@@ -25,7 +25,7 @@ const WIKIA_PAGE_LINK = "http://warframe.wikia.com";
 
 /**
  * Link to the wikia mods 2.0 page. This is the webapge initialy scraped with
- * the `loadModsTable()` function and the page containing a list of all mods, 
+ * the loadModsTable() function and the page containing a list of all mods, 
  * except Rivens.
  *
  * @const
@@ -58,10 +58,8 @@ const TIMEOUT_WAIT_TIME = 10000;
 
 /**
  * A module that shouts hello!
- * @module ModScraper
- * @public
  */
-module.exports = class ModScraper {
+class ModScraper {
 
     /**
      * Innitiazes a ModScraper instance, but doesn't load it.
@@ -69,9 +67,9 @@ module.exports = class ModScraper {
      * Note that all of the methods from this instance can only be called once
      * it is fully loaded.
      *
-     * To load an instance run the `ModScraper.load()` function.
+     * To load an instance run the ModScraper.load() function.
      *
-     * To check if an instace is loaded use the `isLoaded` flag.
+     * To check if an instace is loaded use the isLoaded flag.
      *
      * @constructor
      * @property    {string}    modsListTable       The HTML table from the wiki
@@ -96,9 +94,9 @@ module.exports = class ModScraper {
      *                                              the aura mods.
      * @property    {string}    stanceModsTable     The HTML table containing 
      *                                              the stance mods.
-     * @private    {boolean}   isLoaded             Returns whether or not the 
+     * @property    {boolean}   isLoaded             Returns whether or not the 
      *                                              scraper has run the 
-     *                                              `loadModsTable()` method and
+     *                                              loadModsTable() method and
      *                                              if it is ready to be used.
      * @property    {Object}    requestConfig       Object containing the 
      *                                              necessary information to 
@@ -121,7 +119,7 @@ module.exports = class ModScraper {
      * @return  {Promise}   A Promise that the table was correctly loaded. It 
      *                      only returns after eveything sucessfuly loaded from 
      *                      the website or throws an error. It is atomic. 
-     * @see     {@link  `requestHTML(url)`}
+     * @see     {@link  requestHTML(url)}
      * @public
      */
     loadModsTable() {
@@ -152,12 +150,12 @@ module.exports = class ModScraper {
     }
 
     /**
-     * Returns `true` if the main Mods table on WIKIA_MODS_LINK has been loaded
-     * by the scraper, or `false` otherwise.
+     * Returns true if the main Mods table on WIKIA_MODS_LINK has been loaded
+     * by the scraper, or false otherwise.
      * 
-     * @return  {boolean}   `true` if the table has been loaded, `false` 
+     * @return  {boolean}   true if the table has been loaded, false 
      *                      otherwise.
-     * @see     {@link  `WIKIA_MODS_LINK`}
+     * @see     {@link  WIKIA_MODS_LINK}
      * @public
      */
     isModsTableLoaded() {
@@ -173,7 +171,7 @@ module.exports = class ModScraper {
      * @return  {Array}     An Array containing the all the URLs of all the mods
      *                      contained in the given table.
      * @throws  InstanceNotLoadedException
-     * @see     {@link  `loadModsTable()`}
+     * @see     {@link  loadModsTable()}
      * @public
      */
     getLinks(aTable) {
@@ -296,4 +294,6 @@ module.exports = class ModScraper {
                 });
         });
     }
-};
+}
+
+module.exports = ModScraper;
