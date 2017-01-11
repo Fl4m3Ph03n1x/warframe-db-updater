@@ -36,5 +36,6 @@ Currently, it is in its alpha stage, and the purpose is to update the DB of
 smoother and more automated. 
 
 This project is free to use/change, provided you give credit to the original 
-author (me) and it's code is publicly avaiable as well as heavily documented. 
+author (me) and it's code is publicly avaiable as well as heavily documented 
+(https://fl4m3ph03n1x.github.io/warframe-db-updater/). 
 
