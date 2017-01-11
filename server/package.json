@@ -4,7 +4,7 @@
   "description": "DB updater for warframe goods",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "document": "./node_modules/.bin/jsdoc ./ -d ../docs"
   },
   "keywords": [
     "warframe",

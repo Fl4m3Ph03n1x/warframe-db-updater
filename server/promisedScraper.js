@@ -47,7 +47,7 @@ const HTTP_GET = "GET";
 
 /**
  * Time to wait before sending a timeout exception when making a request to the 
- * wikia servers.
+ * wikia servers. Measured in ms.
  *
  * @const
  * @readonly
@@ -57,19 +57,19 @@ const HTTP_GET = "GET";
 const TIMEOUT_WAIT_TIME = 10000;
 
 /**
- * A module that shouts hello!
+ * <p>This class is responsible for making requests and extracting information from
+ * the Warframe Wikia. All its methods are either query or process HTML 
+ * information from that page. As all scrappers, when one day the wikia gets an 
+ * uplift, so must this class.</p>
+ * 
+ * <p>This class makes usage of Promises for all the methods that make requests, 
+ * so a I advise you to be confident with them.</p>
  */
 class ModScraper {
 
     /**
-     * Innitiazes a ModScraper instance, but doesn't load it.
-     *
-     * Note that all of the methods from this instance can only be called once
-     * it is fully loaded.
-     *
-     * To load an instance run the ModScraper.load() function.
-     *
-     * To check if an instace is loaded use the isLoaded flag.
+     * <p>Innitiazes a ModScraper instance, but doesn't load it. To check if an 
+     * instace is loaded use the isModsTableLoaded() method.</p>
      *
      * @constructor
      * @property    {string}    modsListTable       The HTML table from the wiki
@@ -101,6 +101,7 @@ class ModScraper {
      * @property    {Object}    requestConfig       Object containing the 
      *                                              necessary information to 
      *                                              make the a request. 
+     * @see     {@link  isModsTableLoaded()} 
      */
     constructor() {
         this.isLoaded = false;
@@ -112,9 +113,22 @@ class ModScraper {
     }
 
     /**
-     * Downloads the HTML from the Wikia page, sets up all the mod tables. This
+     * <p>Downloads the HTML from the Wikia page, sets up all the mod tables. This
      * method is mandatory for the methods that required parsed information fom 
-     * mods table and must be run before running them.
+     * mods table and must be run before running them.</p>
+     * 
+     * @example <caption>Loading usage:</caption>
+     * let scrapy = new ModScraper();
+     *
+     * let sucessFn = function(){
+     *  console.log("HTML data loaded with great success!");
+     * };
+     *        
+     * let failFn = function(error){
+     *  console.log("Logging error: " + error);
+     * };
+     *        
+     * scrapy.loadModsTable().then(sucessFn).catch(failFn);
      * 
      * @return  {Promise}   A Promise that the table was correctly loaded. It 
      *                      only returns after eveything sucessfuly loaded from 
