@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>warframe-trades &#8212; REST API for warframe goods</title>
+<style>
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    z-index: 999;
+}
+
+.back-to-top a {
+    display: block;
+    padding: .5em .6em;
+    line-height: 1em;
+    border-radius: .25em;
+    background: #fff;
+}
+
+.back-to-top a svg {
+    vertical-align: middle;
+}
+
+.permalink {
+    position: absolute;
+    margin-left: -.75em;
+    font-weight: normal;
+    color: #eee;
+}
+
+.permalink:hover {
+    text-decoration: none;
+}
+
+.method h2 {
+    line-height: 1.3em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.permalink:hover,
+.doxdox .menu .file {
+    color: #E54D89;
+}
+
+pre .hljs {
+    padding: 0;
+    background: none;
+}
+
+.doxdox .wrap {
+    padding: 0 1em;
+}
+
+.doxdox .jumbotron p,
+.doxdox .label-default {
+    -webkit-font-smoothing: antialiased;
+}
+
+.doxdox .jumbotron {
+    margin-bottom: 0;
+    background-color: #2B303E;
+}
+
+.doxdox .jumbotron h1,
+.doxdox .jumbotron h1 a {
+    color: #eee;
+}
+
+.doxdox .jumbotron p {
+    color: #ccc;
+}
+
+.doxdox .menu {
+    margin: 1.5em 0 0 0;
+    padding: 0;
+}
+
+.doxdox .menu li {
+    list-style: none;
+}
+
+.doxdox .menu li ul {
+    padding: 0;
+}
+
+.doxdox .menu li a {
+    display: block;
+    padding: .25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.doxdox .menu .scope-private a {
+    color: #8BAAC6;
+}
+
+.doxdox .bs-footer {
+    margin: 3em auto;
+    color: #777;
+    text-align: center;
+}
+
+</style>
+<script>
+
+(function (w, d, f) {
+
+    'use strict';
+
+    var protocol = w.location.protocol === 'file:' ? 'http:' : w.location.protocol,
+        resource = [
+            '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
+            '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/github.min.css',
+            '//code.jquery.com/jquery-2.2.3.min.js',
+            '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js'
+        ];
+
+    function loadResource(url) {
+
+        var tag;
+
+        if (url.match(/\.js$/)) {
+
+            tag = d.createElement('script');
+            tag.setAttribute('src', protocol + url);
+
+        } else if (url.match(/\.css$/)) {
+
+            tag = d.createElement('link');
+            tag.setAttribute('rel', 'stylesheet');
+            tag.setAttribute('href', protocol + url);
+
+        }
+
+        tag.addEventListener('load', function () {
+
+            if (resource.length) {
+
+                loadResource(resource.shift());
+
+            } else {
+
+                if ($.isReady) {
+
+                    f();
+
+                } else {
+
+                    $(document).ready(f);
+
+                }
+
+            }
+
+        });
+
+        d.head.appendChild(tag);
+
+    }
+
+    loadResource(resource.shift());
+
+}(window, document, function () {
+
+    'use strict';
+
+    var headerHeight = $('.jumbotron').outerHeight(true),
+        $backToTop = $('.back-to-top');
+
+    function handleScrollEvent() {
+
+        if (window.scrollY > headerHeight && $backToTop.not(':visible')) {
+
+            $backToTop.fadeIn();
+
+        } else if (window.scrollY < headerHeight && $backToTop.is(':visible')) {
+
+            $backToTop.fadeOut();
+
+        }
+
+    }
+
+    $('pre code:not(.hljs)').each(function () {
+        hljs.highlightBlock(this);
+    });
+
+    $(window).on('scroll', handleScrollEvent);
+
+    handleScrollEvent();
+
+}));
+
+</script>
+</head>
+
+<body class="doxdox">
+
+<div class="back-to-top">
+    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px" viewBox="0 0 13 14"><path d="M7.18761156,13 L7.18761156,5.49249703 L10.4587853,5.49249703 L5.09931763,0.113558129 L-0.26015,5.49249703 L3.01102371,5.49249703 L3.01102371,13 L7.18761156,13 Z" fill="#428bca"></path></svg> Back to Top</a>
+</div>
+
+<div class="jumbotron">
+
+    <div class="container">
+
+        <h1>
+                warframe-trades
+            <small>1.0.0</small>
+        </h1>
+
+        <p>REST API for warframe goods</p>
+
+    </div>
+
+</div>
+
+<div class="wrap">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3 hidden-sm hidden-xs">
+
+                <ul class="menu">
+
+
+                    <li>
+                        <a href="#scraper.js" class="file"><b>scraper.js</b></a>
+                        <ul>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-wikia_page_link" title="WIKIA_PAGE_LINK">WIKIA_PAGE_LINK</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-wikia_mods_link" title="WIKIA_MODS_LINK">WIKIA_MODS_LINK</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-module.exports" title="module.exports">module.exports</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-constructor" title="constructor">constructor</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-load" title="load">load</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-if" title="if">if</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-getlinks" title="getLinks">getLinks</a>
+                        </li>
+
+
+                        <li class="scope-public">
+                            <a href="#scraper.js-getmodinformation" title="getModInformation">getModInformation</a>
+                        </li>
+
+
+                        <li class="scope-private">
+                            <a href="#scraper.js-requesthtml" title="requestHtml">requestHtml</a>
+                        </li>
+
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-9">
+
+
+                <a id="scraper.js" />
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-wikia_page_link">
+                            <a href="#scraper.js-wikia_page_link" class="permalink">#</a> WIKIA_PAGE_LINK()
+                        </h2>
+
+                        <p>Base link of the Warframe Wikia. Used to complete relative links.</p>
+
+
+                        
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-wikia_mods_link">
+                            <a href="#scraper.js-wikia_mods_link" class="permalink">#</a> WIKIA_MODS_LINK()
+                        </h2>
+
+                        <p>Link to the wikia mods 2.0 page. This is the webapge initialy scraped with
+the <code>load()</code> function.</p>
+
+
+                        
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-module.exports">
+                            <a href="#scraper.js-module.exports" class="permalink">#</a> module.exports()
+                        </h2>
+
+                        <p>A module that shouts hello!</p>
+
+
+                        
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-constructor">
+                            <a href="#scraper.js-constructor" class="permalink">#</a> constructor([theBody])
+                        </h2>
+
+                        <p>Innitiazes a ModScraper instance, but doesn't load it.</p>
+
+
+                        <p>Note that all of the methods from this instance can only be called once
+it is fully loaded.</p>
+<p>To load an instance run the <code>ModScraper.load()</code> function.</p>
+<p>To check if an instace is loaded use the <code>isLoaded</code> flag.</p>
+
+
+
+                        <section class="parameters">
+
+                            <h3>Parameters</h3>
+
+
+                                <p>
+                                    <b>theBody</b>
+                                        <code>function</code>
+                                        <span class="label label-default">Optional</span>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>...params</b>
+                                        <code>Object</code>
+                                        <span class="label label-default">Optional</span>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                        </section>
+
+
+
+                        <section class="property">
+
+                            <h3>Properties</h3>
+
+
+                                <p>
+                                    <b>htmlBody</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>modsList</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>warframeModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>rifleModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>shotgunModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>pistolModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>meleeModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>sentinelModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>kubrowModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>auraModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                                <p>
+                                    <b>stanceModsTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>description</p>
+
+
+
+                        </section>
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-load">
+                            <a href="#scraper.js-load" class="permalink">#</a> load()
+                        </h2>
+
+                        <p>Downloads the HTML from the Wikia page, setps up all the mod table
+variables and runs the given function with the given arguments.</p>
+
+
+                        
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-if">
+                            <a href="#scraper.js-if" class="permalink">#</a> if()
+                        </h2>
+
+                        <p>Executing functions with a dynamic number of parameters:
+http://stackoverflow.com/questions/676721/calling-dynamic-function-with-dynamic-parameters-in-javascript</p>
+
+
+                        
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-getlinks">
+                            <a href="#scraper.js-getlinks" class="permalink">#</a> getLinks(aTable)
+                        </h2>
+
+                        <p>Extracts a list of mod URLs from the given HTML table. Each URL links to
+the wikia page of the mod it refers to.</p>
+
+
+                        
+
+
+                        <section class="parameters">
+
+                            <h3>Parameters</h3>
+
+
+                                <p>
+                                    <b>aTable</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>The individual HTML table with the information needed.</p>
+
+
+
+                        </section>
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+
+                                    <p>
+                                            <code>Array</code>
+                                    </p>
+
+                                    <p>An Array containing the all the URLs of all the mods contained in the given table.</p>
+
+
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="scraper.js-getmodinformation">
+                            <a href="#scraper.js-getmodinformation" class="permalink">#</a> getModInformation()
+                        </h2>
+
+                        <p>Makes a request to the given mod URL, downloads its information table and
+returns an object with the information parsed.</p>
+
+
+                        <p>If the first request fails, it will attemp five more times with different
+delays depending on the situation.</p>
+<p>After exausting all tries, if nothing works, it throws an exception with
+the problem found.</p>
+
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="method scope-private">
+
+                        <h2 id="scraper.js-requesthtml">
+                            <a href="#scraper.js-requesthtml" class="permalink">#</a> requestHtml(theURL, onResponseFn, onResponseParams[, currentTry, self])
+                            <small>private method</small>
+                        </h2>
+
+                        <p>Makes a GET request to the given URL to download its HTML content and on
+successfull completion of the request it executes the given function with
+the given parameters.</p>
+
+
+                        <p>If the first request fails, it will attemp five more times with different
+delays depending on the situation.</p>
+<p>After exausting all tries, if nothing works, it throws an exception with
+the problem found.</p>
+
+
+
+                        <section class="parameters">
+
+                            <h3>Parameters</h3>
+
+
+                                <p>
+                                    <b>theURL</b>
+                                        <code>string</code>
+                                </p>
+
+                                <p>The URL of the page whose HTML content we want to download.</p>
+
+
+
+                                <p>
+                                    <b>onResponseFn</b>
+                                        <code>function</code>
+                                </p>
+
+                                <p>The function to be executed once the request successfully completes.</p>
+
+
+
+                                <p>
+                                    <b>onResponseParams</b>
+                                        <code>Array</code>
+                                </p>
+
+                                <p>The arguments of the onResponseFn.</p>
+
+
+
+                                <p>
+                                    <b>currentTry</b>
+                                        <code>number</code>
+                                        <span class="label label-default">Optional</span>
+                                </p>
+
+                                <p>The current amount of tries. Used to keep track of how many times we made the request to the server in case of error.</p>
+
+
+
+                                <p>
+                                    <b>self</b>
+                                        <code>ModScraper</code>
+                                        <span class="label label-default">Optional</span>
+                                </p>
+
+                                <p>Reference to the context object used to make the subsequent calls if the first request fails.</p>
+
+
+
+                        </section>
+
+
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+                            <p><code>Void</code></p>
+
+
+                        </section>
+
+                    </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="bs-footer">
+
+    <div class="container">
+
+        <p>Documentation generated with <a href="https://github.com/neogeek/doxdox">doxdox</a>.</p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "warframe-trades",
+  "version": "1.0.0",
+  "description": "DB updater for warframe goods",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "warframe",
+    "trades",
+    "items",
+    "mods",
+    "weapons",
+    "misc",
+    "companions"
+  ],
+  "author": "Pedro Miguel Pereira Serrano Martins",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "http-status": "^0.2.3",
+    "jsonfile": "^2.4.0",
+    "mongoose": "^4.5.4",
+    "promise": "^7.1.1",
+    "request": "^2.73.0"
+  },
+  "devDependencies": {}
+}
