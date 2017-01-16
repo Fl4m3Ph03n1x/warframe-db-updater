@@ -2,7 +2,7 @@
  * @fileOverview Contains the scraper class, responsible for extracting
  * information from the warframe wikia mods page.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 1.0.0
+ * @version 2.0.0
  */
 
 /*jslint node: true */
@@ -13,150 +13,131 @@ let request = require("request");
 let Promise = require("promise");
 let HTTPStatus = require("http-status");
 
-/**
- * Base link of the Warframe Wikia. Used to complete relative links.
- *
- * @const
- * @readonly
- * @type    {string}
- * @default
- */
-const WIKIA_PAGE_LINK = "http://warframe.wikia.com";
+const COLUMN_DESCRIPTION = "Description";
+const COLUMN_POLARITY = "Polarity";
 
 /**
- * Link to the wikia mods 2.0 page. This is the webapge initialy scraped with
- * the loadModsTable() function and the page containing a list of all mods, 
- * except Rivens.
- *
- * @const
- * @readonly
- * @type    {string}
- * @default
- */
-const WIKIA_MODS_LINK = WIKIA_PAGE_LINK + "/wiki/Mods_2.0";
-
-/**
- * Constant for the HTTP GET verb. Helps with clarity when reading the code.
- *
- * @const
- * @readonly
- * @type    {string}
- * @default
- */
-const HTTP_GET = "GET";
-
-/**
- * Time to wait before sending a timeout exception when making a request to the 
- * wikia servers. Measured in ms.
- *
- * @const
- * @readonly
- * @type    {number}
- * @default
- */
-const TIMEOUT_WAIT_TIME = 10000;
-
-/**
- * <p>This class is responsible for making requests and extracting information from
- * the Warframe Wikia. All its methods are either query or process HTML 
+ * <p>This class is responsible for making requests and extracting information 
+ * from the Warframe Wikia. All its methods are either query or process HTML 
  * information from that page. As all scrappers, when one day the wikia gets an 
  * uplift, so must this class.</p>
  * 
  * <p>This class makes usage of Promises for all the methods that make requests, 
  * so a I advise you to be confident with them.</p>
+ * 
+ * @see {@link https://www.toptal.com/javascript/javascript-promises}
  */
 class ModScraper {
 
     /**
-     * <p>Innitiazes a ModScraper instance, but doesn't load it. To check if an 
-     * instace is loaded use the isModsTableLoaded() method.</p>
+     * <p>Innitiazes a ModScraper instance with the given configurations. To </p>
      *
      * @constructor
-     * @property    {string}    modsListTable       The HTML table from the wiki
-     *                                              containing all the game's 
-     *                                              mods. Does not include 
-     *                                              Rivens.
-     * @property    {string}    warframeModsTable   The HTML table containing 
-     *                                              the warframe mods.
-     * @property    {string}    rifleModsTable      The HTML table containing 
-     *                                              the rifle mods.
-     * @property    {string}    shotgunModsTable    The HTML table containing 
-     *                                              the shotgun mods.
-     * @property    {string}    pistolModsTable     The HTML table containing 
-     *                                              the pistol mods.
-     * @property    {string}    meleeModsTable      The HTML table containing 
-     *                                              the melee mods.
-     * @property    {string}    sentinelModsTable   The HTML table containing 
-     *                                              the sentinel mods.
-     * @property    {string}    kubrowModsTable     The HTML table containing 
-     *                                              the kubrow mods.
-     * @property    {string}    auraModsTable       The HTML table containing 
-     *                                              the aura mods.
-     * @property    {string}    stanceModsTable     The HTML table containing 
-     *                                              the stance mods.
-     * @property    {boolean}   isLoaded             Returns whether or not the 
-     *                                              scraper has run the 
-     *                                              loadModsTable() method and
-     *                                              if it is ready to be used.
-     * @property    {Object}    requestConfig       Object containing the 
-     *                                              necessary information to 
-     *                                              make the a request. 
-     * @see     {@link  isModsTableLoaded()} 
+     * @param    {Object}   config  The configuration object with all the links 
+     *                              and config parameters for the scrapper. It 
+     *                              is in the JSON file "scraperConfig.json".
      */
-    constructor() {
-        this.isLoaded = false;
-        this.requestConfig = {
-            method: HTTP_GET,
-            gzip: true,
-            timeout: TIMEOUT_WAIT_TIME
-        };
+    constructor(config) {
+        this.config = config;
+        this.wikiaSource = this.config.sources.wikia;
+        this.request = this.config.network.request;
     }
 
+    getWarframeMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.warframe_mods);
+    }
+    
+    getRifleMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.rifle_mods);
+    }
+    
+    getShotgunMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.shotgun_mods);
+    }
+    
+    getPistolMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.pistol_mods);
+    }
+
+    getMeleeMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.melee_mods);
+    }
+    
+    
+
     /**
-     * <p>Downloads the HTML from the Wikia page, sets up all the mod tables. This
-     * method is mandatory for the methods that required parsed information fom 
-     * mods table and must be run before running them.</p>
-     * 
-     * @example <caption>Loading usage:</caption>
-     * let scrapy = new ModScraper();
-     *
-     * let sucessFn = function(){
-     *  console.log("HTML data loaded with great success!");
-     * };
-     *        
-     * let failFn = function(error){
-     *  console.log("Logging error: " + error);
-     * };
-     *        
-     * scrapy.loadModsTable().then(sucessFn).catch(failFn);
-     * 
-     * @return  {Promise}   A Promise that the table was correctly loaded. It 
-     *                      only returns after eveything sucessfuly loaded from 
-     *                      the website or throws an error. It is atomic. 
-     * @see     {@link  requestHTML(url)}
-     * @public
+     * Check regex for firestorm.
      */
-    loadModsTable() {
+    getTableInfo(url) {
         let self = this;
 
-        return new Promise(function(fulfil, reject) {
-            self.requestHTML(WIKIA_MODS_LINK).then((htmlBody) => {
+        return new Promise((fulfil, reject) => {
+
+            //let url = self.wikiaSource.link + self.wikiaSource.pages.warframe_mods;
+
+            self.requestHTML(url).then((htmlBody) => {
                 self.$ = cheerio.load(htmlBody);
 
-                self.modsList = self.$("table.listtable.sortable");
-                self.warframeModsTable = self.modsList.eq(0);
-                self.rifleModsTable = self.modsList.eq(1);
-                self.shotgunModsTable = self.modsList.eq(2);
-                self.pistolModsTable = self.modsList.eq(3);
-                self.meleeModsTable = self.modsList.eq(4);
-                self.sentinelModsTable = self.modsList.eq(5);
-                self.kubrowModsTable = self.modsList.eq(6);
-                self.auraModsTable = self.modsList.eq(7);
-                self.stanceModsTable = self.modsList.eq(8);
+                //get table
+                let table = self.$("table.listtable.sortable");
 
-                self.isLoaded = true;
+                //get rows from table               
+                let trList = self.$(table).find("tr");
 
-                fulfil();
+                //fill the headers and remove the 1st row as it was processed
+                let headers = trList.first().children().text().trim().split("\n");
+                trList = trList.slice(1, trList.length);
+
+                //aux variables for loop
+                let result = [];
+                let findCamelCase = new RegExp("([a-z]+[A-Z][a-z]+)");
+
+                self.$(trList).each(function(index, elem) {
+                    let currentTdList = self.$(this).children();
+                    let item = {};
+                    let line;
+                    for (let tdIndex = 0; tdIndex < headers.length; tdIndex++) {
+
+                        line = currentTdList.eq(tdIndex).text().trim();
+                        
+                        if (headers[tdIndex] == COLUMN_POLARITY) {
+                            item[headers[tdIndex]] = currentTdList.eq(tdIndex).find("img").attr("alt").split(" ")[0];
+                            
+                            //Because the wikia has conflicting scripts, we must ensure we get the field we want.
+                            item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("data-src");
+                            if(!(item[headers[tdIndex] + "Link"]))
+                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("src");
+                        }
+                        else if (headers[tdIndex] == COLUMN_DESCRIPTION) {
+                            let words = line.split(" ");
+
+                            for (let word of words) {
+                                if (findCamelCase.test(word)) {
+                                    let wordMinusFirst = word.slice(-word.length + 1);
+                                    let newWord = word[0] + wordMinusFirst.replace(/([A-Z])/g, '. $1');
+                                    line = line.replace(word, newWord);
+                                }
+                            }
+                            
+                            //http://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string#
+                            item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
+                            
+                            //check if it is PvP only.
+                            if (item[headers[tdIndex]].includes("PvP"))
+                                item.PvPOnly = true;
+                            else
+                                item.PvPOnly = false;
+                        }
+                        else {
+                            //if the header has associated links, we take them
+                            if (currentTdList.eq(tdIndex).find("a").length)
+                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("a").attr("href");
+                            item[headers[tdIndex]] = line;
+                        }
+                    }
+                    result.push(item);
+                });
+                fulfil(result);
             }).catch(error => {
                 reject(error);
             });
@@ -164,58 +145,8 @@ class ModScraper {
     }
 
     /**
-     * Returns true if the main Mods table on WIKIA_MODS_LINK has been loaded
-     * by the scraper, or false otherwise.
-     * 
-     * @return  {boolean}   true if the table has been loaded, false 
-     *                      otherwise.
-     * @see     {@link  WIKIA_MODS_LINK}
-     * @public
-     */
-    isModsTableLoaded() {
-        return this.isLoaded;
-    }
-
-    /**
-     * Extracts a list of mod URLs from the given HTML table. Each URL links to
-     * the wikia page of the mod it refers to.
-     *
-     * @param   {string}    aTable  The individual HTML table with the 
-     *                              information needed.
-     * @return  {Array}     An Array containing the all the URLs of all the mods
-     *                      contained in the given table.
-     * @throws  InstanceNotLoadedException
-     * @see     {@link  loadModsTable()}
-     * @public
-     */
-    getLinks(aTable) {
-
-        if (!this.isLoaded)
-            throw "InstanceNotLoadedException";
-
-        let self = this;
-        /*
-         * 1. Get all <tr> elements
-         * 2. Remove the first one (which is the header of the table)
-         * 3. Get all the <td> child nodes from each <tr> element
-         * 4. Process <td> elements 4 by 4 and get the link data in the 1st child
-         */
-        let trsList = self.$(aTable).find("tr");
-        let columnsNumber = trsList.first().children().length;
-        let tdsList = trsList.slice(1, trsList.length).children();
-        let linkList = [];
-
-        self.$(tdsList).each(function(index, elem) {
-            if (index % columnsNumber == 0)
-                linkList.push(WIKIA_PAGE_LINK + self.$(this).find("a").attr("href"));
-        });
-
-        return linkList;
-    }
-
-    /**
-     * Makes a request to the given mod URL, downloads its information table and
-     * returns an object with the information parsed.
+     * <p>Makes a request to the given mod URL, downloads its information table and
+     * returns an object with the information parsed.</p>
      *
      * @param   {string}    modURL  The URL of the wikia page containing the mod 
      *                              information to parse.
@@ -254,14 +185,14 @@ class ModScraper {
     }
 
     /**
-     * Makes a GET request to the given URL to download its HTML content and
-     * returns a Promise of a result
+     * <p>Makes a GET request to the given URL to download its HTML content and
+     * returns a Promise of a result.</p>
      *
-     * On successfull completion of the request the promise returns the HTML
-     * body of the HTML page. On fail, it returns a string with the error.
+     * <p>On successfull completion of the request the promise returns the HTML
+     * body of the HTML page. On fail, it returns a string with the error.</p>
      *
-     * This method does not make multiple retries, but if an error occurs it
-     * differentiates between the error types with a best effort basis.
+     * <p>This method does not make multiple retries, but if an error occurs it
+     * differentiates between the error types with a best effort basis.</p>
      *
      * @todo Check if the page changed from last time before making the request.
      *
@@ -288,8 +219,8 @@ class ModScraper {
         let self = this;
         return new Promise(function(fulfil, reject) {
 
-            self.requestConfig.url = url;
-            request(self.requestConfig,
+            self.request.url = url;
+            request(self.request,
                 function(error, response, body) {
 
                     if (!error && response.statusCode == HTTPStatus.OK)

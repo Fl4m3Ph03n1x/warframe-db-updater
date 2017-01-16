@@ -1,0 +1,613 @@
+[
+    {
+        "NameLink": "/wiki/Air_Recon",
+        "Name": "Air Recon",
+        " DescriptionLink": "/wiki/Zoom#Aim_Glide",
+        " Description": "Reduces zoom while Aim Gliding",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Anemic_Agility",
+        "Name": "Anemic Agility",
+        " Description": "Increases rate of fireReduces base damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Corrupted_Mods",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Barrel_Diffusion",
+        "Name": "Barrel Diffusion",
+        " DescriptionLink": "/wiki/Multishot",
+        " Description": "Adds chance of shooting multiple projectiles or increases projectile count for shotgun pistols.",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Blind_Shot",
+        "Name": "Blind Shot",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Increases projectile flight speedReduces accuracyExclusive to PvP",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Bore",
+        "Name": "Bore",
+        " DescriptionLink": "/wiki/Damage_2.0/Puncture_Damage",
+        " Description": "Increases base  Puncture damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Calculated_Victory",
+        "Name": "Calculated Victory",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Adds Chance to Restore Shield on KillExclusive to PvP",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Concussion_Rounds",
+        "Name": "Concussion Rounds",
+        " DescriptionLink": "/wiki/Damage_2.0/Impact_Damage",
+        " Description": "Increases base  Impact damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Convulsion",
+        "Name": "Convulsion",
+        " DescriptionLink": "/wiki/Damage_2.0/Electricity_Damage",
+        " Description": "Adds  Electricity damage to the weapon",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Creeping_Bullseye",
+        "Name": "Creeping Bullseye",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chanceReduces rate of fire",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Deep_Freeze",
+        "Name": "Deep Freeze",
+        " DescriptionLink": "/wiki/Damage_2.0/Cold_Damage",
+        " Description": "Adds  Cold damage to the weapon",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Eject_Magazine",
+        "Name": "Eject Magazine",
+        " Description": "Adds passive reload over time while holstered",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Embedded_Catalyzer",
+        "Name": "Embedded Catalyzer",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effects while aiming for a brief time after casting an ability.",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Expel_Corpus",
+        "Name": "Expel Corpus",
+        " DescriptionLink": "/wiki/Corpus",
+        " Description": "Increases damage dealt to all Corpus units",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Expel_Grineer",
+        "Name": "Expel Grineer",
+        " DescriptionLink": "/wiki/Grineer",
+        " Description": "Increases damage dealt to all Grineer units",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Expel_Infested",
+        "Name": "Expel Infested",
+        " DescriptionLink": "/wiki/Infested",
+        " Description": "Increases damage dealt to all Infested units",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Frostbite",
+        "Name": "Frostbite",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Cold damage to the weapon",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Full_Capacity",
+        "Name": "Full Capacity",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Increases magazine capacityIncreases reload timeExclusive to PvP",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Gunslinger",
+        "Name": "Gunslinger",
+        " Description": "Increases rate of fire",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Hawk_Eye",
+        "Name": "Hawk Eye",
+        " Description": "Increases zoom level",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Heated_Charge",
+        "Name": "Heated Charge",
+        " DescriptionLink": "/wiki/Damage_2.0/Heat_Damage",
+        " Description": "Adds  Fire damage to the weapon",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Heavy_Warhead",
+        "Name": "Heavy Warhead",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Increases Explosion RadiusDecreases Pistol's Projectile Flight SpeedExclusive to PvP",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Hollow_Point",
+        "Name": "Hollow Point",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit damageReduces base damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Corrupted_Mods",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Hornet_Strike",
+        "Name": "Hornet Strike",
+        " Description": "Increases base damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Hydraulic_Barrel",
+        "Name": "Hydraulic Barrel",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Reduces recoil generated while firingDecreases magazine capacityExclusive to PvP",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Hydraulic_Crosshairs",
+        "Name": "Hydraulic Crosshairs",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chance while aiming for a brief time upon a headshot.",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Ice_Storm",
+        "Name": "Ice Storm",
+        " DescriptionLink": "/wiki/Damage_2.0/Cold_Damage",
+        " Description": "Adds  Cold damage to the weaponIncreases magazine capacity",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Rarity": "Nightmare"
+    },
+    {
+        "NameLink": "/wiki/Impaler_Munitions",
+        "Name": "Impaler Munitions",
+        " DescriptionLink": "/wiki/Damage_2.0/Puncture_Damage",
+        " Description": "Converts a percentage of the weapon's damage into  Puncture damageExclusive to PvP",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Jolt",
+        "Name": "Jolt",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Electricity damage to the weapon",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Lethal_Momentum",
+        "Name": "Lethal Momentum",
+        " Description": "Increases Pistol's Projectiles Flight Speed",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Lethal_Torrent",
+        "Name": "Lethal Torrent",
+        " DescriptionLink": "/wiki/Multishot",
+        " Description": "Adds chance of shooting multiple projectiles/Increases projectile count for shotgun pistolsIncreases rate of fire",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Rarity": "Nightmare"
+    },
+    {
+        "NameLink": "/wiki/Loose_Magazine",
+        "Name": "Loose Magazine",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Reduces reload timeIncreases recoil generated while firingExclusive to PvP",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Magnum_Force",
+        "Name": "Magnum Force",
+        " Description": "Increases base damageReduces accuracy",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Corrupted_Mods",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Maim",
+        "Name": "Maim",
+        " DescriptionLink": "/wiki/Damage_2.0/Slash_Damage",
+        " Description": "Increases base  Slash damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Meteor_Munitions",
+        "Name": "Meteor Munitions",
+        " DescriptionLink": "/wiki/Damage_2.0/Impact_Damage",
+        " Description": "Converts a percentage of the weapon's damage into  Impact damageExclusive to PvP",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Night_Stalker",
+        "Name": "Night Stalker",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Adds temporary Target-Tracking to the map on hitExclusive to PvP",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/No_Return",
+        "Name": "No Return",
+        " DescriptionLink": "/wiki/Damage_2.0/Puncture_Damage",
+        " Description": "Increases base  Puncture damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Pathogen_Rounds",
+        "Name": "Pathogen Rounds",
+        " DescriptionLink": "/wiki/Damage_2.0/Toxin_Damage",
+        " Description": "Adds  Toxin damage to the weapon",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Perpetual_Agony",
+        "Name": "Perpetual Agony",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases status duration",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Pistol_Ammo_Mutation",
+        "Name": "Pistol Ammo Mutation",
+        " Description": "Converts any unused ammo types collected into Pistol Ammo",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Pistol_Gambit",
+        "Name": "Pistol Gambit",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chance",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Pistol_Pestilence",
+        "Name": "Pistol Pestilence",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Toxin damage to the weapon",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Pressurized_Magazine",
+        "Name": "Pressurized Magazine",
+        " Description": "Increases rate of fire while aiming for a brief time upon reloading.",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Primed_Heated_Charge",
+        "Name": "Primed Heated Charge",
+        " DescriptionLink": "/wiki/Damage_2.0/Heat_Damage",
+        " Description": "Adds  Fire damage to the weapon",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Primed_Pistol_Gambit",
+        "Name": "Primed Pistol Gambit",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chance",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Primed_Pistol_Mutation",
+        "Name": "Primed Pistol Mutation",
+        " Description": "Converts any unused ammo types collected into Pistol Ammo",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Primed_Slip_Magazine",
+        "Name": "Primed Slip Magazine",
+        " Description": "Increases magazine capacity",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Primed_Target_Cracker",
+        "Name": "Primed Target Cracker",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Pummel",
+        "Name": "Pummel",
+        " DescriptionLink": "/wiki/Damage_2.0/Impact_Damage",
+        " Description": "Increases base  Impact damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Quickdraw",
+        "Name": "Quickdraw",
+        " Description": "Reduces reload time",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Razor_Shot",
+        "Name": "Razor Shot",
+        " DescriptionLink": "/wiki/Damage_2.0/Slash_Damage",
+        " Description": "Increases base  Slash damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Razor_Munitions",
+        "Name": "Razor Munitions",
+        " DescriptionLink": "/wiki/Damage_2.0/Slash_Damage",
+        " Description": "Converts a percentage of the weapon's damage into  Slash damageExclusive to PvP",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Recuperate",
+        "Name": "Recuperate",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Adds Chance to Restore Health on KillExclusive to PvP",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Reflex_Draw",
+        "Name": "Reflex Draw",
+        " Description": "Increases the holster rate",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Ruinous_Extension",
+        "Name": "Ruinous Extension",
+        " Description": "Increases the range of pistol beam weapons",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Scorch_(Mod)",
+        "Name": "Scorch",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Fire damage to the weapon",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Secondary_Wind",
+        "Name": "Secondary Wind",
+        " DescriptionLink": "/wiki/PvP",
+        " Description": "Adds Health Regen for 8 seconds on KillExclusive to PvP",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Seeker_(Mod)",
+        "Name": "Seeker",
+        " DescriptionLink": "/wiki/Punch_Through",
+        " Description": "Adds object/enemy penetration to projectiles",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Sharpened_Bullets",
+        "Name": "Sharpened Bullets",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit damage while aiming for a brief time upon kill.",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Slip_Magazine",
+        "Name": "Slip Magazine",
+        " Description": "Increases magazine capacity",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Spry_Sights",
+        "Name": "Spry Sights",
+        " Description": "Increases movement speed while aiming",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Steady_Hands",
+        "Name": "Steady Hands",
+        " Description": "Reduces recoil generated while firing",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Strafing_Slide",
+        "Name": "Strafing Slide",
+        " Description": "Reduces recoil and spread while sliding",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Stunning_Speed",
+        "Name": "Stunning Speed",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsReduces reload time",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Rarity": "Nightmare"
+    },
+    {
+        "NameLink": "/wiki/Suppress",
+        "Name": "Suppress",
+        " Description": "Reduces noise generated by firing",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Sure_Shot",
+        "Name": "Sure Shot",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effects",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Tainted_Clip",
+        "Name": "Tainted Clip",
+        " Description": "Increases magazine capacityIncreases reload time",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Corrupted_Mods",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Target_Cracker",
+        "Name": "Target Cracker",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Targeting_Subsystem",
+        "Name": "Targeting Subsystem",
+        " Description": "Increases accuracy while aiming for a brief time after hitting an enemy.",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Trick_Mag",
+        "Name": "Trick Mag",
+        " Description": "Increases maximum ammunition capacity",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    }
+]

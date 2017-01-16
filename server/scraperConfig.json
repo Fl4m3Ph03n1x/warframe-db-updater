@@ -1,0 +1,26 @@
+{
+    "sources": {
+        "wikia": {
+            "link": "http://warframe.wikia.com/wiki",
+            "pages": {
+                "mods_2.0": "/Mods_2.0",
+                "warframe_mods": "/Category:Warframe_Mods",
+                "rifle_mods": "/Category:Rifle_Mods",
+                "shotgun_mods": "/Category:Shotgun_Mods",
+                "pistol_mods": "/Category:Pistol_Mods",
+                "melee_mods": "/Category:Melee_Mods",
+                "sentinel_mods": "/Category:Sentinel_Mods",
+                "kubrow_mods": "/Category:Kubrow_Mods",
+                "aura_mods": "/Category:Auras",
+                "stance_mods": "/Category:Stance_Mods"
+            }
+        }
+    },
+    "network": {
+        "request": {
+            "method": "GET",
+            "gzip": true,
+            "timeout": 10000
+        }
+    }
+}

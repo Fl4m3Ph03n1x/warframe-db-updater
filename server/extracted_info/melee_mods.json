@@ -1,0 +1,511 @@
+[
+    {
+        "NameLink": "/wiki/Auger_Strike",
+        "Name": "Auger Strike",
+        " DescriptionLink": "/wiki/Damage_2.0/Puncture_Damage",
+        " Description": "Increases  Puncture damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Berserker",
+        "Name": "Berserker",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Temporarily increases attack speed after scoring a critical hit",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Blood_Rush",
+        "Name": "Blood Rush",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chance as the Melee Combo Counter increases",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Body_Count",
+        "Name": "Body Count",
+        " DescriptionLink": "/wiki/Melee_Combo_Counter",
+        " Description": "Increases Melee Combo Counter duration",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Buzz_Kill",
+        "Name": "Buzz Kill",
+        " DescriptionLink": "/wiki/Damage_2.0/Slash_Damage",
+        " Description": "Increases base  Slash damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Collision_Force",
+        "Name": "Collision Force",
+        " DescriptionLink": "/wiki/Damage_2.0/Impact_Damage",
+        " Description": "Increases base  Impact damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Condition_Overload",
+        "Name": "Condition Overload",
+        " DescriptionLink": "/wiki/Status_Effect",
+        " Description": "Grants extra melee damage for each Status Effect type affecting the target",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Corrupt_Charge",
+        "Name": "Corrupt Charge",
+        " Description": "Increases channeling damageReduces channeling efficiency",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Corrupted_Mods",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Dispatch_Overdrive",
+        "Name": "Dispatch Overdrive",
+        " DescriptionLink": "/wiki/Melee_2.0#Channeling",
+        " Description": "Grants a movement speed buff on a Melee Channel kill",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Drifting_Contact",
+        "Name": "Drifting Contact",
+        " DescriptionLink": "/wiki/Melee_Combo_Counter",
+        " Description": "Increases Melee Combo Counter durationIncreases Status Chance",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Rarity": "Nightmare"
+    },
+    {
+        "NameLink": "/wiki/Enduring_Affliction",
+        "Name": "Enduring Affliction",
+        " DescriptionLink": "/wiki/Status_Effect",
+        " Description": "Grants extra Status Effect duration on melee hits while Channeling",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Enduring_Strike",
+        "Name": "Enduring Strike",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases Status ChanceReduces channeling efficiency",
+        "Polarity": "Zenurik",
+        "PolarityLink": "http://vignette4.wikia.nocookie.net/warframe/images/8/8c/Zenurik_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Energy_Channel",
+        "Name": "Energy Channel",
+        " Description": "Adds bonus melee damage based on Warframe ability energy usage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Fever_Strike",
+        "Name": "Fever Strike",
+        " DescriptionLink": "/wiki/Damage_2.0/Toxin_Damage",
+        " Description": "Adds  Toxin damage to attacks",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Finishing_Touch",
+        "Name": "Finishing Touch",
+        " Description": "Increases finishing attack damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Focus_Energy",
+        "Name": "Focus Energy",
+        " DescriptionLink": "/wiki/Damage_2.0/Electricity_Damage",
+        " Description": "Increases channeling efficiencyAdds  Electricity damage to attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Rarity": "Nightmare"
+    },
+    {
+        "NameLink": "/wiki/Focused_Defense",
+        "Name": "Focused Defense",
+        " DescriptionLink": "/wiki/Armor",
+        " Description": "Increases Armor while channeling\nReduces channeling efficiency",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Fury",
+        "Name": "Fury",
+        " Description": "Increases attack speed",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Guardian_Derision",
+        "Name": "Guardian Derision",
+        " Description": "Allows the player to taunt enemies into attacking them instead of allies when blocking",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Healing_Return",
+        "Name": "Healing Return",
+        " DescriptionLink": "/wiki/Status_Effect",
+        " Description": "Heals the player when hitting a target currently affected by a Status Effect proc",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Heavy_Trauma",
+        "Name": "Heavy Trauma",
+        " DescriptionLink": "/wiki/Damage_2.0/Impact_Damage",
+        " Description": "Increases base  Impact damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Jagged_Edge",
+        "Name": "Jagged Edge",
+        " DescriptionLink": "/wiki/Damage_2.0/Slash_Damage",
+        " Description": "Increases base  Slash damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Killing_Blow",
+        "Name": "Killing Blow",
+        " Description": "Increases channeling damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Lasting_Sting",
+        "Name": "Lasting Sting",
+        " DescriptionLink": "/wiki/Status_Effect",
+        " Description": "Increases the duration of status effects",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Life_Strike",
+        "Name": "Life Strike",
+        " Description": "Melee hits whilst channeling restore healthReduces channeling efficiency",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Maiming_Strike",
+        "Name": "Maiming Strike",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chance on slide attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Melee_Prowess",
+        "Name": "Melee Prowess",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effects",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Molten_Impact",
+        "Name": "Molten Impact",
+        " DescriptionLink": "/wiki/Damage_2.0/Heat_Damage",
+        " Description": "Adds  Fire damage to attacks",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/North_Wind",
+        "Name": "North Wind",
+        " DescriptionLink": "/wiki/Damage_2.0/Cold_Damage",
+        " Description": "Adds  Cold damage to attacks",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Organ_Shatter",
+        "Name": "Organ Shatter",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Parry",
+        "Name": "Parry",
+        " DescriptionLink": "/wiki/Blocking",
+        " Description": "Grants a chance to knock down a melee attacker while Blocking",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Power_Throw",
+        "Name": "Power Throw",
+        " DescriptionLink": "/wiki/Punch_Through",
+        " Description": "Adds object/enemy penetration to thrown weapons such as Glaive, Glaive Prime, Halikar, and Kestrel. Cannot be used on other weapons",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Pressure_Point",
+        "Name": "Pressure Point",
+        " Description": "Increases base damage",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Primed_Heavy_Trauma",
+        "Name": "Primed Heavy Trauma",
+        " DescriptionLink": "/wiki/Damage_2.0/Impact_Damage",
+        " Description": "Increases base  Impact damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Primed_Reach",
+        "Name": "Primed Reach",
+        " Description": "Increases range/reach of melee attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Relentless_Combination",
+        "Name": "Relentless Combination",
+        " DescriptionLink": "/wiki/Melee_2.0#Combo_Counter",
+        " Description": "Grants a chance to deal Combo Counter hits when a target is dealt damage from a  Slash proc caused by the player",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Quick_Return",
+        "Name": "Quick Return",
+        " DescriptionLink": "/wiki/Glaive",
+        " Description": "Reduces the number of bounces for Glaive, Glaive Prime, Halikar and Kestrel",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Quickening",
+        "Name": "Quickening",
+        " Description": "Increases attack speedReduces channeling efficiency",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Reach",
+        "Name": "Reach",
+        " Description": "Increases range/reach of melee attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Rebound",
+        "Name": "Rebound",
+        " DescriptionLink": "/wiki/Glaive",
+        " Description": "Increases number of bounces for Glaive, Glaive Prime, and Kestrel",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Reflex_Coil",
+        "Name": "Reflex Coil",
+        " Description": "Increases channeling efficiency",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Rending_Strike",
+        "Name": "Rending Strike",
+        " DescriptionLink": "/wiki/Damage_2.0/Puncture_Damage",
+        " Description": "Increases base  Puncture and  Slash damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Rarity": "Nightmare"
+    },
+    {
+        "NameLink": "/wiki/Second_Wind",
+        "Name": "Second Wind",
+        " Description": "Melee kills restore staminaReduces channeling efficiency",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Shocking_Touch",
+        "Name": "Shocking Touch",
+        " DescriptionLink": "/wiki/Damage_2.0/Electricity_Damage",
+        " Description": "Adds  Electricity damage to attacks",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Smite_Corpus",
+        "Name": "Smite Corpus",
+        " DescriptionLink": "/wiki/Corpus",
+        " Description": "Increases damage dealt to all Corpus units",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Smite_Grineer",
+        "Name": "Smite Grineer",
+        " DescriptionLink": "/wiki/Grineer",
+        " Description": "Increases damage dealt to all Grineer units",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Smite_Infested",
+        "Name": "Smite Infested",
+        " DescriptionLink": "/wiki/Infested",
+        " Description": "Increases damage dealt to all Infested units",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Spoiled_Strike",
+        "Name": "Spoiled Strike",
+        " Description": "Increases base damageReduces attack speed",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Corrupted_Mods",
+        "Rarity": "Corrupted"
+    },
+    {
+        "NameLink": "/wiki/Sundering_Strike",
+        "Name": "Sundering Strike",
+        " DescriptionLink": "/wiki/Damage_2.0/Puncture_Damage",
+        " Description": "Increases base  Puncture damage",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/True_Punishment",
+        "Name": "True Punishment",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hit chanceReduces channeling efficiency",
+        "Polarity": "Zenurik",
+        "PolarityLink": "http://vignette4.wikia.nocookie.net/warframe/images/8/8c/Zenurik_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/True_Steel",
+        "Name": "True Steel",
+        " DescriptionLink": "/wiki/Critical_Hit",
+        " Description": "Increases critical hits chance",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Vicious_Frost",
+        "Name": "Vicious Frost",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Cold damage to attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Virulent_Scourge",
+        "Name": "Virulent Scourge",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Toxin damage to attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Volcanic_Edge",
+        "Name": "Volcanic Edge",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Heat damage to attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Voltaic_Strike",
+        "Name": "Voltaic Strike",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effectsAdds  Electricity damage to attacks",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Weeping_Wounds",
+        "Name": "Weeping Wounds",
+        " DescriptionLink": "/wiki/Status_Chance",
+        " Description": "Increases chance of causing status effects  as the Melee Combo Counter increases",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Acolyte_Mods",
+        "Rarity": "Acolyte"
+    },
+    {
+        "NameLink": "/wiki/Whirlwind",
+        "Name": "Whirlwind",
+        " DescriptionLink": "/wiki/Glaive",
+        " Description": "Increases flight speed of Glaive, Glaive Prime, Halikar, and Kestrel",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    }
+]
