@@ -2,7 +2,7 @@
  * @fileOverview Contains the scraper class, responsible for extracting
  * information from the warframe wikia mods page.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 2.0.0
+ * @version 2.0.1
  */
 
 /*jslint node: true */
