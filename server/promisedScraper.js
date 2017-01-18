@@ -13,13 +13,32 @@ let request = require("request");
 let Promise = require("promise");
 let HTTPStatus = require("http-status");
 
+/**
+ *  <p>Name of the Description column in the mods table.</p>
+ *  @const      {string}
+ *  @readonly
+ */
 const COLUMN_DESCRIPTION = "Description";
+
+/**
+ *  <p>Name of the Polarity column in the mods table.</p>
+ *  @const      {string}
+ *  @readonly
+ */
 const COLUMN_POLARITY = "Polarity";
+
+/**
+ *  <p>Keyword used to test if a mod is PvP exclusive or not. All the mods which
+ *  are PvP exclusise have the disclaimer "PvP Exclusive" in the description, so
+ *  I make use of it.</p>
+ *  @const      {string}
+ *  @readonly
+ */
 const PVP_ONLY_KEYWORD = "PvP";
 
 /**
  * <p>This class is responsible for making requests and extracting information 
- * from the Warframe Wikia. All its methods are either query or process HTML 
+ * from the Warframe Wikia. All its methods either query or process HTML 
  * information from that page. As all scrappers, when one day the wikia gets an 
  * uplift, so must this class.</p>
  * 
@@ -31,12 +50,13 @@ const PVP_ONLY_KEYWORD = "PvP";
 class ModScraper {
 
     /**
-     * <p>Innitiazes a ModScraper instance with the given configurations. To </p>
+     * <p>Innitiazes a ModScraper instance with the given configurations.</p>
      *
      * @constructor
      * @param    {Object}   config  The configuration object with all the links 
      *                              and config parameters for the scrapper. It 
      *                              is in the JSON file "scraperConfig.json".
+     * @public
      */
     constructor(config) {
         this.config = config;
@@ -44,119 +64,103 @@ class ModScraper {
         this.request = this.config.network.request;
     }
 
+    /**
+     * <p>Queries the Warframe Mods table containing all the Warframe mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
     getWarframeMods() {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.warframe_mods);
     }
-    
+
+    /**
+     * <p>Queries the Rifle Mods table containing all the Rifle mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
     getRifleMods() {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.rifle_mods);
     }
-    
+
+    /**
+     * <p>Queries the Shotgun Mods table containing all the Shotgun mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
     getShotgunMods() {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.shotgun_mods);
     }
-    
+
+    /**
+     * <p>Queries the Pistol Mods table containing all the Pistol mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
     getPistolMods() {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.pistol_mods);
     }
 
+    /**
+     * <p>Queries the Melee Mods table containing all the Melee mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
     getMeleeMods() {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.melee_mods);
     }
-    
-    getSentinelMods(){
+
+    /**
+     * <p>Queries the Sentinel Mods table containing all the Sentinel mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
+    getSentinelMods() {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.sentinel_mods);
-    }
-    
-    getKubrowMods(){
-        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.kubrow_mods);
-    }
-    
-    getAuraMods(){
-        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.aura_mods);
-    }
-    
-    getStanceMods(){
-        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.stance_mods);
     }
 
     /**
+     * <p>Queries the Kubrow Mods table containing all the Kubrow mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
      */
-    getTableInfo(url) {
-        let self = this;
+    getKubrowMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.kubrow_mods);
+    }
 
-        return new Promise((fulfil, reject) => {
+    /**
+     * <p>Queries the Aura Mods table containing all the Aura mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
+    getAuraMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.aura_mods);
+    }
 
-            //let url = self.wikiaSource.link + self.wikiaSource.pages.warframe_mods;
-
-            self.requestHTML(url).then((htmlBody) => {
-                self.$ = cheerio.load(htmlBody);
-
-                //get table
-                let table = self.$("table.listtable.sortable");
-
-                //get rows from table               
-                let trList = self.$(table).find("tr");
-
-                //fill the headers and remove the 1st row as it was processed
-                let headers = trList.first().children().text().trim().split("\n");
-                headers = headers.map(str => str.trim());
-                trList = trList.slice(1, trList.length);
-
-                //aux variables for loop
-                let result = [];
-                let findCamelCase = new RegExp("([a-z]+[A-Z][a-z]+)");
-
-                self.$(trList).each(function(index, elem) {
-                    let currentTdList = self.$(this).children();
-                    let item = {};
-                    let line;
-                    for (let tdIndex = 0; tdIndex < headers.length; tdIndex++) {
-
-                        line = currentTdList.eq(tdIndex).text().trim();
-                        
-                        if (headers[tdIndex] == COLUMN_POLARITY) {
-                            item[headers[tdIndex]] = currentTdList.eq(tdIndex).find("img").attr("alt").split(" ")[0];
-                            
-                            //Because the wikia has conflicting scripts, we must ensure we get the field we want.
-                            item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("data-src");
-                            if(!(item[headers[tdIndex] + "Link"]))
-                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("src");
-                        }
-                        else if (headers[tdIndex] == COLUMN_DESCRIPTION) {
-                            let words = line.split(" ");
-
-                            for (let word of words) {
-                                if (findCamelCase.test(word)) {
-                                    let wordMinusFirst = word.slice(-word.length + 1);
-                                    let newWord = word[0] + wordMinusFirst.replace(/([A-Z])/g, '. $1');
-                                    line = line.replace(word, newWord);
-                                }
-                            }
-                            
-                            //http://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string#
-                            item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
-                            
-                            //check if it is PvP only.
-                            if (item[headers[tdIndex]].includes(PVP_ONLY_KEYWORD))
-                                item.PvPOnly = true;
-                            else
-                                item.PvPOnly = false;
-                        }
-                        else {
-                            //if the header has associated links, we take them
-                            if (currentTdList.eq(tdIndex).find("a").length)
-                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("a").attr("href");
-                            item[headers[tdIndex]] = line;
-                        }
-                    }
-                    result.push(item);
-                });
-                fulfil(result);
-            }).catch(error => {
-                reject(error);
-            });
-        });
+    /**
+     * <p>Queries the Stance Mods table containing all the Stance mods and
+     * information relative to them.</p>
+     * 
+     * @return {Promise} A Promise with a Json object containing the data.
+     * @public
+     */
+    getStanceMods() {
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.stance_mods);
     }
 
     /**
@@ -193,6 +197,94 @@ class ModScraper {
                     modInfo.modRarityType = "Orokin Derelict";
 
                 fulfil(modInfo);
+            }).catch(error => {
+                reject(error);
+            });
+        });
+    }
+
+    /**
+     *  <p>Auxiliary method, makes a request to the given URL and receives the 
+     *  HTML table from another table. Parses it to extract all valuable 
+     *  information and builts a JSON object containing it, which is then 
+     *  returned if the promise is fulfilled.</p>
+     * 
+     *  @param  {string}    url The complete URL of the webpage were the HTML 
+     *                          table containing all the information is. 
+     *  @return {Promise}       A Promise with a Json object containing the data.   
+     *  @private
+     */
+    getTableInfo(url) {
+        let self = this;
+
+        return new Promise((fulfil, reject) => {
+
+            //let url = self.wikiaSource.link + self.wikiaSource.pages.warframe_mods;
+
+            self.requestHTML(url).then((htmlBody) => {
+                self.$ = cheerio.load(htmlBody);
+
+                //get table
+                let table = self.$("table.listtable.sortable");
+
+                //get rows from table               
+                let trList = self.$(table).find("tr");
+
+                //fill the headers and remove the 1st row as it was processed
+                let headers = trList.first().children().text().trim().split("\n");
+                headers = headers.map(str => str.trim());
+                trList = trList.slice(1, trList.length);
+
+                //aux variables for loop
+                let result = [];
+                let findCamelCase = new RegExp("([a-z]+[A-Z][a-z]+)");
+
+                self.$(trList).each(function(index, elem) {
+                    let currentTdList = self.$(this).children();
+                    let item = {};
+                    let line;
+                    for (let tdIndex = 0; tdIndex < headers.length; tdIndex++) {
+
+                        line = currentTdList.eq(tdIndex).text().trim();
+
+                        if (headers[tdIndex] == COLUMN_POLARITY) {
+                            item[headers[tdIndex]] = currentTdList.eq(tdIndex).find("img").attr("alt").split(" ")[0];
+
+                            //Because the wikia has conflicting scripts, we must ensure we get the field we want.
+                            item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("data-src");
+                            if (!(item[headers[tdIndex] + "Link"]))
+                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("src");
+                        }
+                        else if (headers[tdIndex] == COLUMN_DESCRIPTION) {
+                            let words = line.split(" ");
+
+                            for (let word of words) {
+                                if (findCamelCase.test(word)) {
+                                    let wordMinusFirst = word.slice(-word.length + 1);
+                                    let newWord = word[0] + wordMinusFirst.replace(/([A-Z])/g, '. $1');
+                                    line = line.replace(word, newWord);
+                                }
+                            }
+
+                            //http://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string#
+                            item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
+
+                            //check if it is PvP only.
+                            if (item[headers[tdIndex]].includes(PVP_ONLY_KEYWORD))
+                                item.PvPOnly = true;
+                            else
+                                item.PvPOnly = false;
+                        }
+                        else {
+                            //if the header has associated links, we take them
+                            if (currentTdList.eq(tdIndex).find("a").length)
+                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("a").attr("href");
+                            item[headers[tdIndex]] = line;
+                        }
+                    }
+                    result.push(item);
+                });
+                fulfil(result);
             }).catch(error => {
                 reject(error);
             });

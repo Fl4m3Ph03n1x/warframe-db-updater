@@ -96,170 +96,13 @@
 
         
             
-<h4 class="name" id="HTTP_GET"><span class="type-signature">(constant) </span>HTTP_GET<span class="type-signature"> :string</span></h4>
+<h4 class="name" id="COLUMN_DESCRIPTION"><span class="type-signature">(constant) </span>COLUMN_DESCRIPTION<span class="type-signature"> :string</span></h4>
 
 
 
 
 <div class="description">
-    Constant for the HTTP GET verb. Helps with clarity when reading the code.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">string</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy">
-            <li>GET</li>
-        </ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line46">line 46</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="TIMEOUT_WAIT_TIME"><span class="type-signature">(constant) </span>TIMEOUT_WAIT_TIME<span class="type-signature"> :number</span></h4>
-
-
-
-
-<div class="description">
-    Time to wait before sending a timeout exception when making a request to the 
-wikia servers. Measured in ms.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy">
-            <li>10000</li>
-        </ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line57">line 57</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="WIKIA_MODS_LINK"><span class="type-signature">(constant) </span>WIKIA_MODS_LINK<span class="type-signature"> :string</span></h4>
-
-
-
-
-<div class="description">
-    Link to the wikia mods 2.0 page. This is the webapge initialy scraped with
-the loadModsTable() function and the page containing a list of all mods, 
-except Rivens.
+    <p>Name of the Description column in the mods table.</p>
 </div>
 
 
@@ -307,7 +150,7 @@ except Rivens.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line36">line 36</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line21">line 21</a>
     </li></ul></dd>
     
 
@@ -325,13 +168,13 @@ except Rivens.
 
         
             
-<h4 class="name" id="WIKIA_PAGE_LINK"><span class="type-signature">(constant) </span>WIKIA_PAGE_LINK<span class="type-signature"> :string</span></h4>
+<h4 class="name" id="COLUMN_POLARITY"><span class="type-signature">(constant) </span>COLUMN_POLARITY<span class="type-signature"> :string</span></h4>
 
 
 
 
 <div class="description">
-    Base link of the Warframe Wikia. Used to complete relative links.
+    <p>Name of the Polarity column in the mods table.</p>
 </div>
 
 
@@ -375,21 +218,160 @@ except Rivens.
     
 
     
-    <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy">
-            <li>http://warframe.wikia.com</li>
-        </ul></dd>
-    
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line24">line 24</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line28">line 28</a>
     </li></ul></dd>
     
 
     
 
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="PVP_ONLY_KEYWORD"><span class="type-signature">(constant) </span>PVP_ONLY_KEYWORD<span class="type-signature"> :string</span></h4>
+
+
+
+
+<div class="description">
+    <p>Keyword used to test if a mod is PvP exclusive or not. All the mods which
+ are PvP exclusise have the disclaimer "PvP Exclusive" in the description, so
+ I make use of it.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="serration"><span class="type-signature"></span>serration<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>Defines an well formed entry in the warframe-market DB. Used merely as a 
+ consultation example. For more information check the official repo.</p>
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="example_entry.js.html">example_entry.js</a>, <a href="example_entry.js.html#line22">line 22</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://bitbucket.org/42bytes/warframe.market-items">https://bitbucket.org/42bytes/warframe.market-items</a></li>
+        </ul>
+    </dd>
     
 
     
@@ -418,13 +400,13 @@ except Rivens.
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ModScraper.html">ModScraper</a></li></ul><h3>Global</h3><ul><li><a href="global.html#HTTP_GET">HTTP_GET</a></li><li><a href="global.html#TIMEOUT_WAIT_TIME">TIMEOUT_WAIT_TIME</a></li><li><a href="global.html#WIKIA_MODS_LINK">WIKIA_MODS_LINK</a></li><li><a href="global.html#WIKIA_PAGE_LINK">WIKIA_PAGE_LINK</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ModScraper.html">ModScraper</a></li></ul><h3>Global</h3><ul><li><a href="global.html#COLUMN_DESCRIPTION">COLUMN_DESCRIPTION</a></li><li><a href="global.html#COLUMN_POLARITY">COLUMN_POLARITY</a></li><li><a href="global.html#PVP_ONLY_KEYWORD">PVP_ONLY_KEYWORD</a></li><li><a href="global.html#serration">serration</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Jan 11 2017 12:45:45 GMT+0000 (UTC)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Jan 18 2017 11:27:22 GMT+0000 (UTC)
 </footer>
 
 <script> prettyPrint(); </script>

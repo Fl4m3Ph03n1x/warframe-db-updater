@@ -30,8 +30,8 @@
     
         <h2>ModScraper</h2>
         
-            <div class="class-description"><p>This class is responsible for making requests and extracting information from
-the Warframe Wikia. All its methods are either query or process HTML 
+            <div class="class-description"><p>This class is responsible for making requests and extracting information 
+from the Warframe Wikia. All its methods either query or process HTML 
 information from that page. As all scrappers, when one day the wikia gets an 
 uplift, so must this class.</p>
 
@@ -50,15 +50,14 @@ so a I advise you to be confident with them.</p></div>
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="ModScraper"><span class="type-signature"></span>new ModScraper<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="ModScraper"><span class="type-signature"></span>new ModScraper<span class="signature">(config)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    <p>Innitiazes a ModScraper instance, but doesn't load it. To check if an 
-instace is loaded use the isModsTableLoaded() method.</p>
+    <p>Innitiazes a ModScraper instance with the given configurations.</p>
 </div>
 
 
@@ -67,6 +66,57 @@ instace is loaded use the isModsTableLoaded() method.</p>
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The configuration object with all the links 
+                             and config parameters for the scrapper. It 
+                             is in the JSON file "scraperConfig.json".</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -102,12 +152,19 @@ instace is loaded use the isModsTableLoaded() method.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line68">line 68</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line50">line 50</a>
     </li></ul></dd>
     
 
     
 
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://www.toptal.com/javascript/javascript-promises">https://www.toptal.com/javascript/javascript-promises</a></li>
+        </ul>
+    </dd>
     
 
     
@@ -151,15 +208,15 @@ instace is loaded use the isModsTableLoaded() method.</p>
 
     
 
-    <h4 class="name" id="getLinks"><span class="type-signature"></span>getLinks<span class="signature">(aTable)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    <h4 class="name" id="getAuraMods"><span class="type-signature"></span>getAuraMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
 
 
 
 <div class="description">
-    Extracts a list of mod URLs from the given HTML table. Each URL links to
-the wikia page of the mod it refers to.
+    <p>Queries the Aura Mods table containing all the Aura mods and
+information relative to them.</p>
 </div>
 
 
@@ -168,56 +225,6 @@ the wikia page of the mod it refers to.
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>aTable</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The individual HTML table with the 
-                             information needed.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -253,19 +260,12 @@ the wikia page of the mod it refers to.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line191">line 191</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line151">line 151</a>
     </li></ul></dd>
     
 
     
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li>loadModsTable()</li>
-        </ul>
-    </dd>
     
 
     
@@ -281,26 +281,13 @@ the wikia page of the mod it refers to.
 
 
 
-<h5>Throws:</h5>
-
-        
-
-    <div class="param-desc">
-    
-        InstanceNotLoadedException
-    
-    </div>
-
-
-    
 
 
 <h5>Returns:</h5>
 
         
 <div class="param-desc">
-    An Array containing the all the URLs of all the mods
-                     contained in the given table.
+    A Promise with a Json object containing the data.
 </div>
 
 
@@ -311,7 +298,217 @@ the wikia page of the mod it refers to.
     </dt>
     <dd>
         
-<span class="param-type">Array</span>
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getKubrowMods"><span class="type-signature"></span>getKubrowMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Kubrow Mods table containing all the Kubrow mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line140">line 140</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getMeleeMods"><span class="type-signature"></span>getMeleeMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Melee Mods table containing all the Melee mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line118">line 118</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
 
 
     </dd>
@@ -333,8 +530,8 @@ the wikia page of the mod it refers to.
 
 
 <div class="description">
-    Makes a request to the given mod URL, downloads its information table and
-returns an object with the information parsed.
+    <p>Makes a request to the given mod URL, downloads its information table and
+returns an object with the information parsed.</p>
 </div>
 
 
@@ -428,7 +625,7 @@ returns an object with the information parsed.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line226">line 226</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line176">line 176</a>
     </li></ul></dd>
     
 
@@ -482,15 +679,15 @@ returns an object with the information parsed.
 
     
 
-    <h4 class="name" id="isModsTableLoaded"><span class="type-signature"></span>isModsTableLoaded<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="getPistolMods"><span class="type-signature"></span>getPistolMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
 
 
 
 <div class="description">
-    Returns true if the main Mods table on WIKIA_MODS_LINK has been loaded
-by the scraper, or false otherwise.
+    <p>Queries the Pistol Mods table containing all the Pistol mods and
+information relative to them.</p>
 </div>
 
 
@@ -534,19 +731,12 @@ by the scraper, or false otherwise.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line175">line 175</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line107">line 107</a>
     </li></ul></dd>
     
 
     
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="global.html#WIKIA_MODS_LINK">WIKIA_MODS_LINK</a></li>
-        </ul>
-    </dd>
     
 
     
@@ -568,123 +758,7 @@ by the scraper, or false otherwise.
 
         
 <div class="param-desc">
-    true if the table has been loaded, false 
-                     otherwise.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="loadModsTable"><span class="type-signature"></span>loadModsTable<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Downloads the HTML from the Wikia page, sets up all the mod tables. This
-method is mandatory for the methods that required parsed information fom 
-mods table and must be run before running them.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line139">line 139</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li>requestHTML(url)</li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    A Promise that the table was correctly loaded. It 
-                     only returns after eveything sucessfuly loaded from 
-                     the website or throws an error. It is atomic.
+    A Promise with a Json object containing the data.
 </div>
 
 
@@ -704,21 +778,529 @@ mods table and must be run before running them.</p>
     
 
 
-    <h5>Example</h5>
-    
-        <p class="code-caption">Loading usage:</p>
-    
-    <pre class="prettyprint"><code>let scrapy = new ModScraper();
 
-let sucessFn = function(){
- console.log("HTML data loaded with great success!");
-};
-       
-let failFn = function(error){
- console.log("Logging error: " + error);
-};
-       
-scrapy.loadModsTable().then(sucessFn).catch(failFn);</code></pre>
+        
+            
+
+    
+
+    <h4 class="name" id="getRifleMods"><span class="type-signature"></span>getRifleMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Rifle Mods table containing all the Rifle mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getSentinelMods"><span class="type-signature"></span>getSentinelMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Sentinel Mods table containing all the Sentinel mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line129">line 129</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getShotgunMods"><span class="type-signature"></span>getShotgunMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Shotgun Mods table containing all the Shotgun mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line96">line 96</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getStanceMods"><span class="type-signature"></span>getStanceMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Stance Mods table containing all the Stance mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line162">line 162</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getWarframeMods"><span class="type-signature"></span>getWarframeMods<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Queries the Warframe Mods table containing all the Warframe mods and
+information relative to them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A Promise with a Json object containing the data.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -734,14 +1316,14 @@ scrapy.loadModsTable().then(sucessFn).catch(failFn);</code></pre>
 
 
 <div class="description">
-    Makes a GET request to the given URL to download its HTML content and
-returns a Promise of a result
+    <p>Makes a GET request to the given URL to download its HTML content and
+returns a Promise of a result.</p>
 
-On successfull completion of the request the promise returns the HTML
-body of the HTML page. On fail, it returns a string with the error.
+<p>On successfull completion of the request the promise returns the HTML
+body of the HTML page. On fail, it returns a string with the error.</p>
 
-This method does not make multiple retries, but if an error occurs it
-differentiates between the error types with a best effort basis.
+<p>This method does not make multiple retries, but if an error occurs it
+differentiates between the error types with a best effort basis.</p>
 </div>
 
 
@@ -836,7 +1418,7 @@ differentiates between the error types with a best effort basis.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line287">line 287</a>
+        <a href="promisedScraper.js.html">promisedScraper.js</a>, <a href="promisedScraper.js.html#line325">line 325</a>
     </li></ul></dd>
     
 
@@ -949,13 +1531,13 @@ differentiates between the error types with a best effort basis.
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ModScraper.html">ModScraper</a></li></ul><h3>Global</h3><ul><li><a href="global.html#HTTP_GET">HTTP_GET</a></li><li><a href="global.html#TIMEOUT_WAIT_TIME">TIMEOUT_WAIT_TIME</a></li><li><a href="global.html#WIKIA_MODS_LINK">WIKIA_MODS_LINK</a></li><li><a href="global.html#WIKIA_PAGE_LINK">WIKIA_PAGE_LINK</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ModScraper.html">ModScraper</a></li></ul><h3>Global</h3><ul><li><a href="global.html#COLUMN_DESCRIPTION">COLUMN_DESCRIPTION</a></li><li><a href="global.html#COLUMN_POLARITY">COLUMN_POLARITY</a></li><li><a href="global.html#PVP_ONLY_KEYWORD">PVP_ONLY_KEYWORD</a></li><li><a href="global.html#serration">serration</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Jan 11 2017 12:45:45 GMT+0000 (UTC)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Jan 18 2017 11:27:22 GMT+0000 (UTC)
 </footer>
 
 <script> prettyPrint(); </script>
