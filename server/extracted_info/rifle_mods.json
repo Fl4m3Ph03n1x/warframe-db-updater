@@ -168,7 +168,7 @@
     {
         "NameLink": "/wiki/Firestorm",
         "Name": "Firestorm",
-        "Description": "Increases the blast radius of explosive weapons (e.g. Ogris, Opticor, Penta)Increases the radius of Torid's gas clouds.",
+        "Description": "Increases the blast radius of explosive weapons such as the Ogris, the Opticor, the Penta and others. Increases the radius of Torid's gas clouds.",
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
@@ -320,6 +320,16 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Primed_Mods",
+        "Rarity": "Primed"
+    },
+    {
+        "NameLink": "/wiki/Primed_Cryo_Rounds",
+        "Name": "Primed Cryo Rounds",
+        "Description": "Adds Cold damage to the weapon.",
+        "PvPOnly": false,
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
         "RarityLink": "/wiki/Category:Primed_Mods",
         "Rarity": "Primed"
     },

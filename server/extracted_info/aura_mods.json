@@ -1,0 +1,182 @@
+[
+    {
+        "NameLink": "/wiki/Brief_Respite",
+        "Name": "Brief Respite",
+        "Description": "Grants shields equal to a % of energy spent.",
+        "PvPOnly": false,
+        "Polarity": "Zenurik",
+        "PolarityLink": "http://vignette4.wikia.nocookie.net/warframe/images/8/8c/Zenurik_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Corrosive_Projection",
+        "Name": "Corrosive Projection",
+        "Description": "Reduces enemy armor.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Dead_Eye",
+        "Name": "Dead Eye",
+        "Description": "Increases sniper rifle damage.",
+        "PvPOnly": false,
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/EMP_Aura",
+        "Name": "EMP Aura",
+        "Description": "Reduces Corpus enemies' accuracy.",
+        "PvPOnly": false,
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Enemy_Radar",
+        "Name": "Enemy Radar",
+        "Description": "Pinpoints enemy locations on mini-map.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Energy_Siphon",
+        "Name": "Energy Siphon",
+        "Description": "Provides constant energy regeneration.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Infested_Impedance",
+        "Name": "Infested Impedance",
+        "Description": "Reduces speed of nearby Infested units.",
+        "PvPOnly": false,
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Loot_Detector",
+        "Name": "Loot Detector",
+        "Description": "Displays location of containers and resources on minimap and makes modifications visible through walls.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Physique",
+        "Name": "Physique",
+        "Description": "Increases maximum health.",
+        "PvPOnly": false,
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Pistol_Scavenger",
+        "Name": "Pistol Scavenger",
+        "Description": "Increases ammo recovery for pistols.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Rejuvenation",
+        "Name": "Rejuvenation",
+        "Description": "Provides constant health regeneration.",
+        "PvPOnly": false,
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Rifle_Amp",
+        "Name": "Rifle Amp",
+        "Description": "Increases assault rifle damage.",
+        "PvPOnly": false,
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Rifle_Scavenger",
+        "Name": "Rifle Scavenger",
+        "Description": "Increases ammo recovery for assault rifles.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Shield_Disruption",
+        "Name": "Shield Disruption",
+        "Description": "Reduces enemy shields.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Shotgun_Scavenger",
+        "Name": "Shotgun Scavenger",
+        "Description": "Increases ammo recovery for shotguns.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Sniper_Scavenger",
+        "Name": "Sniper Scavenger",
+        "Description": "Increases ammo recovery for sniper rifles.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Speed_Holster",
+        "Name": "Speed Holster",
+        "Description": "Increases weapon switch speed.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Sprint_Boost",
+        "Name": "Sprint Boost",
+        "Description": "Increases sprinting speed.",
+        "PvPOnly": false,
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Stand_United",
+        "Name": "Stand United",
+        "Description": "Increases armor.",
+        "PvPOnly": false,
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Steel_Charge",
+        "Name": "Steel Charge",
+        "Description": "Increases melee weapon damage.",
+        "PvPOnly": false,
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    }
+]

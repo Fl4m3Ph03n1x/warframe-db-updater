@@ -1,0 +1,349 @@
+[
+    {
+        "NameLink": "/wiki/Accelerated_Deflection",
+        "Name": "Accelerated Deflection",
+        "Description": "Increases shield recharge rate of the Sentinel.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Ammo_Case",
+        "Name": "Ammo Case",
+        "Description": "Mutates ammo to the ammo type your weapon is using and is holding. Increases ammo capacity.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Carrier",
+        "Sentinel": "Carrier",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Animal_Instinct",
+        "Name": "Animal Instinct",
+        "Description": "The Sentinel detects the location of nearby enemies and loot for the player.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Arc_Coil",
+        "Name": "Arc Coil",
+        "Description": "Sentinel will zap multiple enemies within range.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Diriga",
+        "Sentinel": "Diriga",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Calculated_Redirection",
+        "Name": "Calculated Redirection",
+        "Description": "Increases maximum shield of the Sentinel.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Calculated_Shot",
+        "Name": "Calculated Shot",
+        "Description": "Sentinel charges a powerful shot and fires at first enemy in sight.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Diriga",
+        "Sentinel": "Diriga",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Coolant_Leak",
+        "Name": "Coolant Leak",
+        "Description": "Sentinel generates a small freeze aura which slows incoming enemies.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Crowd_Dispersion",
+        "Name": "Crowd Dispersion",
+        "Description": "The Sentinel unleashes a radial stun and knockdown when targets get close.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Wyrm",
+        "Sentinel": "Wyrm",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Detect_Vulnerability",
+        "Name": "Detect Vulnerability",
+        "Description": "The Sentinel marks damage multiplying weakspots on enemies with completed codex entries.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Helios",
+        "Sentinel": "Helios",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Electro_Pulse",
+        "Name": "Electro Pulse",
+        "Description": "Sentinel continually zaps a nearby enemy, trapping them in a stunned state.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Diriga",
+        "Sentinel": "Diriga",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Enhanced_Vitality",
+        "Name": "Enhanced Vitality",
+        "Description": "Increases maximum health of the Sentinel.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Fatal_Attraction",
+        "Name": "Fatal Attraction",
+        "Description": "The Sentinel pulls enemies towards the user.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Djinn",
+        "Sentinel": "Djinn",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Fired_Up",
+        "Name": "Fired Up",
+        "Description": "Increases weapon damage of Sentinel in recurrent attacks.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Ghost",
+        "Name": "Ghost",
+        "Description": "The Sentinel cloaks its owner when enemies are close.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Shade",
+        "Sentinel": "Shade",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Guardian",
+        "Name": "Guardian",
+        "Description": "The Sentinel automatically restores some of its owner's shields when they are reduced to zero.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Investigator",
+        "Name": "Investigator",
+        "Description": "The Sentinel will automatically scan enemies and objects to add to the Codex.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Helios",
+        "Sentinel": "Helios",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Looter",
+        "Name": "Looter",
+        "Description": "The Sentinel will break nearby containers by shooting them.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Carrier",
+        "Sentinel": "Carrier",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Medi-Ray",
+        "Name": "Medi-Ray",
+        "Description": "The Sentinel can periodically restore a percentage of its owner's health over 4 seconds (15-second cooldown).",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Metal_Fiber",
+        "Name": "Metal Fiber",
+        "Description": "Increases armor of the Sentinel.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Primed_Regen",
+        "Name": "Primed Regen",
+        "Description": "The Sentinel regenerates up to three times if killed with full health, and is granted an invulnerability period per each rank.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Legendary"
+    },
+    {
+        "NameLink": "/wiki/Regen",
+        "Name": "Regen",
+        "Description": "The Sentinel will regenerate once if it is killed.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Revenge",
+        "Name": "Revenge",
+        "Description": "The Sentinel will attack the enemy which attacked its owner.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Shade",
+        "Sentinel": "Shade",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Sacrifice",
+        "Name": "Sacrifice",
+        "Description": "The Sentinel will revive its owner at the cost of its own life.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Sanctuary_(Mod)",
+        "Name": "Sanctuary",
+        "Description": "Provides a shield when its owner is reviving an ally.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Vazarin",
+        "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Shield_Charger",
+        "Name": "Shield Charger",
+        "Description": "The Sentinel will periodically increase nearby Warframes' max shields and shield regen.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Self_Destruct",
+        "Name": "Self Destruct",
+        "Description": "The Sentinel explodes upon death, dealing Blast damage to nearby enemies.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Madurai",
+        "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Rare"
+    },
+    {
+        "NameLink": "/wiki/Spare_Parts",
+        "Name": "Spare Parts",
+        "Description": "The Sentinel has a chance to drop a rare material upon death.",
+        "PvPOnly": false,
+        "Sentinel": "Any",
+        "Polarity": "Naramon",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Uncommon"
+    },
+    {
+        "NameLink": "/wiki/Striker",
+        "Name": "Striker",
+        "Description": "The Sentinel will attack the first visible enemy in range.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Carrier",
+        "Sentinel": "Carrier",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Swift_Deth",
+        "Name": "Swift Deth",
+        "Description": "The Sentinel will attack the first visible enemy in range.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Dethcube",
+        "Sentinel": "Dethcube",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Targeting_Receptor",
+        "Name": "Targeting Receptor",
+        "Description": "The Sentinel will attack the first visible enemy in range.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Helios",
+        "Sentinel": "Helios",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Thumper",
+        "Name": "Thumper",
+        "Description": "The Sentinel will attack the first visible enemy in range.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Djinn",
+        "Sentinel": "Djinn",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Vaporize",
+        "Name": "Vaporize",
+        "Description": "The Sentinel will fire a powerful beam at close enemies, dealing high damage and stunning those that survive.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Dethcube",
+        "Sentinel": "Dethcube",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    },
+    {
+        "NameLink": "/wiki/Warrior",
+        "Name": "Warrior",
+        "Description": "The Sentinel will attack the first visible enemy in range.",
+        "PvPOnly": false,
+        "SentinelLink": "/wiki/Wyrm",
+        "Sentinel": "Wyrm",
+        "Polarity": "Penjaga",
+        "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "Rarity": "Common"
+    }
+]

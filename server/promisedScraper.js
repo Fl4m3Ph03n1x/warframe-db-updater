@@ -15,6 +15,7 @@ let HTTPStatus = require("http-status");
 
 const COLUMN_DESCRIPTION = "Description";
 const COLUMN_POLARITY = "Polarity";
+const PVP_ONLY_KEYWORD = "PvP";
 
 /**
  * <p>This class is responsible for making requests and extracting information 
@@ -63,10 +64,23 @@ class ModScraper {
         return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.melee_mods);
     }
     
+    getSentinelMods(){
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.sentinel_mods);
+    }
     
+    getKubrowMods(){
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.kubrow_mods);
+    }
+    
+    getAuraMods(){
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.aura_mods);
+    }
+    
+    getStanceMods(){
+        return this.getTableInfo(this.wikiaSource.link + this.wikiaSource.pages.stance_mods);
+    }
 
     /**
-     * Check regex for firestorm.
      */
     getTableInfo(url) {
         let self = this;
@@ -86,6 +100,7 @@ class ModScraper {
 
                 //fill the headers and remove the 1st row as it was processed
                 let headers = trList.first().children().text().trim().split("\n");
+                headers = headers.map(str => str.trim());
                 trList = trList.slice(1, trList.length);
 
                 //aux variables for loop
@@ -123,7 +138,7 @@ class ModScraper {
                             item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
                             
                             //check if it is PvP only.
-                            if (item[headers[tdIndex]].includes("PvP"))
+                            if (item[headers[tdIndex]].includes(PVP_ONLY_KEYWORD))
                                 item.PvPOnly = true;
                             else
                                 item.PvPOnly = false;
