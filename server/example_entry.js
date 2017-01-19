@@ -3,7 +3,6 @@
  * _id: auto
  * icon: from wiki
  * tags: ok
- * ru: not needed
  * trading_tax: ok
  * en: ok
  * icon_format: auto
@@ -28,32 +27,6 @@ let serration = {
         "rifle",
         "uncommon"
     ],
-    "ru": {
-        "icon": "icons/ru/Serration.47d9c768fde63632c64093367dc5f6ef.png",
-        "drop": [{
-            "name": "GrineerScorpion",
-            "link": null
-        }, {
-            "name": "InfestedElectric Crawler",
-            "link": null
-        }, {
-            "name": "InfestedNauseous Crawler",
-            "link": null
-        }, {
-            "name": "Tier 2Defense Reward",
-            "link": null
-        }, {
-            "name": "Tier 1/2/3Survival Reward",
-            "link": null
-        }, {
-            "name": "Spy 2.0 Reward",
-            "link": null
-        }],
-        "thumb": "icons/ru/thumbs/Serration.47d9c768fde63632c64093367dc5f6ef.128x128.png",
-        "item_name": "Зазубрины",
-        "wiki_link": "http://ru.warframe.wikia.com/wiki/%D0%97%D0%B0%D0%B7%D1%83%D0%B1%D1%80%D0%B8%D0%BD%D1%8B",
-        "description": "<p>Зазубрины — необычный мод для основного оружия, который увеличивает базовый урон оружия.</p>"
-    },
     "trading_tax": 4000,
     "icon_format": "port",
     "en": {

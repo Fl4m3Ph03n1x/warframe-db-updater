@@ -2,7 +2,7 @@
  * @fileOverview Contains the scraper class, responsible for extracting
  * information from the warframe wikia mods page.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 2.0.1
+ * @version 2.1.0
  */
 
 /*jslint node: true */
@@ -28,13 +28,19 @@ const COLUMN_DESCRIPTION = "Description";
 const COLUMN_POLARITY = "Polarity";
 
 /**
- *  <p>Keyword used to test if a mod is PvP exclusive or not. All the mods which
- *  are PvP exclusise have the disclaimer "PvP Exclusive" in the description, so
- *  I make use of it.</p>
- *  @const      {string}
+ *  <p>Keyword dictionary for specific words that the scrapper tests against.</p>
+ * 
+ *  <p>Usually it is a better idea to check for logic patterns or HTML tags, but
+ *  when those are non existent I use certain keywords as a last resort.</p>
+ *
+ *  @const      {Object}
  *  @readonly
  */
-const PVP_ONLY_KEYWORD = "PvP";
+const KEYWORDS = {
+    PVP_ONLY: "PvP",
+    TRANSMUTABLE: "Transmutable",
+    NA: "N/A"
+};
 
 /**
  * <p>This class is responsible for making requests and extracting information 
@@ -172,6 +178,7 @@ class ModScraper {
      * @return  {Promise}   A Promise containning a JSON object representing the 
      *                      mod.
      * @public
+     * @todo improve information retrieval from this method (drop locations).
      */
     getModInformation(modURL) {
 
@@ -179,22 +186,25 @@ class ModScraper {
         return new Promise(function(fulfil, reject) {
             self.requestHTML(modURL).then((htmlBody) => {
 
-                self.$ = cheerio.load(htmlBody);
-
+                let $ = cheerio.load(htmlBody);
+                
                 let modInfo = {
-                    modName: self.$(".pi-title > span:nth-child(1)").text().trim(),
-                    modDescription: self.$("#mw-content-text > p:nth-child(2)").text().trim(),
-                    modRarityLevel: self.$("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                    modRarityTypeText: self.$("div.pi-item:nth-child(5) > div:nth-child(2)").text(),
-                    traddingTax: self.$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
-                    modWikiaURL: modURL
+                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                    Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
+                    Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                    TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    URL: modURL,
+                    Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                    Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
+                    ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
                 };
-
-                modInfo.modRarityType = "Normal";
-                if (modInfo.modRarityTypeText.includes("Nightmare"))
-                    modInfo.modRarityType = "Nightmare";
-                else if (modInfo.modRarityTypeText.includes("Orokin Derelict"))
-                    modInfo.modRarityType = "Orokin Derelict";
+                
+                modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
+                // modInfo.modRarityType = "None";
+                // if (modInfo.modRarityTypeText.includes("Nightmare"))
+                //     modInfo.modRarityType = "Nightmare";
+                // else if (modInfo.modRarityTypeText.includes("Orokin Derelict"))
+                //     modInfo.modRarityType = "Orokin Derelict";
 
                 fulfil(modInfo);
             }).catch(error => {
@@ -219,16 +229,14 @@ class ModScraper {
 
         return new Promise((fulfil, reject) => {
 
-            //let url = self.wikiaSource.link + self.wikiaSource.pages.warframe_mods;
-
             self.requestHTML(url).then((htmlBody) => {
-                self.$ = cheerio.load(htmlBody);
+                let $ = cheerio.load(htmlBody);
 
                 //get table
-                let table = self.$("table.listtable.sortable");
+                let table = $("table.listtable.sortable");
 
                 //get rows from table               
-                let trList = self.$(table).find("tr");
+                let trList = $(table).find("tr");
 
                 //fill the headers and remove the 1st row as it was processed
                 let headers = trList.first().children().text().trim().split("\n");
@@ -239,8 +247,8 @@ class ModScraper {
                 let result = [];
                 let findCamelCase = new RegExp("([a-z]+[A-Z][a-z]+)");
 
-                self.$(trList).each(function(index, elem) {
-                    let currentTdList = self.$(this).children();
+                $(trList).each(function(index, elem) {
+                    let currentTdList = $(this).children();
                     let item = {};
                     let line;
                     for (let tdIndex = 0; tdIndex < headers.length; tdIndex++) {
@@ -270,7 +278,7 @@ class ModScraper {
                             item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
 
                             //check if it is PvP only.
-                            if (item[headers[tdIndex]].includes(PVP_ONLY_KEYWORD))
+                            if (item[headers[tdIndex]].includes(KEYWORDS.PVP))
                                 item.PvPOnly = true;
                             else
                                 item.PvPOnly = false;
@@ -335,14 +343,14 @@ class ModScraper {
                     else if (error.code === 'ETIMEDOUT') {
                         if (error.connect)
                         //Tried to establish a connection to the wiki server and failed
-                            reject("ConnectionTimeoutException");
+                            reject("ConnectionTimeoutException for " + url);
                         else
                         //The wiki server is too slow responding (likely overload)
-                            reject("ReadTimeoutException");
+                            reject("ReadTimeoutException for " + url);
                     }
                     else
                     //general error ocurred
-                        reject("PageUnreacheableException");
+                        reject("PageUnreacheableException for " + url);
                 });
         });
     }

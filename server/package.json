@@ -23,7 +23,8 @@
     "jsonfile": "^2.4.0",
     "mongoose": "^4.5.4",
     "promise": "^7.1.1",
-    "request": "^2.73.0"
+    "request": "^2.73.0",
+    "url-parse": "^1.1.7"
   },
   "devDependencies": {
     "jsdoc": "^3.4.3"
