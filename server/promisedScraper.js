@@ -178,7 +178,7 @@ class ModScraper {
      * @return  {Promise}   A Promise containning a JSON object representing the 
      *                      mod.
      * @public
-     * @todo improve information retrieval from this method (get links of drops).
+     * @todo check stance mods, they layout is a mess.
      */
     getModInformation(modURL) {
 
