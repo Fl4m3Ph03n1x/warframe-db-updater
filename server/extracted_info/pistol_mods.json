@@ -31,7 +31,7 @@
         "NameLink": "/wiki/Blind_Shot",
         "Name": "Blind Shot",
         "Description": "Increases projectile flight speed. Reduces accuracy. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Rare"
@@ -49,7 +49,7 @@
         "NameLink": "/wiki/Calculated_Victory",
         "Name": "Calculated Victory",
         "Description": "Adds Chance to Restore Shield on Kill. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
         "Rarity": "Rare"
@@ -149,7 +149,7 @@
         "NameLink": "/wiki/Full_Capacity",
         "Name": "Full Capacity",
         "Description": "Increases magazine capacity. Increases reload time. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Common"
@@ -185,7 +185,7 @@
         "NameLink": "/wiki/Heavy_Warhead",
         "Name": "Heavy Warhead",
         "Description": "Increases Explosion Radius. Decreases Pistol's Projectile Flight Speed. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Rare"
@@ -213,7 +213,7 @@
         "NameLink": "/wiki/Hydraulic_Barrel",
         "Name": "Hydraulic Barrel",
         "Description": "Reduces recoil generated while firing. Decreases magazine capacity. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Rare"
@@ -242,7 +242,7 @@
         "NameLink": "/wiki/Impaler_Munitions",
         "Name": "Impaler Munitions",
         "Description": "Converts a percentage of the weapon's damage into Puncture damage. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -279,7 +279,7 @@
         "NameLink": "/wiki/Loose_Magazine",
         "Name": "Loose Magazine",
         "Description": "Reduces reload time. Increases recoil generated while firing. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Common"
@@ -307,7 +307,7 @@
         "NameLink": "/wiki/Meteor_Munitions",
         "Name": "Meteor Munitions",
         "Description": "Converts a percentage of the weapon's damage into Impact damage. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -316,7 +316,7 @@
         "NameLink": "/wiki/Night_Stalker",
         "Name": "Night Stalker",
         "Description": "Adds temporary Target-Tracking to the map on hit. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -461,7 +461,7 @@
         "NameLink": "/wiki/Razor_Munitions",
         "Name": "Razor Munitions",
         "Description": "Converts a percentage of the weapon's damage into Slash damage. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -470,7 +470,7 @@
         "NameLink": "/wiki/Recuperate",
         "Name": "Recuperate",
         "Description": "Adds Chance to Restore Health on Kill. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
         "Rarity": "Rare"
@@ -506,7 +506,7 @@
         "NameLink": "/wiki/Secondary_Wind",
         "Name": "Secondary Wind",
         "Description": "Adds Health Regen for 8 seconds on Kill. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
         "Rarity": "Rare"

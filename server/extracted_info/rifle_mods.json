@@ -31,7 +31,7 @@
         "NameLink": "/wiki/Apex_Predator",
         "Name": "Apex Predator",
         "Description": "Adds temporary Target-Tracking to the map on hit. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -96,7 +96,7 @@
         "NameLink": "/wiki/Comet_Rounds",
         "Name": "Comet Rounds",
         "Description": "Converts a percentage of the weapon's damage into Impact damage. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -234,7 +234,7 @@
         "NameLink": "/wiki/Lucky_Shot",
         "Name": "Lucky Shot",
         "Description": "Increases projectile flight speed. Reduces accuracy. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -347,7 +347,7 @@
         "NameLink": "/wiki/Recover",
         "Name": "Recover",
         "Description": "Adds Chance to Restore Health on Kill. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
         "Rarity": "Rare"
@@ -374,7 +374,7 @@
         "NameLink": "/wiki/Ripper_Rounds",
         "Name": "Ripper Rounds",
         "Description": "Converts a percentage of the weapon's damage into Puncture damage. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -401,7 +401,7 @@
         "NameLink": "/wiki/Serrated_Rounds",
         "Name": "Serrated Rounds",
         "Description": "Converts a percentage of the weapon's damage into Slash damage. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
         "Rarity": "Uncommon"
@@ -501,7 +501,7 @@
         "NameLink": "/wiki/Vanquished_Prey",
         "Name": "Vanquished Prey",
         "Description": "Adds Chance to Restore Shield on Kill. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
         "Rarity": "Rare"

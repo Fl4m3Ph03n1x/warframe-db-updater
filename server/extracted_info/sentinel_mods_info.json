@@ -1,0 +1,963 @@
+[
+    {
+        "Name": "Accelerated Deflection",
+        "Description": "Accelerated Deflection increases the shield recharge rate Sentinels. It has no effect on the recharge delay.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Accelerated_Deflection",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/5/5e/AcceleratedDeflectionMod.png/revision/latest?cb=20160531214924",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Seeker",
+                "Links": [
+                    "/wiki/Seeker"
+                ]
+            },
+            {
+                "Name": "Infested Boiler",
+                "Links": [
+                    "/wiki/Boiler"
+                ]
+            },
+            {
+                "Name": "Infested Toxic Ancient",
+                "Links": [
+                    "/wiki/Toxic_Ancient"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Ammo Case",
+        "Description": "Ammo Case allows the Carrier sentinel to convert any unused ammo type into ammo for the currently equipped weapon and provides increased ammunition capacity.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Ammo_Case",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/3a/Ammo_Case_19.6.3.png/revision/latest?cb=20170118032927",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Butcher",
+                "Links": [
+                    "/wiki/Corrupted_Butcher"
+                ]
+            },
+            {
+                "Name": "Corrupted Lancer",
+                "Links": [
+                    "/wiki/Corrupted_Lancer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Animal Instinct",
+        "Description": "Animal Instinct is a Companion mod that gives Enemy Sense and Loot Detection effects to the companion's owner. It can be equipped on both Sentinels and Kubrows.[1] Unlike the equivalent Warframe auras (with which these effects stack), these effects only apply to the owner and not the other players in the squad, and they cease if the companion dies during the mission.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Animal_Instinct",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/34/AnimalInstinctMod.png/revision/latest?cb=20160713125221",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Nightmare Mode Reward",
+                "Links": [
+                    "/wiki/Nightmare_Mode"
+                ]
+            },
+            {
+                "Name": "Tier 5-6 Platinum Packs",
+                "Links": [
+                    "/wiki/Platinum",
+                    "https://warframe.com/buyplatinum"
+                ]
+            },
+            {
+                "Name": "Alerts",
+                "Links": [
+                    "/wiki/Alert"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Arc Coil",
+        "Description": "Arc Coil allows Diriga to zap multiple enemies within range, with a chance to stun. It has 10m range and does 100  Electricity damage.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Arc_Coil",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/6d/Arc_Coil_19.6.3.png/revision/latest?cb=20170118032919",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Transmutable",
+                "Links": [
+                    "/wiki/Transmutation"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Calculated Redirection",
+        "Description": "Calculated Redirection increases the shield capacity of a Sentinel.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Calculated_Redirection",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/63/CalculatedRedirectionMod.png/revision/latest?cb=20160531214925",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Powerfist",
+                "Links": [
+                    "/wiki/Powerfist"
+                ]
+            },
+            {
+                "Name": "Infested Charger",
+                "Links": [
+                    "/wiki/Charger"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut",
+                "Links": [
+                    "/wiki/Juggernaut"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut Behemoth",
+                "Links": [
+                    "/wiki/Juggernaut_Behemoth"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Calculated Shot",
+        "Description": "Calculated Shot  is a Precept mod for the Diriga Sentinel that allows it to engage enemies within sight with a long-range shot. Keep in mind that Diriga will use this ability regardless of the weapon equipped, which has interesting consequences when using Sweeper or Burst Laser.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Calculated_Shot",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/6/62/Calculated_Shot_19.6.3.png/revision/latest?cb=20170118032917",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Transmutable",
+                "Links": [
+                    "/wiki/Transmutation"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Coolant Leak",
+        "Description": "Coolant Leak allows a Sentinel to freeze and slow all enemies at close proximity in a similar manner to Freeze Damage.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Coolant_Leak",
+        "Transmutable": true,
+        "Ranks": -2,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/a/a1/Coolant_Leak_19.6.3.png/revision/latest?cb=20170118032902",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Drone",
+                "Links": [
+                    "/wiki/Orokin_Drone"
+                ]
+            },
+            {
+                "Name": "Orokin Spectator",
+                "Links": [
+                    "/wiki/Orokin_Spectator"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Crowd Dispersion",
+        "Description": "Crowd Dispersion allows Wyrm to release a shockwave when multiple enemies are nearby.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Crowd_Dispersion",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/f/f1/Crowd_Dispersion_19.6.3.png/revision/latest?cb=20170118032905",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Leech Osprey",
+                "Links": [
+                    "/wiki/Leech_Osprey"
+                ]
+            },
+            {
+                "Name": "Corpus Sapping Osprey",
+                "Links": [
+                    "/wiki/Sapping_Osprey"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Detect Vulnerability",
+        "Description": "Detect Vulnerability is a Sentinel precept that allows the Helios Sentinel to reveal weakspots on enemies that have had previously completed Codex scans. Hitting an enemy in the highlighted weakspot will apply a damage multiplier.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Detect_Vulnerability",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/9/96/DetectVulnerability.png/revision/latest?cb=20150321142238",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Cephalon Simaris Offering",
+                "Links": [
+                    "/wiki/Cephalon_Simaris"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Electro Pulse",
+        "Description": "Electro Pulse allows the Diriga sentinel to repeatedly stun a single enemy within range using  Electricity status effect.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Electro_Pulse",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/4/44/Electro_Pulse_19.6.3.png/revision/latest?cb=20170118032915",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Transmutable",
+                "Links": [
+                    "/wiki/Transmutation"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Enhanced Vitality",
+        "Description": "Enhanced Vitality increases the health of a Sentinel.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Enhanced_Vitality",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/6c/EnhancedVitalityMod.png/revision/latest?cb=20160531214926",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Anti MOA",
+                "Links": [
+                    "/wiki/Anti_MOA"
+                ]
+            },
+            {
+                "Name": "Corpus Lynx Osprey",
+                "Links": [
+                    "/wiki/Lynx_Osprey"
+                ]
+            },
+            {
+                "Name": "Corpus Lynx Turret",
+                "Links": [
+                    "/wiki/Lynx_Turret"
+                ]
+            },
+            {
+                "Name": "Corpus Fusion MOA",
+                "Links": [
+                    "/wiki/Fusion_MOA"
+                ]
+            },
+            {
+                "Name": "Grineer Napalm",
+                "Links": [
+                    "/wiki/Napalm"
+                ]
+            },
+            {
+                "Name": "Grineer Roller",
+                "Links": [
+                    "/wiki/Roller"
+                ]
+            },
+            {
+                "Name": "Grineer Roller Sentry",
+                "Links": [
+                    "/wiki/Roller_Sentry"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Fatal Attraction",
+        "Description": "Fatal Attraction allows Djinn to damage nearby enemies.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Fatal_Attraction",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/9/9b/Fatal_Attraction_19.6.3.png/revision/latest?cb=20170118032914",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted MOA",
+                "Links": [
+                    "/wiki/Corrupted_MOA"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Fired Up",
+        "Description": "Fired Up is a Sentinel mod that increases the damage of a sentinel after continuously firing its weapon for a set amount of time.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Fired_Up",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/0/0c/FiredUpModU145.png/revision/latest?cb=20140830131126",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Crewman",
+                "Links": [
+                    "/wiki/Corrupted_Crewman"
+                ]
+            },
+            {
+                "Name": "Orokin Drone",
+                "Links": [
+                    "/wiki/Orokin_Drone"
+                ]
+            },
+            {
+                "Name": "Orokin Spectator",
+                "Links": [
+                    "/wiki/Orokin_Spectator"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Ghost",
+        "Description": "Ghost allows the Shade sentinel to cloak itself and the user when hostile entities are within range, rendering themselves invisible to enemies.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Ghost",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/5/55/Ghost_19.6.3.png/revision/latest?cb=20170118032908",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Infested Volatile Runner",
+                "Links": [
+                    "/wiki/Volatile_Runner"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Guardian",
+        "Description": "Guardian grants a Sentinel the ability to replenish its owner's shield when depleted.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Guardian",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/8/8f/Guardian_19.6.3.png/revision/latest?cb=20170118032901",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Drone",
+                "Links": [
+                    "/wiki/Orokin_Drone"
+                ]
+            },
+            {
+                "Name": "Orokin Spectator",
+                "Links": [
+                    "/wiki/Orokin_Spectator"
+                ]
+            },
+            {
+                "Name": "Orokin Storage Containers",
+                "Links": [
+                    "/wiki/Orokin",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Investigator",
+        "Description": "Investigator allows the Helios Sentinel to scan objects and enemies it encounters. This consumes Codex Scanner, or Synthesis Scanner charges.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Investigator",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/a1/Investigator_19.6.3.png/revision/latest?cb=20170118032911",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "N/A",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Looter",
+        "Description": "Looter allows the Carrier to break nearby containers by shooting them.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Looter",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/b/b8/Looter_19.6.3.png/revision/latest?cb=20170118032927",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Cephalon Simaris Offering",
+                "Links": [
+                    "/wiki/Cephalon_Simaris"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Medi-Ray",
+        "Description": "Medi-Ray is a Sentinel precept mod that allows a sentinel to periodically restore a percentage of its owner's health over 4 seconds.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Medi-Ray",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/a/a4/Medi-RayMod.png/revision/latest?cb=20160501205621",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Kela De Thaym",
+                "Links": [
+                    "/wiki/Kela_De_Thaym"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Metal Fiber",
+        "Description": "Metal Fiber increases the armor of a Sentinel.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Metal_Fiber",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/55/MetalFiberMod.png/revision/latest?cb=20160531214927",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Prod Crewman",
+                "Links": [
+                    "/wiki/Prod_Crewman"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Primed Regen",
+        "Description": "Primed Regen allows a Sentinel to regenerate some or all of its health up to three times per mission if killed. The Sentinel will also gain invulnerability for 1 + mod rank seconds after regenerating.",
+        "Rarity": "Legendary",
+        "TraddingTax": "1,000,000",
+        "URL": "http://warframe.wikia.com/wiki/Primed_Regen",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/f5/Primed_Regen_19.6.3.png/revision/latest?cb=20170118032944",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Regen",
+        "Description": "Regen allows a Sentinel to regenerate once per mission if killed. \nThe Sentinel will also gain invulnerability for 1 + mod rank seconds after regenerating.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Regen",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/05/Regen_19.6.3.png/revision/latest?cb=20170118032946",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Infested Charger",
+                "Links": [
+                    "/wiki/Charger"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut",
+                "Links": [
+                    "/wiki/Juggernaut"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut Behemoth",
+                "Links": [
+                    "/wiki/Juggernaut_Behemoth"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Revenge",
+        "Description": "Revenge allows Shade to attack enemies but only if they attacked its owner.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Revenge",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/26/Revenge_19.6.3.png/revision/latest?cb=20170118032907",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus MOA",
+                "Links": [
+                    "/wiki/MOA"
+                ]
+            },
+            {
+                "Name": "Corpus Isolator Bursa",
+                "Links": [
+                    "/wiki/Isolator_Bursa"
+                ]
+            },
+            {
+                "Name": "Corpus Drover Bursa",
+                "Links": [
+                    "/wiki/Drover_Bursa"
+                ]
+            },
+            {
+                "Name": "Corpus Denial Bursa",
+                "Links": [
+                    "/wiki/Denial_Bursa"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Lancer",
+                "Links": [
+                    "/wiki/Elite_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Arid Lancer",
+                "Links": [
+                    "/wiki/Elite_Arid_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Frontier Lancer",
+                "Links": [
+                    "/wiki/Elite_Frontier_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Draga",
+                "Links": [
+                    "/wiki/Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Darek Draga",
+                "Links": [
+                    "/wiki/Darek_Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Shock Draga",
+                "Links": [
+                    "/wiki/Shock_Draga"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Sacrifice",
+        "Description": "Sacrifice allows a Sentinel to revive its owner at the cost of its own life.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Sacrifice",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/1/18/Sacrifice.png/revision/latest?cb=20131101033733",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "N/A",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Sanctuary (Mod)",
+        "Description": "Sanctuary allows a Sentinel to create a shield around its master while they heal fallen allies.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Sanctuary_(Mod)",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/d/d0/Sanctuary_19.6.3.png/revision/latest?cb=20170118032858",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Bombard",
+                "Links": [
+                    "/wiki/Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Manic Bombard",
+                "Links": [
+                    "/wiki/Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Manic Bombard",
+                "Links": [
+                    "/wiki/Drekar_Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Shield Charger",
+        "Description": "Shield Charger is a Sentinel Mod that periodically increases your Warframe's Max Shields and Shield Regen for a certain amount of time.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000‍ 8,000",
+        "URL": "http://warframe.wikia.com/wiki/Shield_Charger",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/30/ShieldChargerMod.png/revision/latest?cb=20161027211124",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Auditor",
+                "Links": [
+                    "/wiki/Auditor"
+                ]
+            },
+            {
+                "Name": "Azoth",
+                "Links": [
+                    "/wiki/Azoth"
+                ]
+            },
+            {
+                "Name": "Jad Teran",
+                "Links": [
+                    "/wiki/Jad_Teran"
+                ]
+            },
+            {
+                "Name": "Raptor RX",
+                "Links": [
+                    "/wiki/Raptor_RX"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Self Destruct",
+        "Description": "Self Destruct allows Sentinels to explode upon death, dealing Explosion Damage in a moderate AoE.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Self_Destruct",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/4/40/SelfDestructModU145.png/revision/latest?cb=20140901145001",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Fusion MOA",
+                "Links": [
+                    "/wiki/Fusion_MOA"
+                ]
+            },
+            {
+                "Name": "Referral Program",
+                "Links": [
+                    "/wiki/Referral_Program"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Spare Parts",
+        "Description": "Spare Parts gives the Sentinel a chance to drop rare items on death.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Spare_Parts",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/f/ff/SparePartsModU145.png/revision/latest?cb=20140901150036",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Lephantis",
+                "Links": [
+                    "/wiki/Lephantis"
+                ]
+            },
+            {
+                "Name": "Corrupted Bombard",
+                "Links": [
+                    "/wiki/Corrupted_Bombard"
+                ]
+            },
+            {
+                "Name": "Corrupted Heavy Gunner",
+                "Links": [
+                    "/wiki/Corrupted_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Corrupted Nullifier",
+                "Links": [
+                    "/wiki/Corrupted_Nullifier"
+                ]
+            },
+            {
+                "Name": "Tier 2 Survival Reward",
+                "Links": [
+                    "/wiki/Survival"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Striker",
+        "Description": "Striker mod allows Carrier to attack the first visible enemy in range.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Striker",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/a6/Striker_19.6.3.png/revision/latest?cb=20170118032924",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted MOA",
+                "Links": [
+                    "/wiki/Corrupted_MOA"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Swift Deth",
+        "Description": "Swift Deth mod allows Dethcube to attack the first visible enemy in range.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Swift_Deth",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/ce/Swift_Deth_19.6.3.png/revision/latest?cb=20170118032922",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Scorch",
+                "Links": [
+                    "/wiki/Scorch"
+                ]
+            },
+            {
+                "Name": "Infested Leaper",
+                "Links": [
+                    "/wiki/Leaper"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Targeting Receptor",
+        "Description": "Targeting Receptor allows Helios to attack a nearby enemy with \"a devastating Glaive-esque attack\".",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Targeting_Receptor",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/d/dd/Targeting_Receptor_19.6.3.png/revision/latest?cb=20170117223930",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "N/A",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Thumper",
+        "Description": "Thumper allows Djinn to attack the first visible enemy within range.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Thumper",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/f/f2/Thumper_19.6.3.png/revision/latest?cb=20170118032912",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Butcher",
+                "Links": [
+                    "/wiki/Corrupted_Butcher"
+                ]
+            },
+            {
+                "Name": "Corrupted Lancer",
+                "Links": [
+                    "/wiki/Corrupted_Lancer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Vaporize",
+        "Description": "Vaporize allows Dethcube to periodically fire a powerful beam weapon at nearby foes.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Vaporize",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/3/31/Vaporize_19.6.3.png/revision/latest?cb=20170118032920",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Fusion MOA",
+                "Links": [
+                    "/wiki/Fusion_MOA"
+                ]
+            },
+            {
+                "Name": "Grineer Powerfist",
+                "Links": [
+                    "/wiki/Powerfist"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Warrior",
+        "Description": "Warrior allows Wyrm to attack the first visible enemy in range.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Warrior",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/3/3c/Warrior_19.6.3.png/revision/latest?cb=20170118032904",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Nullifier Crewman",
+                "Links": [
+                    "/wiki/Nullifier_Crewman"
+                ]
+            },
+            {
+                "Name": "Corpus Sniper Crewman",
+                "Links": [
+                    "/wiki/Sniper_Crewman"
+                ]
+            }
+        ]
+    }
+]

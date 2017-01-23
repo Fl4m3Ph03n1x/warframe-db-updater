@@ -1,0 +1,2116 @@
+[
+    {
+        "Name": "Air Recon",
+        "Description": "Air Recon is a pistol mod usable in both PvE and PvP that decreases zoom during Aim Glide.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Air_Recon",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/8/83/AirRecon.png/revision/latest?cb=20160329225434",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            },
+            {
+                "Name": "Battalyst",
+                "Links": [
+                    "/wiki/Battalyst"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Anemic Agility",
+        "Description": "Anemic Agility is a Corrupted Mod that increases a pistol's Fire Rate by 15% per rank but decreases its damage  by 2.5% per rank, for a maximum of 90% fire rate and -15% damage at rank 5.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Anemic_Agility",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/9/95/AnemicAgilityMod.png/revision/latest?cb=20141026075439",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Vault",
+                "Links": [
+                    "/wiki/Orokin_Vault"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Barrel Diffusion",
+        "Description": "Barrel Diffusion increases the multishot of pistols. These additional rounds do not consume extra ammunition.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Barrel_Diffusion",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/c7/BarrelDiffusionModU145.png/revision/latest?cb=20140830011700",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "The Grustrag Three",
+                "Links": [
+                    "/wiki/The_Grustrag_Three"
+                ]
+            },
+            {
+                "Name": "Grineer Seeker",
+                "Links": [
+                    "/wiki/Seeker"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            },
+            {
+                "Name": "Dark Sectors Defense Reward",
+                "Links": [
+                    "/wiki/Dark_Sectors",
+                    "/wiki/Defense"
+                ]
+            },
+            {
+                "Name": "Infested T3 Defense Reward",
+                "Links": [
+                    "/wiki/Defense"
+                ]
+            },
+            {
+                "Name": "Interception Wave Reward",
+                "Links": [
+                    "/wiki/Interception"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Blind Shot",
+        "Description": "Blind Shot is a PvP-exclusive pistol mod which provides faster projectile flight speed at the cost of reduced accuracy.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Blind_Shot",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/7/77/BlindShotMod.png/revision/latest?cb=20160515174635",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Mission Reward",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Bore",
+        "Description": "The Bore mod increases  Puncture damage of a pistol by 20% per rank for a maximum of 120% at Rank 5.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Bore",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/c/c0/BoreModU145.png/revision/latest?cb=20160512173852",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Operation: Mutalist Incursions reward",
+                "Links": [
+                    "/wiki/Operation:_Mutalist_Incursions"
+                ]
+            },
+            {
+                "Name": "Tactical Alert (Divine Will)",
+                "Links": [
+                    "/wiki/Tactical_Alert",
+                    "/wiki/Tactical_Alert#Divine_Will"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Calculated Victory",
+        "Description": "Calculated Victory was a PvP-exclusive pistol mod that gave a chance to restore shields on kill.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Calculated_Victory",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/ae/Cvictory.png/revision/latest?cb=20150812083921",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "N/A",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Concussion Rounds",
+        "Description": "Concussion Rounds increases the  Impact damage done by Pistols.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Concussion_Rounds",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/b/b0/ConcussionRoundsModU145.png/revision/latest?cb=20160512173452",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Detron Crewman",
+                "Links": [
+                    "/wiki/Detron_Crewman"
+                ]
+            },
+            {
+                "Name": "Infested Volatile Runner",
+                "Links": [
+                    "/wiki/Volatile_Runner"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Convulsion",
+        "Description": "Convulsion  increases  Electricity damage on secondary weapons.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Convulsion",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/3f/ConvulsionModU145.png/revision/latest?cb=20160512181852",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Drone",
+                "Links": [
+                    "/wiki/Drone"
+                ]
+            },
+            {
+                "Name": "Corpus Nemes",
+                "Links": [
+                    "/wiki/Nemes"
+                ]
+            },
+            {
+                "Name": "Corpus Oxium Osprey",
+                "Links": [
+                    "/wiki/Oxium_Osprey"
+                ]
+            },
+            {
+                "Name": "Grineer Carabus",
+                "Links": [
+                    "/wiki/Carabus"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Regulator",
+                "Links": [
+                    "/wiki/Frontier_Regulator"
+                ]
+            },
+            {
+                "Name": "Grineer Regulator",
+                "Links": [
+                    "/wiki/Regulator"
+                ]
+            },
+            {
+                "Name": "Infested Charger",
+                "Links": [
+                    "/wiki/Charger"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut",
+                "Links": [
+                    "/wiki/Juggernaut"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut Behemoth",
+                "Links": [
+                    "/wiki/Juggernaut_Behemoth"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            },
+            {
+                "Name": "Corpus Tier 3 Defense Reward",
+                "Links": [
+                    "/wiki/Endless_Defense"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Creeping Bullseye",
+        "Description": "The Creeping Bullseye mod increases the critical hit chance by 8% per rank while reducing the Fire Rate by -6% per rank of pistols for a maximum of 48% critical hit chance and -36% fire rate at rank 5.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Creeping_Bullseye",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/8/87/CreepingBullseye.png/revision/latest?cb=20141026080657",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Vault",
+                "Links": [
+                    "/wiki/Orokin_Vault"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Deep Freeze",
+        "Description": "Deep Freeze increases  Cold damage on a secondary weapon by 15% per rank for a maximum of 90% at rank 5.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Deep_Freeze",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/4/4a/DeepFreezeModU161.png/revision/latest?cb=20160512175502",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            },
+            {
+                "Name": "Grineer T3 Defense Reward",
+                "Links": [
+                    "/wiki/Endless_Defense"
+                ]
+            },
+            {
+                "Name": "Augustus, Mars Corpus T1 Interception",
+                "Links": [
+                    "/wiki/Interception"
+                ]
+            },
+            {
+                "Name": "Spy 2.0 Reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Eject Magazine",
+        "Description": "Eject Magazine is a pistol mod usable in both PvE and PvP that reloads a portion of a secondary weapon's magazine for each second while holstered.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Eject_Magazine",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/3/39/EjectMagazine.png/revision/latest?cb=20160329230834",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            },
+            {
+                "Name": "Battalyst",
+                "Links": [
+                    "/wiki/Battalyst"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Embedded Catalyzer",
+        "Description": "Embedded Catalyzer is an uncommon Pistol mod that increases Status chance while aiming for a brief time after casting an ability.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Embedded_Catalyzer",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/0/0c/EmbeddedCatalyzerMod.png/revision/latest?cb=20160401031343",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Mania",
+                "Links": [
+                    "/wiki/Mania"
+                ]
+            },
+            {
+                "Name": "Misery",
+                "Links": [
+                    "/wiki/Misery"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Expel Corpus",
+        "Description": "Expel Corpus increases the damage of secondary weapons against Corpus.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Expel_Corpus",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/a/a8/ExpelCorpusModU145.png/revision/latest?cb=20140830030343",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Expel Grineer",
+        "Description": "Expel Grineer increases the damage of secondary weapons against Grineer.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Expel_Grineer",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/b/ba/ExpelGrineerModU145.png/revision/latest?cb=20140830030344",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Bombard",
+                "Links": [
+                    "/wiki/Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Manic Bombard",
+                "Links": [
+                    "/wiki/Drekar_Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Manic Bombard",
+                "Links": [
+                    "/wiki/Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Expel Infested",
+        "Description": "Expel Infested increases the damage of secondary weapons against the Infested.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Expel_Infested",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/8/83/ExpelInfestedModU145.png/revision/latest?cb=20140830030344",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Infested Ancient Disruptor",
+                "Links": [
+                    "/wiki/Ancient_Disruptor"
+                ]
+            },
+            {
+                "Name": "Infested Brood Mother",
+                "Links": [
+                    "/wiki/Brood_Mother"
+                ]
+            },
+            {
+                "Name": "Infested Tar-Mutalist MOA",
+                "Links": [
+                    "/wiki/Tar-Mutalist_MOA"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Frostbite",
+        "Description": "The Frostbite mod increases both the  Cold damage and Status Chance of a sidearm by 15% per rank for a maximum of 60% at rank 3.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Frostbite",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/d8/FrostbiteModU145.png/revision/latest?cb=20160512175505",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Spy 2.0 reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            },
+            {
+                "Name": "Reward from Operation Cryotic Front",
+                "Links": [
+                    "/wiki/Operation_Cryotic_Front"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Full Capacity",
+        "Description": "Full Capacity is a PvP-exclusive secondary weapon mod  mod which grants increased magazine capacity at the cost of reduced reload speed.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Full_Capacity",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/9/90/FullCapacityMod.png/revision/latest?cb=20151013013155",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Mission Reward",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Gunslinger",
+        "Description": "The Gunslinger mod increases the fire rate of secondary weapons by 12% per rank for a maximum of 72% at rank 5.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Gunslinger",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/1/1c/GunslingerModU145.png/revision/latest?cb=20140830131419",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Alad V",
+                "Links": [
+                    "/wiki/Alad_V"
+                ]
+            },
+            {
+                "Name": "Mutalist Alad V",
+                "Links": [
+                    "/wiki/Mutalist_Alad_V"
+                ]
+            },
+            {
+                "Name": "Captain Vor",
+                "Links": [
+                    "/wiki/Captain_Vor"
+                ]
+            },
+            {
+                "Name": "Grineer Napalm",
+                "Links": [
+                    "/wiki/Napalm"
+                ]
+            },
+            {
+                "Name": "Corpus Scavenger Drone",
+                "Links": [
+                    "/wiki/Scavenger_Drone"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Hawk Eye",
+        "Description": "Hawk Eye increases the zoom of secondary weapons.  Beginning with Update 12.6, Hawk Eye also increases the range at which Sentinels can shoot enemies if installed on a Sentinel Weapon.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Hawk_Eye",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/67/HawkEyeModU145.png/revision/latest?cb=20140831140758",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Shield Osprey",
+                "Links": [
+                    "/wiki/Shield_Osprey"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Heated Charge",
+        "Description": "The Heated Charge mod increases  Heat damage of a secondary weapon by 15% per rank for a maximum of 90% at rank 5.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Heated_Charge",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/4/41/HeatedChargeModU145.png/revision/latest?cb=20160512175403",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Alad V",
+                "Links": [
+                    "/wiki/Alad_V"
+                ]
+            },
+            {
+                "Name": "Ambulas",
+                "Links": [
+                    "/wiki/Ambulas"
+                ]
+            },
+            {
+                "Name": "Captain Vor",
+                "Links": [
+                    "/wiki/Captain_Vor"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Hellion",
+                "Links": [
+                    "/wiki/Arid_Hellion"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Lancer",
+                "Links": [
+                    "/wiki/Arid_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Heavy Gunner",
+                "Links": [
+                    "/wiki/Arid_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Heavy Gunner",
+                "Links": [
+                    "/wiki/Frontier_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Hellion",
+                "Links": [
+                    "/wiki/Frontier_Hellion"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Scorpion",
+                "Links": [
+                    "/wiki/Scorpion"
+                ]
+            },
+            {
+                "Name": "Grineer Lancer",
+                "Links": [
+                    "/wiki/Lancer"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Heavy Warhead",
+        "Description": "Heavy Warhead is PvP-exclusive Pistol Mod which increases explosion radius for a reduction in flight speed.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Heavy_Warhead",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/3b/HeavyWarhead.png/revision/latest?cb=20160330025547",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Mission Reward",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Hollow Point",
+        "Description": "Hollow Point increases critical hit damage while reducing the damage of Pistols.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Hollow_Point",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/1/1d/HollowPointModU145.png/revision/latest?cb=20140831140810",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Vault",
+                "Links": [
+                    "/wiki/Orokin_Vault"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Hornet Strike",
+        "Description": "Hornet Strike increases the base damage of secondary weapons by 20% per rank, at a maximum of 220% at rank 10.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Hornet_Strike",
+        "Transmutable": true,
+        "Ranks": 10,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/6/6d/HornetStrikeModU145.png/revision/latest?cb=20140831140810",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Infested Arcane Boiler",
+                "Links": [
+                    "/wiki/Arcane_Boiler"
+                ]
+            },
+            {
+                "Name": "Infested Boiler",
+                "Links": [
+                    "/wiki/Boiler"
+                ]
+            },
+            {
+                "Name": "Infested Toxic Ancient",
+                "Links": [
+                    "/wiki/Toxic_Ancient"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            },
+            {
+                "Name": "Tier 3 Defense Reward",
+                "Links": [
+                    "/wiki/Endless_Defense"
+                ]
+            },
+            {
+                "Name": "Tier 1/2/3 Survival Reward",
+                "Links": [
+                    "/wiki/Survival"
+                ]
+            },
+            {
+                "Name": "Spy 2.0 Reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Hydraulic Barrel",
+        "Description": "Hydraulic Barrel is a PvP-exclusive secondary weapon mod which reduces weapon recoil at the cost of reduced magazine capacity.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Hydraulic_Barrel",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/64/Hbarrel.png/revision/latest?cb=20160330025550",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Mission Reward",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Hydraulic Crosshairs",
+        "Description": "Hydraulic Crosshairs is a common Pistol mod that increases Critical chance while aiming for a brief time upon a headshot.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Hydraulic_Crosshairs",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/0/0c/HydraulicCrosshairs.png/revision/latest?cb=20160401031342",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Misery",
+                "Links": [
+                    "/wiki/Misery"
+                ]
+            },
+            {
+                "Name": "Torment",
+                "Links": [
+                    "/wiki/Torment"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy Reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Ice Storm",
+        "Description": "Ice Storm increases the magazine capacity and  Cold damage of Pistols.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Ice_Storm",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/9c/IceStormModU145.png/revision/latest?cb=20160512175506",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Nightmare Mode reward",
+                "Links": [
+                    "/wiki/Nightmare_Mode"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Impaler Munitions",
+        "Description": "Impaler Munitions is a PvP exclusive Pistol Mod that converts an amount of physical damage to Puncture damage.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Impaler_Munitions",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/2c/ImpalerMunitions.png/revision/latest?cb=20160329225230",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Jolt",
+        "Description": "The Jolt mod increases both the  Electricity damage and Status Chance of a pistol by 15% per rank for a maximum of 60% at rank 3.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Jolt",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/5b/JoltNew.png/revision/latest?cb=20141201185340",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Tethra's Doom Reward",
+                "Links": [
+                    "/wiki/Tethra%27s_Doom"
+                ]
+            },
+            {
+                "Name": "Operation: Mutalist Incursions Reward",
+                "Links": [
+                    "/wiki/Operation:_Mutalist_Incursions"
+                ]
+            },
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            },
+            {
+                "Name": "Project Undermine Reward",
+                "Links": [
+                    "/wiki/Tactical_Alert#Completed_Alerts"
+                ]
+            },
+            {
+                "Name": "One Thousand Cuts Reward",
+                "Links": [
+                    "/wiki/Tactical_Alert#Completed_Alerts"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Lethal Momentum",
+        "Description": "Lethal Momentum increases flight speed of Pistol rounds.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Lethal_Momentum",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/9d/LethalMomentum.png/revision/latest?cb=20141025110610",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Tyl Regor",
+                "Links": [
+                    "/wiki/Tyl_Regor"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Lethal Torrent",
+        "Description": "The Lethal Torrent mod increases both fire rate and multishot percentage. These additional rounds do not consume extra ammunition.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Lethal_Torrent",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/0/03/LethalTorrentModU145.png/revision/latest?cb=20140831211618",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Operation Arid Fear",
+                "Links": [
+                    "/wiki/Operation_Arid_Fear"
+                ]
+            },
+            {
+                "Name": "Nightmare Mode reward",
+                "Links": [
+                    "/wiki/Nightmare_Mode"
+                ]
+            },
+            {
+                "Name": "Alerts",
+                "Links": [
+                    "/wiki/Alert"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Loose Magazine",
+        "Description": "Loose Magazine is a PvP-exclusive secondary weapon mod which grants improved reload speed at the cost of increased recoil.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Loose_Magazine",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/a0/LooseMagazineMod.png/revision/latest?cb=20151013013154",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Mission Reward",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Magnum Force",
+        "Description": "Magnum Force increases damage of secondary weapons at the cost of reduced accuracy by 6% and -3% per rank, at a maximum of 66% and -33% at rank 10, respectively.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Magnum_Force",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/9/9f/MagnumForceModU145.png/revision/latest?cb=20140831184524",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Vault",
+                "Links": [
+                    "/wiki/Orokin_Vault"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Maim",
+        "Description": "The Maim mod increases  Slash damage of a pistol by 20% per rank for a maximum of 120% at rank 5.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Maim",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/1/1c/MaimModU145.png/revision/latest?cb=20160512173548",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Operation: Gate Crash reward",
+                "Links": [
+                    "/wiki/Operation:_Gate_Crash"
+                ]
+            },
+            {
+                "Name": "Emergency Exit Tactical Alert reward",
+                "Links": [
+                    "/wiki/Tactical_Alert"
+                ]
+            },
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Meteor Munitions",
+        "Description": "Meteor Munitions is a PvP exclusive pistol Mod that converts an amount of physical damage to Impact damage.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Meteor_Munitions",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/d5/MeteorMunitions.png/revision/latest?cb=20160329225226",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Night Stalker",
+        "Description": "Night Stalker is a secondary weapon mod in PvP which causes targets hit by secondary weapons to be temporarily visible on the minimap.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Night_Stalker",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/2/20/NightStalker.png/revision/latest?cb=20160329225151",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "No Return",
+        "Description": "No Return increases the  Puncture damage of a pistol.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/No_Return",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/5e/NoReturnModU145.png/revision/latest?cb=20160512173848",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Crewman",
+                "Links": [
+                    "/wiki/Crewman"
+                ]
+            },
+            {
+                "Name": "Corpus Elite Crewman",
+                "Links": [
+                    "/wiki/Elite_Crewman"
+                ]
+            },
+            {
+                "Name": "Corpus Power Carrier",
+                "Links": [
+                    "/wiki/Power_Carrier"
+                ]
+            },
+            {
+                "Name": "Grineer Power Carrier",
+                "Links": [
+                    "/wiki/Power_Carrier"
+                ]
+            },
+            {
+                "Name": "Infested Mutalist Osprey Carrier",
+                "Links": [
+                    "/wiki/Mutalist_Osprey_Carrier"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            },
+            {
+                "Name": "Spy 2.0 Reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pathogen Rounds",
+        "Description": "Pathogen Rounds adds +15%  Toxin damage per rank to pistols.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Pathogen_Rounds",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/5/51/PathogenRoundsModU145.png/revision/latest?cb=20160512181205",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Anti MOA",
+                "Links": [
+                    "/wiki/Anti_MOA"
+                ]
+            },
+            {
+                "Name": "Hive Sabotage Cache Reward",
+                "Links": [
+                    "/wiki/Hive_Sabotage"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Perpetual Agony",
+        "Description": "Perpetual Agony increases the duration of Status Effects inflicted by secondary weapons.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Perpetual_Agony",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/6c/PerpetualAgony.png/revision/latest?cb=20141026152657",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Arid Butcher",
+                "Links": [
+                    "/wiki/Arid_Butcher"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Butcher",
+                "Links": [
+                    "/wiki/Frontier_Butcher"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pistol Ammo Mutation",
+        "Description": "Pistol Ammo Mutation is a pistol mod that converts any unused ammo type into Pistol Ammo, or Sniper Ammo in the case of most explosive sidearms. The affected pistol will only convert ammo while equipped, and will not convert any ammo type used by holstered primary weapons until their own ammo is full.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Pistol_Ammo_Mutation",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/c/c8/PistolAmmoMutationModU145.png/revision/latest?cb=20141212230143",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Operation Sling-Stone",
+                "Links": [
+                    "/wiki/Operation_Sling-Stone"
+                ]
+            },
+            {
+                "Name": "Survival (Rotation C)",
+                "Links": [
+                    "/wiki/Survival"
+                ]
+            },
+            {
+                "Name": "Excavation (Rotation C)",
+                "Links": [
+                    "/wiki/Excavation"
+                ]
+            },
+            {
+                "Name": "Spy 2.0",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pistol Gambit",
+        "Description": "The Pistol Gambit mod increases the critical hit chance of a pistol by 20% per rank for a maximum of 120% at rank 5.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Pistol_Gambit",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c0/PistolGambitModU145.png/revision/latest?cb=20140831201330",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corpus Prod Crewman",
+                "Links": [
+                    "/wiki/Prod_Crewman"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Eviscerator",
+                "Links": [
+                    "/wiki/Arid_Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Trooper",
+                "Links": [
+                    "/wiki/Arid_Trooper"
+                ]
+            },
+            {
+                "Name": "Grineer Eviscerator",
+                "Links": [
+                    "/wiki/Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Trooper",
+                "Links": [
+                    "/wiki/Trooper"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Eviscerator",
+                "Links": [
+                    "/wiki/Drekar_Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Trooper",
+                "Links": [
+                    "/wiki/Drekar_Trooper"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Eviscerator",
+                "Links": [
+                    "/wiki/Frontier_Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Trooper",
+                "Links": [
+                    "/wiki/Frontier_Trooper"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pistol Pestilence",
+        "Description": "The Pistol Pestilence mod increases the  Toxin Damage and Status Chance of a pistol by 15% per rank for a maximum of 60% at rank 3.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Pistol_Pestilence",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/b/ba/PistolPestilenceModU145.png/revision/latest?cb=20160512180227",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Reward from The Cicero Crisis",
+                "Links": [
+                    "/wiki/The_Cicero_Crisis"
+                ]
+            },
+            {
+                "Name": "Captain Vor (Corrupted)",
+                "Links": [
+                    "/wiki/Captain_Vor_(Corrupted)"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pressurized Magazine",
+        "Description": "Pressurized Magazine is a rare Pistol mod that increases Fire Rate while aiming for a brief time upon reloading.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Pressurized_Magazine",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/d/db/PressurisedMagazineMod.png/revision/latest?cb=20160401031356",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Angst",
+                "Links": [
+                    "/wiki/Angst"
+                ]
+            },
+            {
+                "Name": "Misery",
+                "Links": [
+                    "/wiki/Misery"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Primed Heated Charge",
+        "Description": "Primed Heated Charge is the Primed version of the Heated Charge mod, which adds  Heat damage to secondary weapons.",
+        "Rarity": "Legendary",
+        "TraddingTax": "1,000,000",
+        "URL": "http://warframe.wikia.com/wiki/Primed_Heated_Charge",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/cb/PrimedHeatedCharge.png/revision/latest?cb=20160512175409",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Primed Pistol Gambit",
+        "Description": "Primed Pistol Gambit is the primed version of the Pistol Gambit mod, which increases the critical chance of secondary weapons.",
+        "Rarity": "Legendary",
+        "TraddingTax": "1,000,000",
+        "URL": "http://warframe.wikia.com/wiki/Primed_Pistol_Gambit",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/2d/PrimedPistolGambit.png/revision/latest?cb=20150627150139",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Primed Pistol Mutation",
+        "Description": "Primed Pistol Mutation is the Primed version of the Pistol Ammo Mutation mod for pistols, which converts any unused ammo type into Pistol Ammo, or Sniper Ammo in the case of most explosive sidearms. The affected pistol will only convert ammo while equipped, and will not convert any ammo type used by holstered primary weapons until their own ammo is full.",
+        "Rarity": "Legendary",
+        "TraddingTax": "1,000,000",
+        "URL": "http://warframe.wikia.com/wiki/Primed_Pistol_Mutation",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/0/02/PrimedPistolAmmoMutation.png/revision/latest?cb=20150206173425",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Primed Slip Magazine",
+        "Description": "Primed Slip Magazine is the Primed version of the Slip Magazine mod, which increases the magazine capacity of pistols.",
+        "Rarity": "Legendary",
+        "TraddingTax": "1,000,000",
+        "URL": "http://warframe.wikia.com/wiki/Primed_Slip_Magazine",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/b/b8/PrimedSlipMagazine.png/revision/latest?cb=20150501181550",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Primed Target Cracker",
+        "Description": "Primed Target Cracker is the Primed version of Target Cracker, which increases the critical damage of Pistols.",
+        "Rarity": "Legendary",
+        "TraddingTax": "1,000,000",
+        "URL": "http://warframe.wikia.com/wiki/Primed_Target_Cracker",
+        "Transmutable": false,
+        "Ranks": 10,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/1/14/PrimedTargetCracker.png/revision/latest?cb=20151030181647",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pummel",
+        "Description": "The Pummel mod increases  Impact damage of a pistol by 20% per rank for a maximum of 120% at rank 5.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Pummel",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/e/ec/Pummel.png/revision/latest?cb=20160512173455",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Operation False Profit reward",
+                "Links": [
+                    "/wiki/Operation_False_Profit"
+                ]
+            },
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Quickdraw",
+        "Description": "The Quickdraw mod increases the reloading speed of a pistol by 8% per rank for a maximum of 48% at rank 5.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Quickdraw",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c5/QuickdrawModU145.png/revision/latest?cb=20140831200358",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Alad V",
+                "Links": [
+                    "/wiki/Alad_V"
+                ]
+            },
+            {
+                "Name": "Captain Vor",
+                "Links": [
+                    "/wiki/Captain_Vor"
+                ]
+            },
+            {
+                "Name": "Mutalist Alad V",
+                "Links": [
+                    "/wiki/Mutalist_Alad_V"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Arid Lancer",
+                "Links": [
+                    "/wiki/Elite_Arid_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Draga",
+                "Links": [
+                    "/wiki/Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Darek Draga",
+                "Links": [
+                    "/wiki/Darek_Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Shock Draga",
+                "Links": [
+                    "/wiki/Shock_Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Frontier Lancer",
+                "Links": [
+                    "/wiki/Elite_Frontier_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Lancer",
+                "Links": [
+                    "/wiki/Elite_Lancer"
+                ]
+            },
+            {
+                "Name": "Infested Crawler",
+                "Links": [
+                    "/wiki/Crawler"
+                ]
+            },
+            {
+                "Name": "Infested Nauseous Crawler",
+                "Links": [
+                    "/wiki/Nauseous_Crawler"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Razor Shot",
+        "Description": "Razor Shot increases the  Slash damage of pistols.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Razor_Shot",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/7/74/RazorShotModU145.png/revision/latest?cb=20160512173544",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Elite Arid Lancer",
+                "Links": [
+                    "/wiki/Elite_Arid_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Frontier Lancer",
+                "Links": [
+                    "/wiki/Elite_Frontier_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Lancer",
+                "Links": [
+                    "/wiki/Elite_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Draga",
+                "Links": [
+                    "/wiki/Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Darek Draga",
+                "Links": [
+                    "/wiki/Darek_Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Shock Draga",
+                "Links": [
+                    "/wiki/Shock_Draga"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Razor Munitions",
+        "Description": "Razor Munitions is a PvP exclusive Pistol Mod that converts an amount of damage to Slash damage.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Razor_Munitions",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/f/f2/RazorMunitions.png/revision/latest?cb=20160329225245",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Recuperate",
+        "Description": "Recuperate was a PvP-exclusive secondary weapon mod that gave a chance to restore health on each kill.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Recuperate",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/3a/Recuperate.png/revision/latest?cb=20150812085623",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "N/A",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Reflex Draw",
+        "Description": "Reflex Draw is a pistol mod usable in both PvE and PvP that increases the holster rate of secondary weapons.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Reflex_Draw",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/f/f1/ReflexDraw.png/revision/latest?cb=20160329225205",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            },
+            {
+                "Name": "Conculyst",
+                "Links": [
+                    "/wiki/Conculyst"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Ruinous Extension",
+        "Description": "Ruinous Extension increases the range of secondary weapons.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Ruinous_Extension",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/1/18/RuinousExtension.png/revision/latest?cb=20141026143326",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Jackal",
+                "Links": [
+                    "/wiki/Jackal"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Scorch (Mod)",
+        "Description": "The Scorch mod increases the  Heat damage and Status Chance of a pistol by 15% per rank for a maximum of 60% at Rank 3.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Scorch_(Mod)",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/22/ScorchModU145.png/revision/latest?cb=20160512175406",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Spy 2.0 reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            },
+            {
+                "Name": "17 points in Operation Breeding Grounds",
+                "Links": [
+                    "/wiki/Operation_Breeding_Grounds"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Secondary Wind",
+        "Description": "Secondary Wind is PvP-exclusive Pistol Mod which increases Health Regen on Kills.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Secondary_Wind",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/8/8a/SecondaryWind.png/revision/latest?cb=20160330025559",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Mission Reward",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Seeker (Mod)",
+        "Description": "The Seeker mod increases Punch Through of a pistol by 0.35 per rank for a maximum of 2.1 at rank 5.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Seeker_(Mod)",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/7/7e/SeekerModU145.png/revision/latest?cb=20140901144542",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Infested Ancient Healer",
+                "Links": [
+                    "/wiki/Ancient_Healer"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            },
+            {
+                "Name": "Swarm-Mutalist MOA",
+                "Links": [
+                    "/wiki/Swarm-Mutalist_MOA"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Sharpened Bullets",
+        "Description": "Sharpened Bullets is an uncommon Pistol mod that increases Critical damage while aiming for a brief time upon a kill.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Sharpened_Bullets",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/c/c6/SharpenedBulletsMod.png/revision/latest?cb=20160401031347",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Misery",
+                "Links": [
+                    "/wiki/Misery"
+                ]
+            },
+            {
+                "Name": "Violence",
+                "Links": [
+                    "/wiki/Violence"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Slip Magazine",
+        "Description": "The Slip Magazine increases magazine capacity of a pistol by 5% per rank for a maximum of 30% at rank 5.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Slip_Magazine",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/5/5b/SlipMagazineModU145.png/revision/latest?cb=20140901145653",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Alad V",
+                "Links": [
+                    "/wiki/Alad_V"
+                ]
+            },
+            {
+                "Name": "Captain Vor",
+                "Links": [
+                    "/wiki/Captain_Vor"
+                ]
+            },
+            {
+                "Name": "Grineer Commander",
+                "Links": [
+                    "/wiki/Commander"
+                ]
+            },
+            {
+                "Name": "Grineer Desert Heavy Gunner",
+                "Links": [
+                    "/wiki/Desert_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Grineer Heavy Gunner",
+                "Links": [
+                    "/wiki/Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Grineer Warden",
+                "Links": [
+                    "/wiki/Grineer_Warden"
+                ]
+            },
+            {
+                "Name": "Infested Toxic Ancient",
+                "Links": [
+                    "/wiki/Toxic_Ancient"
+                ]
+            },
+            {
+                "Name": "Orokin Void Containers",
+                "Links": [
+                    "/wiki/Orokin_Void",
+                    "/wiki/Storage_Containers"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Spry Sights",
+        "Description": "Spry Sights is a pistol mod usable in both PvE and PvP that increases movement speed while aiming.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Spry_Sights",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/f/fa/SprySights.png/revision/latest?cb=20160329225420",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            },
+            {
+                "Name": "Conculyst",
+                "Links": [
+                    "/wiki/Conculyst"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Steady Hands",
+        "Description": "The Steady Hands mod is a pistol mod that reduces the recoil produced from firing a weapon by 15% per rank for a maximum of 60% at rank 3.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Steady_Hands",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/d9/SteadyHandsModU145.png/revision/latest?cb=20140901150418",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Crewman",
+                "Links": [
+                    "/wiki/Corrupted"
+                ]
+            },
+            {
+                "Name": "Spy 2.0 reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            },
+            {
+                "Name": "Tier 3 Survival Reward",
+                "Links": [
+                    "/wiki/Survival"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Strafing Slide",
+        "Description": "Strafing Slide is a pistol mod usable in both PvE and PvP that reduces recoil and spread when firing while sliding.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Strafing_Slide",
+        "Transmutable": false,
+        "Ranks": 3,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/StrafingSlide.png/revision/latest?cb=20160329230900",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            },
+            {
+                "Name": "Battalyst",
+                "Links": [
+                    "/wiki/Battalyst"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Stunning Speed",
+        "Description": "The Stunning Speed mod increases reload speed and status effect chance by 10% and 2.5% per rank for a maximum of 40% and 10%, respectively.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Stunning_Speed",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/f/f7/StunningSpeedModU145.png/revision/latest?cb=20140901150731",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Nightmare Mode reward, Alert",
+                "Links": [
+                    "/wiki/Nightmare_Mode",
+                    "/wiki/Alert"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Suppress",
+        "Description": "The Suppress mod reduces Noise Level on pistols. At max rank, it renders any pistols completely silent and undetectable while firing.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Suppress",
+        "Transmutable": true,
+        "Ranks": 3,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/3/32/SuppressModU145.png/revision/latest?cb=20150428224531",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Crewman",
+                "Links": [
+                    "/wiki/Corrupted_Crewman"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Sure Shot",
+        "Description": "Sure Shot increases the Status Chance of Pistols.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Sure_Shot",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/8/85/SureShotModU145.png/revision/latest?cb=20140901150733",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Scorch",
+                "Links": [
+                    "/wiki/Scorch"
+                ]
+            },
+            {
+                "Name": "Infested Electric Crawler",
+                "Links": [
+                    "/wiki/Electric_Crawler"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Tainted Clip",
+        "Description": "Tainted Clip increases pistol magazine capacity while decreasing reload speed.",
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "URL": "http://warframe.wikia.com/wiki/Tainted_Clip",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/b/b3/TaintedClipModU145.png/revision/latest?cb=20140901024155",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Orokin Vault",
+                "Links": [
+                    "/wiki/Orokin_Vault"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Target Cracker",
+        "Description": "The Target Cracker mod increases the critical damage of a pistol by 10% for each rank for a maximum of 60% at rank 5.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Target_Cracker",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/1/13/TargetCrackerModU145.png/revision/latest?cb=20140901024209",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Grineer Powerfist",
+                "Links": [
+                    "/wiki/Powerfist"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            },
+            {
+                "Name": "Tier 2 Infested Defense Reward",
+                "Links": [
+                    "/wiki/Endless_Defense"
+                ]
+            },
+            {
+                "Name": "Spy 2.0 Reward",
+                "Links": [
+                    "/wiki/Spy_2.0"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Targeting Subsystem",
+        "Description": "Targeting Subsystem is a Pistol mod that temporarily increases accuracy while aiming upon hitting an enemy.",
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "URL": "http://warframe.wikia.com/wiki/Targeting_Subsystem",
+        "Transmutable": false,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/56/TargetingSubsystemMod.png/revision/latest?cb=20160401031351",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Malice",
+                "Links": [
+                    "/wiki/Malice"
+                ]
+            },
+            {
+                "Name": "Misery",
+                "Links": [
+                    "/wiki/Misery"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Trick Mag",
+        "Description": "The Trick Mag increases maximum ammo of a pistol by 15% per rank for a maximum of 90% at rank 5.",
+        "Rarity": "Common",
+        "TraddingTax": "2,000",
+        "URL": "http://warframe.wikia.com/wiki/Trick_Mag",
+        "Transmutable": true,
+        "Ranks": 5,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/37/TrickMagModU145.png/revision/latest?cb=20140901024248",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Lynx Osprey",
+                "Links": [
+                    "/wiki/Lynx_Osprey"
+                ]
+            },
+            {
+                "Name": "Corpus Railgun MOA",
+                "Links": [
+                    "/wiki/Railgun_MOA"
+                ]
+            },
+            {
+                "Name": "Corpus Shield Osprey",
+                "Links": [
+                    "/wiki/Shield_Osprey"
+                ]
+            },
+            {
+                "Name": "Corpus Shockwave MOA",
+                "Links": [
+                    "/wiki/Shockwave_MOA"
+                ]
+            },
+            {
+                "Name": "Grineer Flameblade",
+                "Links": [
+                    "/wiki/Flameblade"
+                ]
+            },
+            {
+                "Name": "Grineer Guardsman",
+                "Links": [
+                    "/wiki/Guardsman"
+                ]
+            },
+            {
+                "Name": "Grineer Roller",
+                "Links": [
+                    "/wiki/Roller"
+                ]
+            },
+            {
+                "Name": "Grineer Roller Sentry",
+                "Links": [
+                    "/wiki/Roller_Sentry"
+                ]
+            },
+            {
+                "Name": "Infested Lobber Crawler",
+                "Links": [
+                    "/wiki/Lobber_Crawler"
+                ]
+            },
+            {
+                "Name": "Infested Toxic Crawler",
+                "Links": [
+                    "/wiki/Toxic_Crawler"
+                ]
+            },
+            {
+                "Name": "Orokin Void Container",
+                "Links": [
+                    "/wiki/Orokin_Void"
+                ]
+            }
+        ]
+    }
+]

@@ -163,7 +163,7 @@
         "NameLink": "/wiki/Fateful_Truth",
         "Name": "Fateful Truth",
         "Description": "Fighting form devised for Conclave. Exclusive to PvP.",
-        "PvPOnly": true,
+        "PvPOnly": false,
         "Weapon Type": "Nikanas",
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",

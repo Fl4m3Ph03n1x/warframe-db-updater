@@ -1,8 +1,8 @@
 /**
  * @fileOverview Contains the scraper class, responsible for extracting
- * information from the warframe wikia mods page.
+ * information from the warframe wikia mods pages.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 2.1.0
+ * @version 2.2.0
  */
 
 /*jslint node: true */
@@ -178,7 +178,7 @@ class ModScraper {
      * @return  {Promise}   A Promise containning a JSON object representing the 
      *                      mod.
      * @public
-     * @todo improve information retrieval from this method (drop locations).
+     * @todo improve information retrieval from this method (get links of drops).
      */
     getModInformation(modURL) {
 
@@ -187,7 +187,7 @@ class ModScraper {
             self.requestHTML(modURL).then((htmlBody) => {
 
                 let $ = cheerio.load(htmlBody);
-                
+
                 let modInfo = {
                     Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
                     Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
@@ -198,17 +198,36 @@ class ModScraper {
                     Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
                     ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
                 };
-                
+
                 modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
-                // modInfo.modRarityType = "None";
-                // if (modInfo.modRarityTypeText.includes("Nightmare"))
-                //     modInfo.modRarityType = "Nightmare";
-                // else if (modInfo.modRarityTypeText.includes("Orokin Derelict"))
-                //     modInfo.modRarityType = "Orokin Derelict";
+
+                let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
+                let info = droppedByDiv.split("<br>");
+                let dropInfo = {};
+                let links = "";
+                modInfo.DroppedBy = [];
+                
+                if(modInfo.Name == "Vengeful Revenant")
+                    console.log("Dragons ahead!");
+                
+                for (let tag of info) {
+                    dropInfo = {};
+                    dropInfo.Name = $(tag).text().trim();
+                    dropInfo.Links = [];
+
+                    links =  $(tag).find("a").add($(tag).filter("a"));
+                    
+                    $(links).each(function(index, elem) {
+                        dropInfo.Links.push($(this).attr("href"));
+                    });
+
+                    modInfo.DroppedBy.push(dropInfo);
+                }
+
 
                 fulfil(modInfo);
             }).catch(error => {
-                reject(error);
+                reject("Error with " + modURL + ". Error: " + error);
             });
         });
     }
