@@ -2,7 +2,7 @@
  * @fileOverview Contains the scraper class, responsible for extracting
  * information from the warframe wikia mods pages.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 2.2.0
+ * @version 2.2.1
  */
 
 /*jslint node: true */
@@ -297,10 +297,9 @@ class ModScraper {
                             item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
 
                             //check if it is PvP only.
+                            item.PvPOnly = false;
                             if (item[headers[tdIndex]].includes(KEYWORDS.PVP))
                                 item.PvPOnly = true;
-                            else
-                                item.PvPOnly = false;
                         }
                         else {
                             //if the header has associated links, we take them
