@@ -31,11 +31,31 @@ Also known as the Wikia-stalker, `warframe-db-updater` is a project which
 purpose is to scavenge the warframe wikia looking for news and updates and then 
 update other services. 
 
-Currently, it is in its alpha stage, and the purpose is to update the DB of 
-[Warframe Market](https://warframe.market/) in order to make the udpate process
-smoother and more automated. 
+Currently this project extracts data for the following mod types:
 
-This project is free to use/change, provided you give credit to the original 
-author (me) and it's code is publicly avaiable as well as  
-[documented](https://fl4m3ph03n1x.github.io/warframe-db-updater/). 
+ - Warframes
+ - Rifles
+ - Shotguns
+ - Pistols
+ - Melee 
+ - Sentinels
+ - Kubrows
+ - Kavats
+ - Sentinels
+ - Auras
+ - Stances
+
+Currently, the stalker does **not** provide information about:
+
+ - Archwings
+ - Archwing Melee
+ - Archwing Rifles
+ - Syndicate Mods
+ - Rivens
+
+Further versions of the stalker are planned to improve on this, but since the 
+project stalks the Wikia, it is imperative to improve the wikia's quality first.
+
+This project is under the [GPL license](https://en.wikipedia.org/wiki/GNU_General_Public_License), 
+ and it's code is publicly [documented](https://fl4m3ph03n1x.github.io/warframe-db-updater/) as well.
 
