@@ -8,6 +8,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/34/AnimalInstinctMod.png/revision/latest?cb=20160713125221",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -40,6 +41,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/91/BiteMod.png/revision/latest?cb=20160713125221",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -49,9 +51,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -65,6 +67,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/6/66/DigModU145.png/revision/latest?cb=20140830023250",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -74,9 +77,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -90,6 +93,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c0/HastenedDeflectionMod.png/revision/latest?cb=20160531214922",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -99,9 +103,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -115,6 +119,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/b/b4/FerocityModU145.png/revision/latest?cb=20140830130608",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -124,9 +129,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -140,6 +145,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/6/64/Howl_19.6.3.png/revision/latest?cb=20170118032936",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -149,9 +155,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -165,6 +171,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/99/Hunt_19.6.3.png/revision/latest?cb=20170118032942",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -174,9 +181,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -190,6 +197,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/1/15/LinkArmorMod.png/revision/latest?cb=20160713125223",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -199,9 +207,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -215,6 +223,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/8/83/LinkHealthMod.png/revision/latest?cb=20160713125223",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -224,9 +233,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -240,6 +249,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/5/54/LinkShieldsMod.png/revision/latest?cb=20160713125226",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -249,9 +259,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -265,6 +275,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/1/10/LoyalCompanionMod.png/revision/latest?cb=20160713125226",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -274,9 +285,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -290,6 +301,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/0e/MaulMod.png/revision/latest?cb=20160713125222",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -299,9 +311,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -315,6 +327,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/2/28/Neutralize_19.6.3.png/revision/latest?cb=20170118032939",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -334,6 +347,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/a/a2/PackLeaderMod.png/revision/latest?cb=20160713125222",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -343,9 +357,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -359,6 +373,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/4/40/Protect_19.6.3.png/revision/latest?cb=20170118032934",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -368,9 +383,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -384,6 +399,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/8/86/Retrieve_19.6.3.png/revision/latest?cb=20170118032940",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -403,6 +419,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/d/db/SavageryModU145.png/revision/latest?cb=20140901144536",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -412,9 +429,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -428,6 +445,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/0/06/Shelter_19.6.3.png/revision/latest?cb=20170118032932",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -437,9 +455,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -453,6 +471,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/4/4f/ScavengeMod.png/revision/latest?cb=20160713125227",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -462,9 +481,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -478,6 +497,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/34/Stalk_19.6.3.png/revision/latest?cb=20170118032937",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -487,9 +507,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]
@@ -503,6 +523,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/6d/Unleashed_19.6.3.png/revision/latest?cb=20170118032930",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -512,9 +533,9 @@
                 ]
             },
             {
-                "Name": "Kubrow (Feral)",
+                "Name": "Kubrow",
                 "Links": [
-                    "/wiki/Kubrow_(Feral)"
+                    "/wiki/Kubrow_"
                 ]
             }
         ]

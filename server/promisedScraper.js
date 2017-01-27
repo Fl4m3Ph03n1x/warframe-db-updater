@@ -2,7 +2,7 @@
  * @fileOverview Contains the scraper class, responsible for extracting
  * information from the warframe wikia mods pages.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 2.2.1
+ * @version 2.3.1
  */
 
 /*jslint node: true */
@@ -178,7 +178,8 @@ class ModScraper {
      * @return  {Promise}   A Promise containning a JSON object representing the 
      *                      mod.
      * @public
-     * @todo check stance mods, they layout is a mess.
+     * @idea The Wiki should have the SlotType where the mod is to be equiped on
+     * the description table. 
      */
     getModInformation(modURL) {
 
@@ -186,46 +187,133 @@ class ModScraper {
         return new Promise(function(fulfil, reject) {
             self.requestHTML(modURL).then((htmlBody) => {
 
+                //for everything else
                 let $ = cheerio.load(htmlBody);
 
-                let modInfo = {
-                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
-                    Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
-                    Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                    TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
-                    URL: modURL,
-                    Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
-                    Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
-                    ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
-                };
+                //hack to know if this is a stance
+                if (htmlBody.includes('<a href="/wiki/Stance" title="Stance">Stance</a>')) {
 
-                modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
+                    //The Description paragraph always strats with the name of the stance in bold. 
+                    let descriptionParagraph = $(htmlBody).find('div').find('p').find('b').parent();
 
-                let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
-                let info = droppedByDiv.split("<br>");
-                let dropInfo = {};
-                let links = "";
-                modInfo.DroppedBy = [];
-                
-                if(modInfo.Name == "Vengeful Revenant")
-                    console.log("Dragons ahead!");
-                
-                for (let tag of info) {
-                    dropInfo = {};
-                    dropInfo.Name = $(tag).text().trim();
-                    dropInfo.Links = [];
+                    let stanceInfo = {
+                        Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                        Description: descriptionParagraph.text().trim(),
+                        SlotType: "Stance",
+                        URL: modURL,
+                        Ranks: 3, //all stances have 3 ranks
+                        Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                        TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                        Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                        ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
+                    };
 
-                    links =  $(tag).find("a").add($(tag).filter("a"));
-                    
-                    $(links).each(function(index, elem) {
-                        dropInfo.Links.push($(this).attr("href"));
+                    let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
+                        return $(el).attr('title') === 'Polarity';
                     });
 
-                    modInfo.DroppedBy.push(dropInfo);
+                    if (polarityNode.length > 0)
+                        stanceInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
+
+
+                    let WeaponsList = [];
+                    let weaponsListNodes = descriptionParagraph.next().next().find("li");
+                    let tmpWeaponObj = {};
+                    let tmpWeaponName = "";
+                    let tmpWeaponLinkNodes = [];
+                    weaponsListNodes.each((index, elem) => {
+                        tmpWeaponObj = {};
+                        tmpWeaponName = $(elem).text().trim();
+
+                        if (tmpWeaponName.includes("*")) {
+                            tmpWeaponObj.Name = tmpWeaponName.replace("*", "");
+                            tmpWeaponObj.MatchesPolarity = true;
+                        }
+                        else {
+                            tmpWeaponObj.Name = tmpWeaponName;
+                            tmpWeaponObj.MatchesPolarity = false;
+                        }
+
+                        tmpWeaponObj.Links = [];
+                        tmpWeaponLinkNodes = $(elem).find("a");
+                        tmpWeaponLinkNodes.each((linkIndex, linkElem) => {
+                            tmpWeaponObj.Links.push($(linkElem).attr("href"));
+                        });
+                        WeaponsList.push(tmpWeaponObj);
+                    });
+
+                    stanceInfo.WeaponsList = WeaponsList;
+
+                    let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
+                    let info = droppedByDiv.split("<br>");
+                    let dropInfo = {};
+                    let links = "";
+                    stanceInfo.DroppedBy = [];
+                    for (let tag of info) {
+                        dropInfo = {};
+                        //remove text between parenthesis, and it is useless and often confuses the parser
+                        tag = tag.replace(/ *\([^)]*\) */g, "");
+                        dropInfo.Name = $(tag).text().trim() || tag;
+                        dropInfo.Links = [];
+
+                        links = $(tag).find("a").add($(tag).filter("a"));
+
+                        $(links).each(function(index, elem) {
+                            dropInfo.Links.push($(this).attr("href"));
+                        });
+
+                        stanceInfo.DroppedBy.push(dropInfo);
+                    }
+
+                    fulfil(stanceInfo);
+                }
+                else {
+                    let modInfo = {
+                        Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                        Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
+                        Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                        TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                        URL: modURL,
+                        Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                        Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
+                        ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
+                    };
+
+                    let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
+                        return $(el).attr('title') === 'Polarity';
+                    });
+
+                    if (polarityNode.length > 0)
+                        modInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
+
+                    modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
+
+                    let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
+                    let info = droppedByDiv.split("<br>");
+                    let dropInfo = {};
+                    let links = "";
+                    modInfo.DroppedBy = [];
+
+                    for (let tag of info) {
+                        dropInfo = {};
+                        //remove text between parenthesis, and it is useless and often confuses the parser
+                        tag = tag.replace(/ *\([^)]*\) */g, "");
+                        dropInfo.Name = $(tag).text().trim() || tag;
+                        dropInfo.Links = [];
+
+                        links = $(tag).find("a").add($(tag).filter("a"));
+
+                        $(links).each(function(index, elem) {
+                            dropInfo.Links.push($(this).attr("href"));
+                        });
+
+                        modInfo.DroppedBy.push(dropInfo);
+                    }
+
+                    fulfil(modInfo);
                 }
 
 
-                fulfil(modInfo);
             }).catch(error => {
                 reject("Error with " + modURL + ". Error: " + error);
             });

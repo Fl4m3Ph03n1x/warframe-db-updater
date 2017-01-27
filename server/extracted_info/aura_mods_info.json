@@ -8,6 +8,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/7/7a/BriefRespiteMod.png/revision/latest?cb=20160823011412",
+        "Polarity": "Zenurik",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -27,6 +28,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/6c/CorrosiveProjectionModU145.png/revision/latest?cb=20140830023237",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -46,6 +48,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c6/DeadEyeModU145.png/revision/latest?cb=20141008235242",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -65,6 +68,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/fd/EMPAuraMod.png/revision/latest?cb=20160801140354",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -82,6 +86,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/6/69/EnemyRadarModU145.png/revision/latest?cb=20140830030335",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -101,6 +106,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/59/EnergySiphonModU145.png/revision/latest?cb=20140830030336",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -120,6 +126,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/9/9d/InfestedImpedanceModU145.png/revision/latest?cb=20140831140813",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -139,6 +146,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/4/41/LootDetectorModU145.png/revision/latest?cb=20140831183513",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -158,6 +166,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/0/0d/PhysiqueModU145.png/revision/latest?cb=20140831201326",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -178,6 +187,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/f7/PistolScavengerModU145.png/revision/latest?cb=20140831201354",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -197,6 +207,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/d/d1/RejuvenationModU145.png/revision/latest?cb=20140831202858",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -216,6 +227,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/2d/RifleAmpModU145.png/revision/latest?cb=20140831203526",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -235,6 +247,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/4/44/RifleScavengerModU145.png/revision/latest?cb=20140831203527",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -254,6 +267,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/b/b1/ShieldDisruptionNew.png/revision/latest?cb=20150128205152",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -273,6 +287,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/b/b3/ShotgunScavengerModU145.png/revision/latest?cb=20140901145318",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -292,6 +307,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/5/51/SniperScavengerModU145.png/revision/latest?cb=20140901145705",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -311,6 +327,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/4/42/SpeedHolsterModU145.png/revision/latest?cb=20140901150036",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -330,6 +347,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/b/b2/SprintBoostModU145.png/revision/latest?cb=20140901150416",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -349,6 +367,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/a/ad/StandUnitedMod.png/revision/latest?cb=20160823011307",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -368,6 +387,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/66/SteelChargeModU145.png/revision/latest?cb=20140901150419",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {

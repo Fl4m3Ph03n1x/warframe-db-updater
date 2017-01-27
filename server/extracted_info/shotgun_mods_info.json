@@ -8,6 +8,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/3/3a/AcceleratedBlastModU145.png/revision/latest?cb=20160512173853",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -28,6 +29,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/1/1a/AmmoStockModU145.png/revision/latest?cb=20140830004759",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -53,6 +55,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/1/19/BlazeModU145.png/revision/latest?cb=20160512175410",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -78,6 +81,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/5/5c/BlunderbussModU145.png/revision/latest?cb=20140830012950",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -170,6 +174,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/1/13/BountyHunter.png/revision/latest?cb=20160329230031",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -189,6 +194,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/62/BreachLoaderModU145.png/revision/latest?cb=20160512173849",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -198,10 +204,9 @@
                 ]
             },
             {
-                "Name": "Tactical Alert (Divine Will) Endurance Reward",
+                "Name": "Tactical AlertEndurance Reward",
                 "Links": [
-                    "/wiki/Tactical_Alert",
-                    "/wiki/Tactical_Alert#Divine_Will"
+                    "/wiki/Tactical_Alert"
                 ]
             }
         ]
@@ -215,6 +220,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/f0/BroadEye.png/revision/latest?cb=20160329225445",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -240,6 +246,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/5/51/BurdenedMagazineModU145.png/revision/latest?cb=20140830012951",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -259,6 +266,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c3/ChargedShellModU145.png/revision/latest?cb=20160512181852",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -297,6 +305,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/d3/ChillingGraspModU161.png/revision/latest?cb=20160512175501",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -322,6 +331,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/2/2c/ChillingReloadMod.png/revision/latest?cb=20161027211113",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -347,6 +357,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/e/e9/CleanseCorpusModU145.png/revision/latest?cb=20140830014018",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -382,6 +393,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/0/05/CleanseGrineerModU145.png/revision/latest?cb=20140830014018",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -419,6 +431,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/f/f4/CleanseInfestedModU145.png/revision/latest?cb=20140830014019",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -450,6 +463,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/6/69/ContagiousSpreadModU145.png/revision/latest?cb=20160512181204",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -481,6 +495,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/0/0c/Cshot.png/revision/latest?cb=20160329225302",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -500,6 +515,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/7/7d/CriticalDeceleration.png/revision/latest?cb=20141026080215",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -519,6 +535,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/b/b6/DisruptorModU145.png/revision/latest?cb=20160512173452",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -580,6 +597,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/7/78/DoubleBarrelDrift.png/revision/latest?cb=20160329230857",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -605,6 +623,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/2/2e/FatalAccelerationMod.png/revision/latest?cb=20161123143655",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -624,6 +643,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/05/Fshot.png/revision/latest?cb=20160329225330",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -643,6 +663,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/51/FlechetteModU145.png/revision/latest?cb=20160512173848",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -686,6 +707,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/4/4a/FrailMomentum.png/revision/latest?cb=20141026100235",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -705,6 +727,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/c5/FrigidBlastModU145.png/revision/latest?cb=20160512175504",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -730,6 +753,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/7/7c/FullContact.png/revision/latest?cb=20160512173454",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -755,6 +779,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/db/HellsChamberModU145.png/revision/latest?cb=20140831140810",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -812,7 +837,7 @@
                 ]
             },
             {
-                "Name": "",
+                "Name": "Orokin Void Container ",
                 "Links": []
             },
             {
@@ -832,6 +857,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/5d/Hchamber.png/revision/latest?cb=20160330025552",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -851,6 +877,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/97/IncendiaryCoatModU145.png/revision/latest?cb=20160512175402",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -895,6 +922,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/8/82/KillSwitchMod.png/revision/latest?cb=20160330030104",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -914,6 +942,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/f3/LaserSightMod.png/revision/latest?cb=20160401031330",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -939,6 +968,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/1/1b/LingeringTorment.png/revision/latest?cb=20141026143022",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1000,6 +1030,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/cc/LoadedCapacityMod.png/revision/latest?cb=20151013013154",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1019,6 +1050,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/9b/LockandLoad.png/revision/latest?cb=20160329230843",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1044,6 +1076,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/7/78/LooseChamberMod.png/revision/latest?cb=20151013013154",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1063,6 +1096,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/2a/Mpause.png/revision/latest?cb=20150812084315",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1080,6 +1114,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/50/Nano-ApplicatorMod.png/revision/latest?cb=20160821173711",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1105,6 +1140,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/dd/NarrowBarrelMod.png/revision/latest?cb=20160821173712",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1130,6 +1166,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c8/PointBlankModU145.png/revision/latest?cb=20140831201439",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1167,6 +1204,7 @@
         "Transmutable": false,
         "Ranks": 10,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/8/87/PrimedPointBlank.png/revision/latest?cb=20141226173922",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1186,6 +1224,7 @@
         "Transmutable": false,
         "Ranks": 10,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/b/b2/PrimedRavage.png/revision/latest?cb=20141212181946",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1205,6 +1244,7 @@
         "Transmutable": false,
         "Ranks": 10,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/30/PrimedShotgunAmmoMutation.png/revision/latest?cb=20151113174142",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1224,6 +1264,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/9e/Prizekill.png/revision/latest?cb=20150812084516",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1241,6 +1282,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/b/b0/RavageModU145.png/revision/latest?cb=20140831202423",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1278,6 +1320,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/d/d0/RepeaterClipMod.png/revision/latest?cb=20160401031334",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1303,6 +1346,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/d/d4/ScatteringInfernoModU145.png/revision/latest?cb=20160512175424",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1328,6 +1372,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/06/SeekingForceModU145.png/revision/latest?cb=20140901144543",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1353,6 +1398,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/1/14/SeekingFury2.png/revision/latest?cb=20150705065627",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1385,6 +1431,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/8/87/ShellCompressionModU145.png/revision/latest?cb=20140901145008",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1441,6 +1488,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/4/43/ShellShockModU145.png/revision/latest?cb=20160512181904",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1490,6 +1538,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/1/1f/ShotgunAmmoMutationModU145.png/revision/latest?cb=20141212230145",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1499,13 +1548,13 @@
                 ]
             },
             {
-                "Name": "Survival (Rotation C)",
+                "Name": "Survival",
                 "Links": [
                     "/wiki/Survival"
                 ]
             },
             {
-                "Name": "Excavation (Rotation C)",
+                "Name": "Excavation",
                 "Links": [
                     "/wiki/Excavation"
                 ]
@@ -1527,6 +1576,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/7/78/ShotgunSavvyModU145.png/revision/latest?cb=20140901145317",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1570,6 +1620,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/b/be/ShotgunSpazzModU145.png/revision/latest?cb=20140901145321",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1595,6 +1646,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/0/0c/ShrapnelShotMod.png/revision/latest?cb=20160401031326",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1627,6 +1679,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/8/82/ShredderModU145.png/revision/latest?cb=20160512173544",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1664,6 +1717,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/04/Sshot.png/revision/latest?cb=20160329225307",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1683,6 +1737,7 @@
         "Transmutable": true,
         "Ranks": 3,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/36/SilentBatteryMod.png/revision/latest?cb=20160831025204",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1702,6 +1757,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/7/70/SnapShot.png/revision/latest?cb=20160329225430",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1727,6 +1783,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/a6/SoftHands.png/revision/latest?cb=20160329225212",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1752,6 +1809,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/6/6b/SweepingSerrationModU145.png/revision/latest?cb=20160512173547",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1783,6 +1841,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/c/c6/TacticalPumpModU145.png/revision/latest?cb=20140901024151",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1832,6 +1891,7 @@
         "Transmutable": false,
         "Ranks": 10,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/2/2f/TaintedShellModU145.png/revision/latest?cb=20140901024206",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1851,6 +1911,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/8/81/ToxicBarrageModU145.png/revision/latest?cb=20160512181207",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -1860,9 +1921,9 @@
                 ]
             },
             {
-                "Name": "Captain Vor (Corrupted)",
+                "Name": "Captain Vor",
                 "Links": [
-                    "/wiki/Captain_Vor_(Corrupted)"
+                    "/wiki/Captain_Vor_"
                 ]
             }
         ]
@@ -1876,6 +1937,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/4/4b/ViciousSpreadModU145.png/revision/latest?cb=20140901025612",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {

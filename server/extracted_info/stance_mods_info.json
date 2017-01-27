@@ -1,0 +1,3280 @@
+[
+    {
+        "Name": "Astral Twilight",
+        "Description": "Astral Twilight is one of two available Stance mods for Glaive-type weapons, featuring highly mobile spins and sweeping slashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Astral_Twilight",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": false,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/cd/AstralTwilight.png/revision/latest?cb=20150504131721",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Cerata",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Cerata"
+                ]
+            },
+            {
+                "Name": "Glaive",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Glaive"
+                ]
+            },
+            {
+                "Name": "Glaive Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Glaive_Prime"
+                ]
+            },
+            {
+                "Name": "Halikar",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Halikar"
+                ]
+            },
+            {
+                "Name": "Kestrel",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Kestrel"
+                ]
+            },
+            {
+                "Name": "Orvius",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Orvius"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Overtake RewardDenial Bursa",
+                "Links": [
+                    "/wiki/Tactical_Alert",
+                    "/wiki/Denial_Bursa"
+                ]
+            },
+            {
+                "Name": "Kuva Jester",
+                "Links": [
+                    "/wiki/Kuva_Jester"
+                ]
+            },
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy Reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy"
+                ]
+            },
+            {
+                "Name": "Rathuum - Mission 3",
+                "Links": [
+                    "/wiki/Operation:_Rathuum"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Atlantis Vulcan",
+        "Description": "Atlantis Vulcan is a Stance for Nunchaku-type weapons, specializing in fast, multi-hit whirling strikes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Atlantis_Vulcan",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/1/19/AtlantisVulcan.png/revision/latest?cb=20150913035114",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Ninkondi",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ninkondi"
+                ]
+            },
+            {
+                "Name": "Shaku",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Shaku"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Guardsman",
+                "Links": [
+                    "/wiki/Guardsman"
+                ]
+            },
+            {
+                "Name": "Orphid Specter",
+                "Links": [
+                    "/wiki/Orphid_Specter"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Bleeding Willow",
+        "Description": "Bleeding Willow is a Stance Mod for polearm weapons, specializing in lunging, sweeping attacks that can hit large swathes of enemies.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Bleeding_Willow",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/6/6d/BleedingWillowModU145.png/revision/latest?cb=20150504132902",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Lesion",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Lesion"
+                ]
+            },
+            {
+                "Name": "Orthos",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Orthos"
+                ]
+            },
+            {
+                "Name": "Orthos Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Orthos_Prime"
+                ]
+            },
+            {
+                "Name": "Serro",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Serro"
+                ]
+            },
+            {
+                "Name": "Sydon",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Sydon"
+                ]
+            },
+            {
+                "Name": "Tonbo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Tonbo"
+                ]
+            },
+            {
+                "Name": "Kesheg",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Kesheg"
+                ]
+            },
+            {
+                "Name": "Vaykor Sydon",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Vaykor_Sydon"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corrupted MOA",
+                "Links": [
+                    "/wiki/Corrupted_MOA"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Blind Justice",
+        "Description": "Blind Justice is a Stance mod for Nikanas, specializing in high mobility combined with fast overhead slashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Blind_Justice",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/3f/BlindJusticeMod.png/revision/latest?cb=20141009073225",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana"
+                ]
+            },
+            {
+                "Name": "Dragon Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dragon_Nikana"
+                ]
+            },
+            {
+                "Name": "Nikana Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Stalker",
+                "Links": [
+                    "/wiki/Stalker"
+                ]
+            },
+            {
+                "Name": "Shadow Stalker",
+                "Links": [
+                    "/wiki/Shadow_Stalker"
+                ]
+            },
+            {
+                "Name": "Knave Specter",
+                "Links": [
+                    "/wiki/Knave_Specter"
+                ]
+            },
+            {
+                "Name": "Rathuum Arenas",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Brutal Tide",
+        "Description": "Brutal Tide is one of two Stance mods for hands & feet weapons, featuring highly agile sweeping kicks combined with powerful fist attacks.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Brutal_Tide",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/8/8c/BrutalTideNew.png/revision/latest?cb=20150502184121",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Kogake",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Kogake"
+                ]
+            },
+            {
+                "Name": "Obex",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Obex"
+                ]
+            },
+            {
+                "Name": "Hirudo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Hirudo"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Boiler",
+                "Links": [
+                    "/wiki/Boiler"
+                ]
+            },
+            {
+                "Name": "Infested Arcane Boiler",
+                "Links": [
+                    "/wiki/Arcane_Boiler"
+                ]
+            },
+            {
+                "Name": "Infested Toxic Ancient",
+                "Links": [
+                    "/wiki/Toxic_Ancient"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Bullet Dance",
+        "Description": "Bullet Dance is a Stance mod for gunblades.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Bullet_Dance",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/97/BulletDanceMod.png/revision/latest?cb=20160831030001",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Redeemer",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Redeemer"
+                ]
+            },
+            {
+                "Name": "Sarpa",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Sarpa"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Orokin Sabotage",
+                "Links": [
+                    "/wiki/Orokin_Sabotage"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Burning Wasp",
+        "Description": "Burning Wasp is one of two available Stance mods for Whip type weapons. It is a specialized Stance that trades speed for range, its focused lashing attacks being able to hit targets from deceptively long ranges. The style of the stance utilizes a more flowing combo as opposed to Coiling Viper's slithering, coiling style.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Burning_Wasp",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/f/f7/BurningWaspModU145.png/revision/latest?cb=20140830012951",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Atterax",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Atterax"
+                ]
+            },
+            {
+                "Name": "Lecta",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Lecta"
+                ]
+            },
+            {
+                "Name": "Scoliac",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Scoliac"
+                ]
+            },
+            {
+                "Name": "Secura Lecta",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Secura_Lecta"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Butcher",
+                "Links": [
+                    "/wiki/Corrupted_Butcher"
+                ]
+            },
+            {
+                "Name": "Corrupted Lancer",
+                "Links": [
+                    "/wiki/Corrupted_Lancer"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Clashing Forest",
+        "Description": "Clashing Forest is one of two Stance mods compatible with Staff type weapons. It is a highly mobile stance in which the Tenno advances in tandem with their strikes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Clashing_Forest",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/b/b4/ClashingForestModU145.png/revision/latest?cb=20140830014017",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Amphis",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Amphis"
+                ]
+            },
+            {
+                "Name": "Bo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Bo"
+                ]
+            },
+            {
+                "Name": "Bo Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Bo_Prime"
+                ]
+            },
+            {
+                "Name": "Broken Scepter",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Broken_Scepter"
+                ]
+            },
+            {
+                "Name": "MK1-Bo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/MK1-Bo"
+                ]
+            },
+            {
+                "Name": "Tipedo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Tipedo"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Ancient",
+                "Links": [
+                    "/wiki/Corrupted_Ancient"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Cleaving Whirlwind",
+        "Description": "Cleaving Whirlwind is a Stance mod for Heavy Blade melee weapons. It is a momentum-based stance whose slow, sweeping attacks deal high damage in coned or radial areas around the wielder.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Cleaving_Whirlwind",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/d/d1/CleavingWhirlwindModU145.png/revision/latest?cb=20140830014019",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Dark Split-Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Split-Sword"
+                ]
+            },
+            {
+                "Name": "Galatine",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Galatine"
+                ]
+            },
+            {
+                "Name": "Galatine Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Galatine_Prime"
+                ]
+            },
+            {
+                "Name": "Gram",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Gram"
+                ]
+            },
+            {
+                "Name": "Scindo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Scindo"
+                ]
+            },
+            {
+                "Name": "Scindo Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Scindo_Prime"
+                ]
+            },
+            {
+                "Name": "War",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/War"
+                ]
+            },
+            {
+                "Name": "Zenistar",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Zenistar"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Ancient Disruptor",
+                "Links": [
+                    "/wiki/Ancient_Disruptor"
+                ]
+            },
+            {
+                "Name": "Infested Tar-Mutalist MOA",
+                "Links": [
+                    "/wiki/Tar-Mutalist_MOA"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy Reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Coiling Viper",
+        "Description": "Coiling Viper is one of two Stance mods for Whip type weapons. Wielders of this Stance trade range for highly mobile attacks. True to the namesake, the attack style of the stance greatly resembles a slithering Viper as opposed to Burning Wasp's flowing style.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Coiling_Viper",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/e/e2/CoilingViperModU145.png/revision/latest?cb=20140830014020",
+        "Polarity": "Zenurik",
+        "WeaponsList": [
+            {
+                "Name": "Atterax",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Atterax"
+                ]
+            },
+            {
+                "Name": "Lecta",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Lecta"
+                ]
+            },
+            {
+                "Name": "Scoliac",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Scoliac"
+                ]
+            },
+            {
+                "Name": "Secura Lecta",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Secura_Lecta"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Crewman",
+                "Links": [
+                    "/wiki/Corrupted_Crewman"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy Reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Crimson Dervish",
+        "Description": "Crimson Dervish is a Stance for swords, specializing in strong spinning attacks that can hit adjacent enemies or deal multiple strikes against a single foe, sacrificing mobility and speed. Combos executed in this stance are notable for their high damage multiplier.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Crimson_Dervish",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/6/61/CrimsonDervishMod.png/revision/latest?cb=20140919024441",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Broken War",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Broken_War"
+                ]
+            },
+            {
+                "Name": "Cronus",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Cronus"
+                ]
+            },
+            {
+                "Name": "Dakra Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dakra_Prime"
+                ]
+            },
+            {
+                "Name": "Dark Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Sword"
+                ]
+            },
+            {
+                "Name": "Ether Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ether_Sword"
+                ]
+            },
+            {
+                "Name": "Heat Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Heat_Sword"
+                ]
+            },
+            {
+                "Name": "Jaw Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Jaw_Sword"
+                ]
+            },
+            {
+                "Name": "Mire",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Mire"
+                ]
+            },
+            {
+                "Name": "Pangolin Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Pangolin_Sword"
+                ]
+            },
+            {
+                "Name": "Plasma Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Plasma_Sword"
+                ]
+            },
+            {
+                "Name": "Prisma Skana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Prisma_Skana"
+                ]
+            },
+            {
+                "Name": "Skana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Skana"
+                ]
+            },
+            {
+                "Name": "Skana Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Skana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Bombard",
+                "Links": [
+                    "/wiki/Bombard"
+                ]
+            },
+            {
+                "Name": "Rathuum - Mission 3",
+                "Links": []
+            },
+            {
+                "Name": "Knave Specter",
+                "Links": [
+                    "/wiki/Knave_Specter"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Crossing Snakes",
+        "Description": "Crossing Snakes is one of two Stance mods for Dual Sword type weapons. Wielders of this Stance thrust at foes with deadly jabs.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Crossing_Snakes",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/7/72/CrossingSnakesMod.png/revision/latest?cb=20140830023250",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Dark Split-Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Split-Sword"
+                ]
+            },
+            {
+                "Name": "Dex Dakra",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dex_Dakra"
+                ]
+            },
+            {
+                "Name": "Dual Cleavers",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Cleavers"
+                ]
+            },
+            {
+                "Name": "Dual Ether",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Ether"
+                ]
+            },
+            {
+                "Name": "Dual Heat Swords",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Heat_Swords"
+                ]
+            },
+            {
+                "Name": "Dual Ichor",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Ichor"
+                ]
+            },
+            {
+                "Name": "Dual Kamas",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Kamas"
+                ]
+            },
+            {
+                "Name": "Dual Kamas Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Kamas_Prime"
+                ]
+            },
+            {
+                "Name": "Dual Raza",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Raza"
+                ]
+            },
+            {
+                "Name": "Dual Skana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Skana"
+                ]
+            },
+            {
+                "Name": "Dual Zoren",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Zoren"
+                ]
+            },
+            {
+                "Name": "Nami Skyla",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nami_Skyla"
+                ]
+            },
+            {
+                "Name": "Prisma Dual Cleavers",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Prisma_Dual_Cleavers"
+                ]
+            },
+            {
+                "Name": "Twin Basolk",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Twin_Basolk"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Elite Lancer",
+                "Links": [
+                    "/wiki/Elite_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Arid Lancer",
+                "Links": [
+                    "/wiki/Elite_Arid_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Elite Frontier Lancer",
+                "Links": [
+                    "/wiki/Elite_Frontier_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Shock Draga",
+                "Links": [
+                    "/wiki/Shock_Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Draga",
+                "Links": [
+                    "/wiki/Draga"
+                ]
+            },
+            {
+                "Name": "Grineer Darek Draga",
+                "Links": [
+                    "/wiki/Darek_Draga"
+                ]
+            },
+            {
+                "Name": "Orphid Specter",
+                "Links": [
+                    "/wiki/Orphid_Specter"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Crushing Ruin",
+        "Description": "Crushing Ruin is one of two Stance mods for Hammer type weapons. Wielders of this Stance thrust in strong whirlwind attacks.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Crushing_Ruin",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/f4/CrushingRuinNew.png/revision/latest?cb=20151117191249",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Fragor (Prime)",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Fragor",
+                    "/wiki/Fragor_Prime"
+                ]
+            },
+            {
+                "Name": "(Synoid) Heliocor",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Synoid_Heliocor",
+                    "/wiki/Heliocor"
+                ]
+            },
+            {
+                "Name": "Jat Kittag",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Jat_Kittag"
+                ]
+            },
+            {
+                "Name": "(Sancti) Magistar",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Sancti_Magistar",
+                    "/wiki/Magistar"
+                ]
+            },
+            {
+                "Name": "Sibear",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Sibear"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Arid Seeker",
+                "Links": [
+                    "/wiki/Arid_Seeker"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Seeker",
+                "Links": [
+                    "/wiki/Frontier_Seeker"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Seeker",
+                "Links": [
+                    "/wiki/Drekar_Seeker"
+                ]
+            },
+            {
+                "Name": "Grineer Seeker",
+                "Links": [
+                    "/wiki/Seeker"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy Reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Decisive Judgement",
+        "Description": "Decisive Judgement is a Stance Mod for Nikanas, which features two-handed slashes that can send the user airborne.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Decisive_Judgement",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/d2/DecisiveJudgementMod.png/revision/latest?cb=20150503095251",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana"
+                ]
+            },
+            {
+                "Name": "Dragon Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dragon_Nikana"
+                ]
+            },
+            {
+                "Name": "Nikana Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Warden",
+                "Links": [
+                    "/wiki/Grineer_Warden"
+                ]
+            },
+            {
+                "Name": "Grineer Heavy Gunner",
+                "Links": [
+                    "/wiki/Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Heavy Gunner",
+                "Links": [
+                    "/wiki/Arid_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Infested Mesa",
+                "Links": [
+                    "/wiki/Infested_Mesa"
+                ]
+            },
+            {
+                "Name": "Infested Chroma",
+                "Links": [
+                    "/wiki/Infested_Chroma"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Defiled Snapdragon",
+        "Description": "Defiled Snapdragon is a Stance Mod for Blade and Whip type weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Defiled_Snapdragon",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/0/08/DefiledSnapdragonNew.png/revision/latest?cb=20151117152620",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Mios",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Mios"
+                ]
+            },
+            {
+                "Name": "Lacera",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Lacera"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "ScorpionHuntress Bundle",
+                "Links": [
+                    "/wiki/Scorpion",
+                    "/wiki/Huntress_Bundle"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Eleventh Storm",
+        "Description": "Eleventh Storm is a Stance mod for Sword and Shield weapons that blends fast sword swings with shield bashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Eleventh_Storm",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/c/cd/EleventhStormModU145.png/revision/latest?cb=20140908205315",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Ack & Brunt",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ack_%26_Brunt"
+                ]
+            },
+            {
+                "Name": "Silva & Aegis",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Silva_%26_Aegis"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Lephantis",
+                "Links": [
+                    "/wiki/Lephantis"
+                ]
+            },
+            {
+                "Name": "Mirage Bundle",
+                "Links": [
+                    "/wiki/Mirage_Bundle?action=edit&redlink=1"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Fateful Truth",
+        "Description": "Fateful Truth is a PvP exclusive Stance mod for Nikanas.\n Augments\n Utility\n Augments\n Rifle\n Shotgun\n Sniper\n Bow\n Pistol\n Melee\n Stances\n Archived",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Fateful_Truth",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": false,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/d/d3/FatefulTruthMod.png/revision/latest?cb=20160709141025",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana"
+                ]
+            },
+            {
+                "Name": "Dragon Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dragon_Nikana"
+                ]
+            },
+            {
+                "Name": "Nikana Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Conclave Offering",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Final Harbinger",
+        "Description": "Final Harbinger is a Stance mod for Sword and Shield melee weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Final_Harbinger",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/3/38/Harbinger.png/revision/latest?cb=20150801083039",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Ack & Brunt",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ack_%26_Brunt"
+                ]
+            },
+            {
+                "Name": "Silva & Aegis",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Silva_%26_Aegis"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Drekar Manic",
+                "Links": [
+                    "/wiki/Drekar_Manic"
+                ]
+            },
+            {
+                "Name": "Equinox Mega Pack",
+                "Links": [
+                    "/wiki/Equinox_Mega_Pack"
+                ]
+            },
+            {
+                "Name": "Tier 2 Arena Reward",
+                "Links": [
+                    "/wiki/Arena"
+                ]
+            },
+            {
+                "Name": "Feyarch Specter",
+                "Links": [
+                    "/wiki/Feyarch_Specter"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Flailing Branch",
+        "Description": "Flailing Branch is a Stance mod for staff weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Flailing_Branch",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/c/c2/FlailingBranchModU145.png/revision/latest?cb=20140830131127",
+        "Polarity": "Unairu",
+        "WeaponsList": [
+            {
+                "Name": "Amphis",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Amphis"
+                ]
+            },
+            {
+                "Name": "Bo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Bo"
+                ]
+            },
+            {
+                "Name": "Bo Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Bo_Prime"
+                ]
+            },
+            {
+                "Name": "MK1-Bo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/MK1-Bo"
+                ]
+            },
+            {
+                "Name": "Broken Scepter",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Broken_Scepter"
+                ]
+            },
+            {
+                "Name": "Tipedo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Tipedo"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corrupted Heavy Gunner",
+                "Links": [
+                    "/wiki/Corrupted_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Corrupted Bombard",
+                "Links": [
+                    "/wiki/Corrupted_Bombard"
+                ]
+            },
+            {
+                "Name": "Corrupted Nullifier",
+                "Links": [
+                    "/wiki/Corrupted_Nullifier"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Four Riders",
+        "Description": "Four Riders is a Rare Stance mod for Claw-type weapons, featuring fast strikes and powerful slams.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Four_Riders",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/58/FourRiders.png/revision/latest?cb=20150425111803",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Ripkas",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ripkas"
+                ]
+            },
+            {
+                "Name": "Venka",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Venka"
+                ]
+            },
+            {
+                "Name": "Venka Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Venka_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Manic",
+                "Links": [
+                    "/wiki/Manic"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Fracturing Wind",
+        "Description": "Fracturing Wind is one of three Stance mods for Fist type weapons. Wielders of this Stance can deliver a barrage of fast punches and deliver powerful knockdowns.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Fracturing_Wind",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/9/94/FracturingWindModU145.png/revision/latest?cb=20140830131129",
+        "Polarity": "Unairu",
+        "WeaponsList": [
+            {
+                "Name": "Ankyros",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ankyros"
+                ]
+            },
+            {
+                "Name": "Ankyros Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ankyros_Prime"
+                ]
+            },
+            {
+                "Name": "Furax",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Furax"
+                ]
+            },
+            {
+                "Name": "Furax Wraith",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Furax_Wraith"
+                ]
+            },
+            {
+                "Name": "MK1-Furax",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/MK1-Furax"
+                ]
+            },
+            {
+                "Name": "Tekko",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Tekko"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Charger",
+                "Links": [
+                    "/wiki/Charger"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut",
+                "Links": [
+                    "/wiki/Juggernaut"
+                ]
+            },
+            {
+                "Name": "Infested Juggernaut Behemoth",
+                "Links": [
+                    "/wiki/Juggernaut_Behemoth"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Gaia's Tragedy",
+        "Description": "Gaia's Tragedy is one of three Stance mods for Fist type weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Gaia%27s_Tragedy",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/31/Gaia%27sTragedyMod.png/revision/latest?cb=20151216001021",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Ankyros",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ankyros"
+                ]
+            },
+            {
+                "Name": "Ankyros Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ankyros_Prime"
+                ]
+            },
+            {
+                "Name": "Furax",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Furax"
+                ]
+            },
+            {
+                "Name": "Furax Wraith",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Furax_Wraith"
+                ]
+            },
+            {
+                "Name": "MK1-Furax",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/MK1-Furax"
+                ]
+            },
+            {
+                "Name": "Tekko",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Tekko"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Comba",
+                "Links": [
+                    "/wiki/Comba"
+                ]
+            },
+            {
+                "Name": "Corpus Scrambus",
+                "Links": [
+                    "/wiki/Scrambus"
+                ]
+            },
+            {
+                "Name": "Corpus Datalyst",
+                "Links": [
+                    "/wiki/Datalyst"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Gemini Cross",
+        "Description": "Gemini Cross is a Stance mod for Tonfa-type weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Gemini_Cross",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/2/2c/GeminiCrossNew.png/revision/latest?cb=20150525075302",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Kronen",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Kronen"
+                ]
+            },
+            {
+                "Name": "Boltace",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Boltace"
+                ]
+            },
+            {
+                "Name": "Ohma",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ohma"
+                ]
+            },
+            {
+                "Name": "Telos Boltace",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Telos_Boltace"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corrupted MOA",
+                "Links": [
+                    "/wiki/Corrupted_MOA"
+                ]
+            },
+            {
+                "Name": "Excavation Reward",
+                "Links": [
+                    "/wiki/Excavation"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Gleaming Talon",
+        "Description": "Gleaming Talon is one of two available Stance mods for Glaives, which combines whirling attacks with explosive weapon throws.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Gleaming_Talon",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/5/5d/GleamingTalonModU145.png/revision/latest?cb=20140919024441",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Cerata",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Cerata"
+                ]
+            },
+            {
+                "Name": "Glaive",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Glaive"
+                ]
+            },
+            {
+                "Name": "Glaive Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Glaive_Prime"
+                ]
+            },
+            {
+                "Name": "Halikar",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Halikar"
+                ]
+            },
+            {
+                "Name": "Kestrel",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Kestrel"
+                ]
+            },
+            {
+                "Name": "Orvius",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Orvius"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Leech Osprey",
+                "Links": [
+                    "/wiki/Leech_Osprey"
+                ]
+            },
+            {
+                "Name": "Corpus Sapping Osprey",
+                "Links": [
+                    "/wiki/Sapping_Osprey"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Gnashing Payara",
+        "Description": "Gnashing Payara is a Stance Mod for dual daggers that deals spinning attacks, stabs and slashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Gnashing_Payara",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/e/e2/GnashingPayaraModU145.png/revision/latest?cb=20140830131419",
+        "Polarity": "Unairu",
+        "WeaponsList": [
+            {
+                "Name": "Okina",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Okina"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Elite Crewman",
+                "Links": [
+                    "/wiki/Elite_Crewman"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy_2.0"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Grim Fury",
+        "Description": "Grim Fury is one of two Stance mods for Sparring weapons like the Kogake, that deals in powerful kicking finishers.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Grim_Fury",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/5f/GrimFuryModU145.png/revision/latest?cb=20150504133754",
+        "Polarity": "Unairu",
+        "WeaponsList": [
+            {
+                "Name": "Kogake",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Kogake"
+                ]
+            },
+            {
+                "Name": "Obex",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Obex"
+                ]
+            },
+            {
+                "Name": "Hirudo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Hirudo"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Powerfist",
+                "Links": [
+                    "/wiki/Powerfist"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "High Noon",
+        "Description": "High Noon is a Stance mod for gunblades, blending swift slashes with gunshots.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/High_Noon",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/5/50/HighNoon.png/revision/latest?cb=20141128105910",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Redeemer",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Redeemer"
+                ]
+            },
+            {
+                "Name": "Sarpa",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Sarpa"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Brood Mother",
+                "Links": [
+                    "/wiki/Brood_Mother"
+                ]
+            },
+            {
+                "Name": "Orokin Moon Spy Reward",
+                "Links": [
+                    "/wiki/Orokin_Moon",
+                    "/wiki/Spy"
+                ]
+            },
+            {
+                "Name": "Operation: Rathuum Tier 1",
+                "Links": [
+                    "/wiki/Operation:_Rathuum"
+                ]
+            },
+            {
+                "Name": "Feyarch Specter",
+                "Links": [
+                    "/wiki/Feyarch_Specter"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Homing Fang",
+        "Description": "Homing Fang is a Stance mod for daggers that features highly mobile spinning attacks and powerful finishers.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Homing_Fang",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/0f/HomingFangNew.png/revision/latest?cb=20140919120735",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Ceramic Dagger",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ceramic_Dagger"
+                ]
+            },
+            {
+                "Name": "Dark Dagger",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Dagger"
+                ]
+            },
+            {
+                "Name": "Heat Dagger",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Heat_Dagger"
+                ]
+            },
+            {
+                "Name": "Karyst",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Karyst"
+                ]
+            },
+            {
+                "Name": "Sheev",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Sheev"
+                ]
+            },
+            {
+                "Name": "Rakta Dark Dagger",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Rakta_Dark_Dagger"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Nauseous Crawler",
+                "Links": [
+                    "/wiki/Nauseous_Crawler"
+                ]
+            },
+            {
+                "Name": "</div>",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Iron Phoenix",
+        "Description": "Iron Phoenix is a Stance mod for longswords, that provide very mobile combos that allows users to move semi-freely.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Iron_Phoenix",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/8/87/IronPhoenixMod.png/revision/latest?cb=20140831140826",
+        "Polarity": "Unairu",
+        "WeaponsList": [
+            {
+                "Name": "Broken War",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Broken_War"
+                ]
+            },
+            {
+                "Name": "Cronus",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Cronus"
+                ]
+            },
+            {
+                "Name": "Dakra Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dakra_Prime"
+                ]
+            },
+            {
+                "Name": "Dark Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dark_Sword"
+                ]
+            },
+            {
+                "Name": "Ether Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ether_Sword"
+                ]
+            },
+            {
+                "Name": "Heat Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Heat_Sword"
+                ]
+            },
+            {
+                "Name": "Jaw Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Jaw_Sword"
+                ]
+            },
+            {
+                "Name": "Mire",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Mire"
+                ]
+            },
+            {
+                "Name": "Pangolin Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Pangolin_Sword"
+                ]
+            },
+            {
+                "Name": "Plasma Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Plasma_Sword"
+                ]
+            },
+            {
+                "Name": "Prisma Skana",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Prisma_Skana"
+                ]
+            },
+            {
+                "Name": "Skana",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Skana"
+                ]
+            },
+            {
+                "Name": "Skana Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Skana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Hellion",
+                "Links": [
+                    "/wiki/Hellion"
+                ]
+            },
+            {
+                "Name": "Grineer Lancer",
+                "Links": [
+                    "/wiki/Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Hellion",
+                "Links": [
+                    "/wiki/Arid_Hellion"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Lancer",
+                "Links": [
+                    "/wiki/Arid_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Hellion",
+                "Links": [
+                    "/wiki/Frontier_Hellion"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Lancer",
+                "Links": [
+                    "/wiki/Frontier_Lancer"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Heavy Gunner",
+                "Links": [
+                    "/wiki/Frontier_Heavy_Gunner"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Scorpion",
+                "Links": [
+                    "/wiki/Drekar_Scorpion"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Malicious Raptor",
+        "Description": "Malicious Raptor is a rare Stance mod for Claw-type weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Malicious_Raptor",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/7/7e/MaliciousRaptorNew.png/revision/latest?cb=20140912120013",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Ripkas",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ripkas"
+                ]
+            },
+            {
+                "Name": "Venka",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Venka"
+                ]
+            },
+            {
+                "Name": "Venka Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Venka_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Powerfist",
+                "Links": [
+                    "/wiki/Powerfist"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Pointed Wind",
+        "Description": "Pointed Wind is a Stance mod for daggers that specializes in high damage, sweeping slashes and jumping strikes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Pointed_Wind",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/4/43/PointedWindModU145.png/revision/latest?cb=20140831201444",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Ceramic Dagger",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ceramic_Dagger"
+                ]
+            },
+            {
+                "Name": "Dark Dagger",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Dagger"
+                ]
+            },
+            {
+                "Name": "Heat Dagger",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Heat_Dagger"
+                ]
+            },
+            {
+                "Name": "Karyst",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Karyst"
+                ]
+            },
+            {
+                "Name": "Sheev",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Sheev"
+                ]
+            },
+            {
+                "Name": "Rakta Dark Dagger",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Rakta_Dark_Dagger"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Shockwave MOA",
+                "Links": [
+                    "/wiki/Shockwave_MOA"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Reaping Spiral",
+        "Description": "Reaping Spiral is a Scythe Stance mod that features somersaults and high damage weapon throws.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Reaping_Spiral",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/3/36/ReapingSpiralModU145.png/revision/latest?cb=20140831202430",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Anku",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Anku"
+                ]
+            },
+            {
+                "Name": "Ether Reaper",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ether_Reaper"
+                ]
+            },
+            {
+                "Name": "Hate",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Hate"
+                ]
+            },
+            {
+                "Name": "Reaper Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Reaper_Prime"
+                ]
+            },
+            {
+                "Name": "Caustacyst",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Caustacyst"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Crewman",
+                "Links": [
+                    "/wiki/Crewman"
+                ]
+            },
+            {
+                "Name": "Corpus Power Carrier",
+                "Links": [
+                    "/wiki/Power_Carrier"
+                ]
+            },
+            {
+                "Name": "Grineer Power Carrier",
+                "Links": [
+                    "/wiki/Power_Carrier"
+                ]
+            },
+            {
+                "Name": "Grineer Hellion Power Carrier",
+                "Links": [
+                    "/wiki/Hellion_Power_Carrier"
+                ]
+            },
+            {
+                "Name": "Infested Mutalist Osprey Carrier",
+                "Links": [
+                    "/wiki/Mutalist_Osprey_Carrier"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Rending Crane",
+        "Description": "Rending Crane is one of the Stance Mods for Heavy Blade melee weapons, which specializes in overhead slashes with powerful knockdown finishers.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Rending_Crane",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/3/3f/RendingCraneModU145.png/revision/latest?cb=20140831202905",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Dark Split-Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Split-Sword"
+                ]
+            },
+            {
+                "Name": "Galatine",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Galatine"
+                ]
+            },
+            {
+                "Name": "Galatine Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Galatine_Prime"
+                ]
+            },
+            {
+                "Name": "Gram",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Gram"
+                ]
+            },
+            {
+                "Name": "Scindo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Scindo"
+                ]
+            },
+            {
+                "Name": "Scindo Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Scindo_Prime"
+                ]
+            },
+            {
+                "Name": "War",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/War"
+                ]
+            },
+            {
+                "Name": "Zenistar",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Zenistar"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Napalm",
+                "Links": [
+                    "/wiki/Napalm"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Seismic Palm",
+        "Description": "Seismic Palm is one of three Stance mods for fist weapons like the Furax. It features staggering and knockdowns.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Seismic_Palm",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/b/b6/SeismicPalmModU145.png/revision/latest?cb=20140901144543",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Ankyros",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ankyros"
+                ]
+            },
+            {
+                "Name": "Ankyros Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ankyros_Prime"
+                ]
+            },
+            {
+                "Name": "Furax",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Furax"
+                ]
+            },
+            {
+                "Name": "Furax Wraith",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Furax_Wraith"
+                ]
+            },
+            {
+                "Name": "MK1-Furax",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/MK1-Furax"
+                ]
+            },
+            {
+                "Name": "Tekko",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Tekko"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Leaper",
+                "Links": [
+                    "/wiki/Leaper"
+                ]
+            },
+            {
+                "Name": "</div>",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Shattering Storm",
+        "Description": "Shattering Storm is one of two Stance mods for Hammer type weapons, specializing in high impact smashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Shattering_Storm",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/c/ca/ShatteringStormModU145.png/revision/latest?cb=20140901145006",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Fragor (Prime)",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Fragor",
+                    "/wiki/Fragor_Prime"
+                ]
+            },
+            {
+                "Name": "Heliocor",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Heliocor"
+                ]
+            },
+            {
+                "Name": "Jat Kittag",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Jat_Kittag"
+                ]
+            },
+            {
+                "Name": "(Sancti) Magistar",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Sancti_Magistar",
+                    "/wiki/Magistar"
+                ]
+            },
+            {
+                "Name": "Sibear",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Sibear"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "General Sargas Ruk",
+                "Links": [
+                    "/wiki/General_Sargas_Ruk"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Shimmering Blight",
+        "Description": "Shimmering Blight is a Stance Mod for polearms that allows for rapid, spinning strikes which hit multiple enemies, and finishes with powerful, slashing strikes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Shimmering_Blight",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/8/83/ShimmeringBlightModU145.png/revision/latest?cb=20150503095544",
+        "Polarity": "Zenurik",
+        "WeaponsList": [
+            {
+                "Name": "Lesion",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Lesion"
+                ]
+            },
+            {
+                "Name": "Orthos",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Orthos"
+                ]
+            },
+            {
+                "Name": "Orthos Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Orthos_Prime"
+                ]
+            },
+            {
+                "Name": "Serro",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Serro"
+                ]
+            },
+            {
+                "Name": "Sydon",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Sydon"
+                ]
+            },
+            {
+                "Name": "Tonbo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Tonbo"
+                ]
+            },
+            {
+                "Name": "Kesheg",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Kesheg"
+                ]
+            },
+            {
+                "Name": "Vaykor Sydon",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Vaykor_Sydon"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Arid Seeker",
+                "Links": [
+                    "/wiki/Arid_Seeker"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Seeker",
+                "Links": [
+                    "/wiki/Frontier_Seeker"
+                ]
+            },
+            {
+                "Name": "Grineer Seeker",
+                "Links": [
+                    "/wiki/Seeker"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Sinking Talon",
+        "Description": "Sinking Talon is a Stance Mod for dual daggers.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Sinking_Talon",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/d/db/SinkingTalon.png/revision/latest?cb=20150502183434",
+        "Polarity": "Zenurik",
+        "WeaponsList": [
+            {
+                "Name": "Fang",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Fang"
+                ]
+            },
+            {
+                "Name": "Fang Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Fang_Prime"
+                ]
+            },
+            {
+                "Name": "Ether Daggers",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ether_Daggers"
+                ]
+            },
+            {
+                "Name": "Okina",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Okina"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Detron Crewman",
+                "Links": [
+                    "/wiki/Detron_Crewman"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Spinning Needle",
+        "Description": "Spinning Needle is one of three Stance mods for dual-daggers weapons. It features swift stabs and twisting slashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Spinning_Needle",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/e/e9/SpinningNeedleMod.png/revision/latest?cb=20160709171048",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Okina",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Okina"
+                ]
+            },
+            {
+                "Name": "Ether Daggers",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ether_Daggers"
+                ]
+            },
+            {
+                "Name": "Fang",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Fang"
+                ]
+            },
+            {
+                "Name": "Fang Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Fang_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Infested Leaper",
+                "Links": [
+                    "/wiki/Leaper"
+                ]
+            },
+            {
+                "Name": "</div>",
+                "Links": []
+            }
+        ]
+    },
+    {
+        "Name": "Stalking Fan",
+        "Description": "Stalking Fan is a Scythe Stance mod with fast and powerful spinning weapon swings.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Stalking_Fan",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/b/b1/StalkingFanNew.png/revision/latest?cb=20140923143503",
+        "Polarity": "Zenurik",
+        "WeaponsList": [
+            {
+                "Name": "Anku",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Anku"
+                ]
+            },
+            {
+                "Name": "Ether Reaper",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ether_Reaper"
+                ]
+            },
+            {
+                "Name": "Hate",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Hate"
+                ]
+            },
+            {
+                "Name": "Reaper Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Reaper_Prime"
+                ]
+            },
+            {
+                "Name": "Caustacyst",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Caustacyst"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Sniper Crewman",
+                "Links": [
+                    "/wiki/Sniper_Crewman"
+                ]
+            },
+            {
+                "Name": "Corpus Nullifier Crewman",
+                "Links": [
+                    "/wiki/Nullifier_Crewman"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Sundering Weave",
+        "Description": "Sundering Weave is the only available Stance mod for Machete-type weapons. It specializes in steady strikes combined with forward-striking finishers.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Sundering_Weave",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/e/e3/SunderingWeaveModU145.png/revision/latest?cb=20140901150732",
+        "Polarity": "Zenurik",
+        "WeaponsList": [
+            {
+                "Name": "Machete",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Machete"
+                ]
+            },
+            {
+                "Name": "Machete Wraith",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Machete_Wraith"
+                ]
+            },
+            {
+                "Name": "Kama",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Kama"
+                ]
+            },
+            {
+                "Name": "Prova",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Prova"
+                ]
+            },
+            {
+                "Name": "Nami Solo",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nami_Solo"
+                ]
+            },
+            {
+                "Name": "Prova Vandal",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Prova_Vandal"
+                ]
+            },
+            {
+                "Name": "Gazal Machete",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Gazal_Machete"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Arid Eviscerator",
+                "Links": [
+                    "/wiki/Arid_Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Eviscerator",
+                "Links": [
+                    "/wiki/Frontier_Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Eviscerator",
+                "Links": [
+                    "/wiki/Eviscerator"
+                ]
+            },
+            {
+                "Name": "Grineer Arid Trooper",
+                "Links": [
+                    "/wiki/Arid_Trooper"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Trooper",
+                "Links": [
+                    "/wiki/Frontier_Trooper"
+                ]
+            },
+            {
+                "Name": "Grineer Trooper",
+                "Links": [
+                    "/wiki/Trooper"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Swirling Tiger",
+        "Description": "Swirling Tiger is one of two available Stance mods for Dual Swords type weapons. Its sweeping attacks specialize in dealing damage across multiple foes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Swirling_Tiger",
+        "Ranks": 3,
+        "Rarity": "Uncommon",
+        "TraddingTax": "4,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/3a/SwirlingTigerMod.png/revision/latest?cb=20140901150735",
+        "Polarity": "Zenurik",
+        "WeaponsList": [
+            {
+                "Name": "Dark Split-Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dark_Split-Sword"
+                ]
+            },
+            {
+                "Name": "Dex Dakra",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dex_Dakra"
+                ]
+            },
+            {
+                "Name": "Dual Cleavers",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Cleavers"
+                ]
+            },
+            {
+                "Name": "Dual Ether",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Ether"
+                ]
+            },
+            {
+                "Name": "Dual Heat Swords",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Heat_Swords"
+                ]
+            },
+            {
+                "Name": "Dual Ichor",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Ichor"
+                ]
+            },
+            {
+                "Name": "Dual Kamas",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Kamas"
+                ]
+            },
+            {
+                "Name": "Dual Kamas Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Kamas_Prime"
+                ]
+            },
+            {
+                "Name": "Dual Raza",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Raza"
+                ]
+            },
+            {
+                "Name": "Dual Skana",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dual_Skana"
+                ]
+            },
+            {
+                "Name": "Dual Zoren",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dual_Zoren"
+                ]
+            },
+            {
+                "Name": "Nami Skyla",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Nami_Skyla"
+                ]
+            },
+            {
+                "Name": "Prisma Dual Cleavers",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Prisma_Dual_Cleavers"
+                ]
+            },
+            {
+                "Name": "Twin Basolk",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Twin_Basolk"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Corpus Anti MOA",
+                "Links": [
+                    "/wiki/Anti_MOA"
+                ]
+            },
+            {
+                "Name": "Corpus Tech",
+                "Links": [
+                    "/wiki/Corpus_Tech"
+                ]
+            },
+            {
+                "Name": "Corpus Warden",
+                "Links": [
+                    "/wiki/Corpus_Warden"
+                ]
+            },
+            {
+                "Name": "Grineer Scorch",
+                "Links": [
+                    "/wiki/Scorch"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Tempo Royale",
+        "Description": "Tempo Royale is a Stance Mod for Heavy Blades, specializing in fast, mobile and smooth spinning attacks. This stance sports more graceful maneuvers than its companion stances, utilizing flips and overhead slashes to attain mobility, ultimately providing opportunities to finish enemies with devastating attacks.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Tempo_Royale",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": false,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/5/50/TempoRoyale.png/revision/latest?cb=20150226030259",
+        "Polarity": "Vazarin",
+        "WeaponsList": [
+            {
+                "Name": "Dark Split-Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Split-Sword"
+                ]
+            },
+            {
+                "Name": "Galatine",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Galatine"
+                ]
+            },
+            {
+                "Name": "Galatine Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Galatine_Prime"
+                ]
+            },
+            {
+                "Name": "Gram",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Gram"
+                ]
+            },
+            {
+                "Name": "Scindo",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Scindo"
+                ]
+            },
+            {
+                "Name": "Scindo Prime",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Scindo_Prime"
+                ]
+            },
+            {
+                "Name": "War",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/War"
+                ]
+            },
+            {
+                "Name": "Zenistar",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Zenistar"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Phoenix Intercept Reward",
+                "Links": [
+                    "/wiki/Tactical_Alert"
+                ]
+            },
+            {
+                "Name": "Isolator Bursa",
+                "Links": [
+                    "/wiki/Isolator_Bursa"
+                ]
+            },
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            },
+            {
+                "Name": "Yam, Sedna",
+                "Links": [
+                    "/wiki/Operation:_Rathuum"
+                ]
+            },
+            {
+                "Name": "Conclave Weekly Challenges",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Tranquil Cleave",
+        "Description": "Tranquil Cleave is a Stance mod for Nikanas. This stance features swift and precise single-handed slashes.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Tranquil_Cleave",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/d/df/TranquilCleaveMod.png/revision/latest?cb=20140919024440",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana"
+                ]
+            },
+            {
+                "Name": "Dragon Nikana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dragon_Nikana"
+                ]
+            },
+            {
+                "Name": "Nikana Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Nikana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Arid Butcher",
+                "Links": [
+                    "/wiki/Arid_Butcher"
+                ]
+            },
+            {
+                "Name": "Grineer Frontier Butcher",
+                "Links": [
+                    "/wiki/Frontier_Butcher"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Vengeful Revenant",
+        "Description": "Vengeful Revenant is a Stance Mod for Sword type weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Vengeful_Revenant",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/1/1a/VengefulRevenantMod.png/revision/latest?cb=20161010010044",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Broken War",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Broken_War"
+                ]
+            },
+            {
+                "Name": "Cronus",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Cronus"
+                ]
+            },
+            {
+                "Name": "Dakra Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Dakra_Prime"
+                ]
+            },
+            {
+                "Name": "Dark Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Dark_Sword"
+                ]
+            },
+            {
+                "Name": "Ether Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Ether_Sword"
+                ]
+            },
+            {
+                "Name": "Heat Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Heat_Sword"
+                ]
+            },
+            {
+                "Name": "Jaw Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Jaw_Sword"
+                ]
+            },
+            {
+                "Name": "Mire",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Mire"
+                ]
+            },
+            {
+                "Name": "Pangolin Sword",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Pangolin_Sword"
+                ]
+            },
+            {
+                "Name": "Plasma Sword",
+                "MatchesPolarity": false,
+                "Links": [
+                    "/wiki/Plasma_Sword"
+                ]
+            },
+            {
+                "Name": "Prisma Skana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Prisma_Skana"
+                ]
+            },
+            {
+                "Name": "Skana",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Skana"
+                ]
+            },
+            {
+                "Name": "Skana Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Skana_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Conculyst",
+                "Links": [
+                    "/wiki/Conculyst"
+                ]
+            },
+            {
+                "Name": " Rathuum - Mission 3",
+                "Links": []
+            },
+            {
+                "Name": "Conclave Weekly Challenges",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Vermilion Storm",
+        "Description": "Vermilion Storm is a Rare Stance mod for Claw weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Vermilion_Storm",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": false,
+        "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/c2/VermillionStorm.png/revision/latest?cb=20141129181303",
+        "Polarity": "Madurai",
+        "WeaponsList": [
+            {
+                "Name": "Ripkas",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Ripkas"
+                ]
+            },
+            {
+                "Name": "Venka",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Venka"
+                ]
+            },
+            {
+                "Name": "Venka Prime",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Venka_Prime"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Manic Bombard",
+                "Links": [
+                    "/wiki/Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Manic Bombard",
+                "Links": [
+                    "/wiki/Drekar_Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Kuva Guardian",
+                "Links": [
+                    "/wiki/Kuva_Guardian"
+                ]
+            },
+            {
+                "Name": "Baro Ki'Teer",
+                "Links": [
+                    "/wiki/Baro_Ki%27Teer"
+                ]
+            },
+            {
+                "Name": "Conclave Weekly Challenges",
+                "Links": [
+                    "/wiki/Conclave"
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Vulpine Mask",
+        "Description": "Vulpine Mask is a Stance Mod for Rapier type weapons.",
+        "SlotType": "Stance",
+        "URL": "http://warframe.wikia.com/wiki/Vulpine_Mask",
+        "Ranks": 3,
+        "Rarity": "Rare",
+        "TraddingTax": "8,000",
+        "Transmutable": true,
+        "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/3f/VulpineMask.png/revision/latest?cb=20160114053038",
+        "Polarity": "Naramon",
+        "WeaponsList": [
+            {
+                "Name": "Destreza",
+                "MatchesPolarity": true,
+                "Links": [
+                    "/wiki/Destreza"
+                ]
+            }
+        ],
+        "DroppedBy": [
+            {
+                "Name": "Grineer Manic Bombard",
+                "Links": [
+                    "/wiki/Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Grineer Drekar Manic Bombard",
+                "Links": [
+                    "/wiki/Drekar_Manic_Bombard"
+                ]
+            },
+            {
+                "Name": "Destreza Finesse Bundle",
+                "Links": [
+                    "/wiki/Destreza_Finesse_Bundle"
+                ]
+            },
+            {
+                "Name": "Corpus Comba",
+                "Links": [
+                    "/wiki/Comba"
+                ]
+            },
+            {
+                "Name": "Corpus Scrambus",
+                "Links": [
+                    "/wiki/Scrambus"
+                ]
+            },
+            {
+                "Name": "Corpus Datalyst",
+                "Links": [
+                    "/wiki/Datalyst"
+                ]
+            }
+        ]
+    }
+]

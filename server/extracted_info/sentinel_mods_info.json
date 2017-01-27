@@ -8,6 +8,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/5/5e/AcceleratedDeflectionMod.png/revision/latest?cb=20160531214924",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -46,6 +47,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/3a/Ammo_Case_19.6.3.png/revision/latest?cb=20170118032927",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -71,6 +73,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/3/34/AnimalInstinctMod.png/revision/latest?cb=20160713125221",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -103,6 +106,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/6d/Arc_Coil_19.6.3.png/revision/latest?cb=20170118032919",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -122,6 +126,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/6/63/CalculatedRedirectionMod.png/revision/latest?cb=20160531214925",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -166,6 +171,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/6/62/Calculated_Shot_19.6.3.png/revision/latest?cb=20170118032917",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -185,6 +191,7 @@
         "Transmutable": true,
         "Ranks": -2,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/a/a1/Coolant_Leak_19.6.3.png/revision/latest?cb=20170118032902",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -210,6 +217,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/f/f1/Crowd_Dispersion_19.6.3.png/revision/latest?cb=20170118032905",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -242,6 +250,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/9/96/DetectVulnerability.png/revision/latest?cb=20150321142238",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -261,6 +270,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/4/44/Electro_Pulse_19.6.3.png/revision/latest?cb=20170118032915",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -280,6 +290,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/6/6c/EnhancedVitalityMod.png/revision/latest?cb=20160531214926",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -342,6 +353,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/9/9b/Fatal_Attraction_19.6.3.png/revision/latest?cb=20170118032914",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -361,6 +373,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/0/0c/FiredUpModU145.png/revision/latest?cb=20140830131126",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -392,6 +405,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/5/55/Ghost_19.6.3.png/revision/latest?cb=20170118032908",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -417,6 +431,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/8/8f/Guardian_19.6.3.png/revision/latest?cb=20170118032901",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -449,6 +464,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/a1/Investigator_19.6.3.png/revision/latest?cb=20170118032911",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -466,6 +482,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/b/b8/Looter_19.6.3.png/revision/latest?cb=20170118032927",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -485,6 +502,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/a/a4/Medi-RayMod.png/revision/latest?cb=20160501205621",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -504,6 +522,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/5/55/MetalFiberMod.png/revision/latest?cb=20160531214927",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -530,6 +549,7 @@
         "Transmutable": false,
         "Ranks": 10,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/f/f5/Primed_Regen_19.6.3.png/revision/latest?cb=20170118032944",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -549,6 +569,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/0/05/Regen_19.6.3.png/revision/latest?cb=20170118032946",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -587,6 +608,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/2/26/Revenge_19.6.3.png/revision/latest?cb=20170118032907",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -660,6 +682,7 @@
         "Transmutable": false,
         "Ranks": 3,
         "ImageURL": "http://vignette2.wikia.nocookie.net/warframe/images/1/18/Sacrifice.png/revision/latest?cb=20131101033733",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -677,6 +700,7 @@
         "Transmutable": true,
         "Ranks": 10,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/d/d0/Sanctuary_19.6.3.png/revision/latest?cb=20170118032858",
+        "Polarity": "Vazarin",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -714,6 +738,7 @@
         "Transmutable": false,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/3/30/ShieldChargerMod.png/revision/latest?cb=20161027211124",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -751,6 +776,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/4/40/SelfDestructModU145.png/revision/latest?cb=20140901145001",
+        "Polarity": "Madurai",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -776,6 +802,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette3.wikia.nocookie.net/warframe/images/f/ff/SparePartsModU145.png/revision/latest?cb=20140901150036",
+        "Polarity": "Naramon",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -819,6 +846,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/a/a6/Striker_19.6.3.png/revision/latest?cb=20170118032924",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -838,6 +866,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/c/ce/Swift_Deth_19.6.3.png/revision/latest?cb=20170118032922",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -869,7 +898,8 @@
         "URL": "http://warframe.wikia.com/wiki/Targeting_Receptor",
         "Transmutable": true,
         "Ranks": 3,
-        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/d/dd/Targeting_Receptor_19.6.3.png/revision/latest?cb=20170117223930",
+        "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/d/dd/Targeting_Receptor_19.6.3.png/revision/latest?cb=20170118032909",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -887,6 +917,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/f/f2/Thumper_19.6.3.png/revision/latest?cb=20170118032912",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -912,6 +943,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette4.wikia.nocookie.net/warframe/images/3/31/Vaporize_19.6.3.png/revision/latest?cb=20170118032920",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
@@ -944,6 +976,7 @@
         "Transmutable": true,
         "Ranks": 5,
         "ImageURL": "http://vignette1.wikia.nocookie.net/warframe/images/3/3c/Warrior_19.6.3.png/revision/latest?cb=20170118032904",
+        "Polarity": "Penjaga",
         "Tradable": true,
         "DroppedBy": [
             {
