@@ -2,7 +2,7 @@
  * @fileOverview Contains the scraper class, responsible for extracting
  * information from the warframe wikia mods pages.
  * @author Pedro Miguel Pereira Serrano Martins
- * @version 2.3.1
+ * @version 2.3.2
  */
 
 /*jslint node: true */
@@ -182,141 +182,137 @@ class ModScraper {
      * the description table. 
      */
     getModInformation(modURL) {
+        return this.requestHTML(modURL).then(htmlBody => {
 
-        let self = this;
-        return new Promise(function(fulfil, reject) {
-            self.requestHTML(modURL).then((htmlBody) => {
+            //for everything else
+            let $ = cheerio.load(htmlBody);
 
-                //for everything else
-                let $ = cheerio.load(htmlBody);
+            //hack to know if this is a stance
+            if (htmlBody.includes('<a href="/wiki/Stance" title="Stance">Stance</a>')) {
 
-                //hack to know if this is a stance
-                if (htmlBody.includes('<a href="/wiki/Stance" title="Stance">Stance</a>')) {
+                //The Description paragraph always strats with the name of the stance in bold. 
+                let descriptionParagraph = $(htmlBody).find('div').find('p').find('b').parent();
 
-                    //The Description paragraph always strats with the name of the stance in bold. 
-                    let descriptionParagraph = $(htmlBody).find('div').find('p').find('b').parent();
+                let stanceInfo = {
+                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                    Description: descriptionParagraph.text().trim(),
+                    SlotType: "Stance",
+                    URL: modURL,
+                    Ranks: 3, //all stances have 3 ranks
+                    Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                    TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                    ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
+                };
 
-                    let stanceInfo = {
-                        Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
-                        Description: descriptionParagraph.text().trim(),
-                        SlotType: "Stance",
-                        URL: modURL,
-                        Ranks: 3, //all stances have 3 ranks
-                        Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                        TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
-                        Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
-                        ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
-                    };
+                let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
+                    return $(el).attr('title') === 'Polarity';
+                });
 
-                    let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
-                        return $(el).attr('title') === 'Polarity';
-                    });
-
-                    if (polarityNode.length > 0)
-                        stanceInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
+                if (polarityNode.length > 0)
+                    stanceInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
 
 
-                    let WeaponsList = [];
-                    let weaponsListNodes = descriptionParagraph.next().next().find("li");
-                    let tmpWeaponObj = {};
-                    let tmpWeaponName = "";
-                    let tmpWeaponLinkNodes = [];
-                    weaponsListNodes.each((index, elem) => {
-                        tmpWeaponObj = {};
-                        tmpWeaponName = $(elem).text().trim();
+                let WeaponsList = [];
+                let weaponsListNodes = descriptionParagraph.next().next().find("li");
+                let tmpWeaponObj = {};
+                let tmpWeaponName = "";
+                let tmpWeaponLinkNodes = [];
+                weaponsListNodes.each((index, elem) => {
+                    tmpWeaponObj = {};
+                    tmpWeaponName = $(elem).text().trim();
 
-                        if (tmpWeaponName.includes("*")) {
-                            tmpWeaponObj.Name = tmpWeaponName.replace("*", "");
-                            tmpWeaponObj.MatchesPolarity = true;
-                        }
-                        else {
-                            tmpWeaponObj.Name = tmpWeaponName;
-                            tmpWeaponObj.MatchesPolarity = false;
-                        }
-
-                        tmpWeaponObj.Links = [];
-                        tmpWeaponLinkNodes = $(elem).find("a");
-                        tmpWeaponLinkNodes.each((linkIndex, linkElem) => {
-                            tmpWeaponObj.Links.push($(linkElem).attr("href"));
-                        });
-                        WeaponsList.push(tmpWeaponObj);
-                    });
-
-                    stanceInfo.WeaponsList = WeaponsList;
-
-                    let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
-                    let info = droppedByDiv.split("<br>");
-                    let dropInfo = {};
-                    let links = "";
-                    stanceInfo.DroppedBy = [];
-                    for (let tag of info) {
-                        dropInfo = {};
-                        //remove text between parenthesis, and it is useless and often confuses the parser
-                        tag = tag.replace(/ *\([^)]*\) */g, "");
-                        dropInfo.Name = $(tag).text().trim() || tag;
-                        dropInfo.Links = [];
-
-                        links = $(tag).find("a").add($(tag).filter("a"));
-
-                        $(links).each(function(index, elem) {
-                            dropInfo.Links.push($(this).attr("href"));
-                        });
-
-                        stanceInfo.DroppedBy.push(dropInfo);
+                    if (tmpWeaponName.includes("*")) {
+                        tmpWeaponObj.Name = tmpWeaponName.replace("*", "");
+                        tmpWeaponObj.MatchesPolarity = true;
+                    }
+                    else {
+                        tmpWeaponObj.Name = tmpWeaponName;
+                        tmpWeaponObj.MatchesPolarity = false;
                     }
 
-                    fulfil(stanceInfo);
-                }
-                else {
-                    let modInfo = {
-                        Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
-                        Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
-                        Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                        TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
-                        URL: modURL,
-                        Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
-                        Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
-                        ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
-                    };
+                    tmpWeaponObj.Links = [];
+                    tmpWeaponLinkNodes = $(elem).find("a");
+                    tmpWeaponLinkNodes.each((linkIndex, linkElem) => {
+                        tmpWeaponObj.Links.push($(linkElem).attr("href"));
+                    });
+                    WeaponsList.push(tmpWeaponObj);
+                });
 
-                    let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
-                        return $(el).attr('title') === 'Polarity';
+                stanceInfo.WeaponsList = WeaponsList;
+
+                let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
+                let info = droppedByDiv.split("<br>");
+                let dropInfo = {};
+                let links = "";
+                stanceInfo.DroppedBy = [];
+                for (let tag of info) {
+                    dropInfo = {};
+                    //remove text between parenthesis, and it is useless and often confuses the parser
+                    tag = tag.replace(/ *\([^)]*\) */g, "");
+                    dropInfo.Name = $(tag).text().trim() || tag;
+                    dropInfo.Links = [];
+
+                    links = $(tag).find("a").add($(tag).filter("a"));
+
+                    $(links).each(function(index, elem) {
+                        dropInfo.Links.push($(this).attr("href"));
                     });
 
-                    if (polarityNode.length > 0)
-                        modInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
-
-                    modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
-
-                    let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
-                    let info = droppedByDiv.split("<br>");
-                    let dropInfo = {};
-                    let links = "";
-                    modInfo.DroppedBy = [];
-
-                    for (let tag of info) {
-                        dropInfo = {};
-                        //remove text between parenthesis, and it is useless and often confuses the parser
-                        tag = tag.replace(/ *\([^)]*\) */g, "");
-                        dropInfo.Name = $(tag).text().trim() || tag;
-                        dropInfo.Links = [];
-
-                        links = $(tag).find("a").add($(tag).filter("a"));
-
-                        $(links).each(function(index, elem) {
-                            dropInfo.Links.push($(this).attr("href"));
-                        });
-
-                        modInfo.DroppedBy.push(dropInfo);
-                    }
-
-                    fulfil(modInfo);
+                    stanceInfo.DroppedBy.push(dropInfo);
                 }
 
+                return stanceInfo;
+            }
+            else {
+                let modInfo = {
+                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                    Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
+                    Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                    TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    URL: modURL,
+                    Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                    Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
+                    ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
+                };
 
-            }).catch(error => {
-                reject("Error with " + modURL + ". Error: " + error);
-            });
+                let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
+                    return $(el).attr('title') === 'Polarity';
+                });
+
+                if (polarityNode.length > 0)
+                    modInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
+
+                modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
+
+                let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
+                let info = droppedByDiv.split("<br>");
+                let dropInfo = {};
+                let links = "";
+                modInfo.DroppedBy = [];
+
+                for (let tag of info) {
+                    dropInfo = {};
+                    //remove text between parenthesis, and it is useless and often confuses the parser
+                    tag = tag.replace(/ *\([^)]*\) */g, "");
+                    dropInfo.Name = $(tag).text().trim() || tag;
+                    dropInfo.Links = [];
+
+                    links = $(tag).find("a").add($(tag).filter("a"));
+
+                    $(links).each(function(index, elem) {
+                        dropInfo.Links.push($(this).attr("href"));
+                    });
+
+                    modInfo.DroppedBy.push(dropInfo);
+                }
+
+                return modInfo;
+            }
+
+
+        }).catch(error => {
+            throw ("Error with " + modURL + ". Error: " + error);
         });
     }
 
@@ -332,76 +328,71 @@ class ModScraper {
      *  @private
      */
     getTableInfo(url) {
-        let self = this;
+        return this.requestHTML(url).then((htmlBody) => {
+            let $ = cheerio.load(htmlBody);
 
-        return new Promise((fulfil, reject) => {
+            //get table
+            let table = $("table.listtable.sortable");
 
-            self.requestHTML(url).then((htmlBody) => {
-                let $ = cheerio.load(htmlBody);
+            //get rows from table               
+            let trList = $(table).find("tr");
 
-                //get table
-                let table = $("table.listtable.sortable");
+            //fill the headers and remove the 1st row as it was processed
+            let headers = trList.first().children().text().trim().split("\n");
+            headers = headers.map(str => str.trim());
+            trList = trList.slice(1, trList.length);
 
-                //get rows from table               
-                let trList = $(table).find("tr");
+            //aux variables for loop
+            let result = [];
+            let findCamelCase = new RegExp("([a-z]+[A-Z][a-z]+)");
 
-                //fill the headers and remove the 1st row as it was processed
-                let headers = trList.first().children().text().trim().split("\n");
-                headers = headers.map(str => str.trim());
-                trList = trList.slice(1, trList.length);
+            $(trList).each(function(index, elem) {
+                let currentTdList = $(this).children();
+                let item = {};
+                let line;
+                for (let tdIndex = 0; tdIndex < headers.length; tdIndex++) {
 
-                //aux variables for loop
-                let result = [];
-                let findCamelCase = new RegExp("([a-z]+[A-Z][a-z]+)");
+                    line = currentTdList.eq(tdIndex).text().trim();
 
-                $(trList).each(function(index, elem) {
-                    let currentTdList = $(this).children();
-                    let item = {};
-                    let line;
-                    for (let tdIndex = 0; tdIndex < headers.length; tdIndex++) {
+                    if (headers[tdIndex] == COLUMN_POLARITY) {
+                        item[headers[tdIndex]] = currentTdList.eq(tdIndex).find("img").attr("alt").split(" ")[0];
 
-                        line = currentTdList.eq(tdIndex).text().trim();
-
-                        if (headers[tdIndex] == COLUMN_POLARITY) {
-                            item[headers[tdIndex]] = currentTdList.eq(tdIndex).find("img").attr("alt").split(" ")[0];
-
-                            //Because the wikia has conflicting scripts, we must ensure we get the field we want.
-                            item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("data-src");
-                            if (!(item[headers[tdIndex] + "Link"]))
-                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("src");
-                        }
-                        else if (headers[tdIndex] == COLUMN_DESCRIPTION) {
-                            let words = line.split(" ");
-
-                            for (let word of words) {
-                                if (findCamelCase.test(word)) {
-                                    let wordMinusFirst = word.slice(-word.length + 1);
-                                    let newWord = word[0] + wordMinusFirst.replace(/([A-Z])/g, '. $1');
-                                    line = line.replace(word, newWord);
-                                }
-                            }
-
-                            //http://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string#
-                            item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
-
-                            //check if it is PvP only.
-                            item.PvPOnly = false;
-                            if (item[headers[tdIndex]].includes(KEYWORDS.PVP))
-                                item.PvPOnly = true;
-                        }
-                        else {
-                            //if the header has associated links, we take them
-                            if (currentTdList.eq(tdIndex).find("a").length)
-                                item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("a").attr("href");
-                            item[headers[tdIndex]] = line;
-                        }
+                        //Because the wikia has conflicting scripts, we must ensure we get the field we want.
+                        item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("data-src");
+                        if (!(item[headers[tdIndex] + "Link"]))
+                            item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("src");
                     }
-                    result.push(item);
-                });
-                fulfil(result);
-            }).catch(error => {
-                reject(error);
+                    else if (headers[tdIndex] == COLUMN_DESCRIPTION) {
+                        let words = line.split(" ");
+
+                        for (let word of words) {
+                            if (findCamelCase.test(word)) {
+                                let wordMinusFirst = word.slice(-word.length + 1);
+                                let newWord = word[0] + wordMinusFirst.replace(/([A-Z])/g, '. $1');
+                                line = line.replace(word, newWord);
+                            }
+                        }
+
+                        //http://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string#
+                        item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
+
+                        //check if it is PvP only.
+                        item.PvPOnly = false;
+                        if (item[headers[tdIndex]].includes(KEYWORDS.PVP))
+                            item.PvPOnly = true;
+                    }
+                    else {
+                        //if the header has associated links, we take them
+                        if (currentTdList.eq(tdIndex).find("a").length)
+                            item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("a").attr("href");
+                        item[headers[tdIndex]] = line;
+                    }
+                }
+                result.push(item);
             });
+            return result;
+        }).catch(error => {
+            throw error;
         });
     }
 

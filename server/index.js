@@ -15,9 +15,9 @@ const TABS_FORMATTING = {
 
 const FILE_NAME = {
     WARFRAME_MODS: "warframe_mods.json",
-    WARFRAME_MODS_INFO:"warframe_mods_info.json",
+    WARFRAME_MODS_INFO: "warframe_mods_info.json",
     RIFLE_MODS: "rifle_mods.json",
-    RIFLE_MODS_INFO:"rifle_mods_info.json",
+    RIFLE_MODS_INFO: "rifle_mods_info.json",
     SHOTGUN_MODS: "shotgun_mods.json",
     SHOTGUN_MODS_INFO: "shotgun_mods_info.json",
     PISTOL_MODS: "pistol_mods.json",
@@ -33,8 +33,6 @@ const FILE_NAME = {
     STANCE_MODS: "stance_mods.json",
     STANCE_MODS_INFO: "stance_mods_info.json"
 };
-
-
 
 let config = jsonfile.readFileSync(SCRAPER_CONFIG_FILE);
 let scrapy = new ModScraper(config);
@@ -66,111 +64,111 @@ let makeBatchRequest = function(linksList) {
 
 
 //Get General information from mod tables
-// scrapy.getWarframeMods()
-//     .then(result => writeOutput(FILE_NAME.WARFRAME_MODS, result))
-//     .then(console.log(FILE_NAME.WARFRAME_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getWarframeMods()
+    .then(result => writeOutput(FILE_NAME.WARFRAME_MODS, result))
+    .then(() => console.log(FILE_NAME.WARFRAME_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getRifleMods()
-//     .then(result => writeOutput(FILE_NAME.RIFLE_MODS, result))
-//     .then(console.log(FILE_NAME.RIFLE_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getRifleMods()
+    .then(result => writeOutput(FILE_NAME.RIFLE_MODS, result))
+    .then(() => console.log(FILE_NAME.RIFLE_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getShotgunMods()
-//     .then(result => writeOutput(FILE_NAME.SHOTGUN_MODS, result))
-//     .then(console.log(FILE_NAME.SHOTGUN_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getShotgunMods()
+    .then(result => writeOutput(FILE_NAME.SHOTGUN_MODS, result))
+    .then(() => console.log(FILE_NAME.SHOTGUN_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getPistolMods()
-//     .then(result => writeOutput(FILE_NAME.PISTOL_MODS, result))
-//     .then(console.log(FILE_NAME.PISTOL_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getPistolMods()
+    .then(result => writeOutput(FILE_NAME.PISTOL_MODS, result))
+    .then(() => console.log(FILE_NAME.PISTOL_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getMeleeMods()
-//     .then(result => writeOutput(FILE_NAME.MELEE_MODS, result))
-//     .then(console.log(FILE_NAME.MELEE_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getMeleeMods()
+    .then(result => writeOutput(FILE_NAME.MELEE_MODS, result))
+    .then(() => console.log(FILE_NAME.MELEE_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getSentinelMods()
-//     .then(result => writeOutput(FILE_NAME.SENTINEL_MODS, result))
-//     .then(console.log(FILE_NAME.SENTINEL_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getSentinelMods()
+    .then(result => writeOutput(FILE_NAME.SENTINEL_MODS, result))
+    .then(() => console.log(FILE_NAME.SENTINEL_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getKubrowMods()
-//     .then(result => writeOutput(FILE_NAME.KUBROW_MODS, result))
-//     .then(console.log(FILE_NAME.KUBROW_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getKubrowMods()
+    .then(result => writeOutput(FILE_NAME.KUBROW_MODS, result))
+    .then(() => console.log(FILE_NAME.KUBROW_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getAuraMods()
-//     .then(result => writeOutput(FILE_NAME.AURA_MODS, result))
-//     .then(console.log(FILE_NAME.AURA_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getAuraMods()
+    .then(result => writeOutput(FILE_NAME.AURA_MODS, result))
+    .then(() => console.log(FILE_NAME.AURA_MODS + " complete"))
+    .catch(console.log);
 
-// scrapy.getStanceMods()
-//     .then(result => writeOutput(FILE_NAME.STANCE_MODS, result))
-//     .then(console.log(FILE_NAME.STANCE_MODS + " complete"))
-//     .catch(error => console.error(error));
+scrapy.getStanceMods()
+    .then(result => writeOutput(FILE_NAME.STANCE_MODS, result))
+    .then(() => console.log(FILE_NAME.STANCE_MODS + " complete"))
+    .catch(console.log);
 
 // get detailed information for each mod
 scrapy.getWarframeMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.WARFRAME_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.WARFRAME_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.WARFRAME_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getRifleMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.RIFLE_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.RIFLE_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.RIFLE_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getShotgunMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.SHOTGUN_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.SHOTGUN_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.SHOTGUN_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getPistolMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.PISTOL_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.PISTOL_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.PISTOL_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getMeleeMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.MELEE_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.MELEE_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.MELEE_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getSentinelMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.SENTINEL_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.SENTINEL_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.SENTINEL_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getKubrowMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.KUBROW_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.KUBROW_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.KUBROW_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getAuraMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.AURA_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.AURA_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.AURA_MODS_INFO + " completed."))
+    .catch(console.log);
 
 scrapy.getStanceMods()
     .then(getURLsList)
     .then(makeBatchRequest)
     .then(modsDetailedInfo => writeOutput(FILE_NAME.STANCE_MODS_INFO, modsDetailedInfo))
-    .then(console.log(FILE_NAME.STANCE_MODS_INFO + " completed."))
-    .catch(error =>console.error(error));
+    .then(() => console.log(FILE_NAME.STANCE_MODS_INFO + " completed."))
+    .catch(console.log);
