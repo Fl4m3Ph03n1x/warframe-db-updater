@@ -6,8 +6,9 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
-        "Rarity": "Nightmare"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Subcategory": "Nightmare"
     },
     {
         "NameLink": "/wiki/Antitoxin_(Mod)",
@@ -16,7 +17,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Aviator",
@@ -25,7 +27,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Blind_Rage",
@@ -34,8 +37,9 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Corrupted_Mods",
-        "Rarity": "Corrupted"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Corrupted_Mods",
+        "Subcategory": "Corrupted"
     },
     {
         "NameLink": "/wiki/Constitution",
@@ -44,8 +48,9 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
-        "Rarity": "Nightmare"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Subcategory": "Nightmare"
     },
     {
         "NameLink": "/wiki/Continuity",
@@ -54,7 +59,8 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Diamond_Skin",
@@ -63,7 +69,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Enemy_Sense",
@@ -72,7 +79,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Equilibrium",
@@ -81,7 +89,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Fast_Deflection",
@@ -90,7 +99,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Flame_Repellent",
@@ -99,7 +109,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Fleeting_Expertise",
@@ -108,8 +119,9 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Corrupted_Mods",
-        "Rarity": "Corrupted"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Corrupted_Mods",
+        "Subcategory": "Corrupted"
     },
     {
         "NameLink": "/wiki/Flow",
@@ -118,7 +130,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Fortitude",
@@ -127,8 +140,9 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
-        "Rarity": "Nightmare"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Subcategory": "Nightmare"
     },
     {
         "NameLink": "/wiki/Handspring",
@@ -137,7 +151,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Heavy_Impact",
@@ -146,7 +161,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Insulation",
@@ -155,7 +171,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Intensify",
@@ -164,7 +181,8 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Intruder",
@@ -173,7 +191,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Lightning_Rod",
@@ -182,7 +201,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Maglev",
@@ -191,7 +211,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Master_Thief",
@@ -200,7 +221,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Narrow_Minded",
@@ -209,8 +231,9 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "RarityLink": "/wiki/Category:Corrupted_Mods",
-        "Rarity": "Corrupted"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Corrupted_Mods",
+        "Subcategory": "Corrupted"
     },
     {
         "NameLink": "/wiki/Natural_Talent",
@@ -219,7 +242,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Overextended",
@@ -228,8 +252,9 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "RarityLink": "/wiki/Category:Corrupted_Mods",
-        "Rarity": "Corrupted"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Corrupted_Mods",
+        "Subcategory": "Corrupted"
     },
     {
         "NameLink": "/wiki/Primed_Continuity",
@@ -238,8 +263,9 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Primed_Mods",
-        "Rarity": "Legendary"
+        "Rarity": "Prime",
+        "SubcategoryLink": "/wiki/Category:Primed_Mods",
+        "Subcategory": "Legendary"
     },
     {
         "NameLink": "/wiki/Primed_Flow",
@@ -248,8 +274,9 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Primed_Mods",
-        "Rarity": "Legendary"
+        "Rarity": "Prime",
+        "SubcategoryLink": "/wiki/Category:Primed_Mods",
+        "Subcategory": "Legendary"
     },
     {
         "NameLink": "/wiki/Primed_Vigor",
@@ -258,8 +285,9 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "RarityLink": "/wiki/Category:Primed_Mods",
-        "Rarity": "Legendary"
+        "Rarity": "Prime",
+        "SubcategoryLink": "/wiki/Category:Primed_Mods",
+        "Subcategory": "Legendary"
     },
     {
         "NameLink": "/wiki/Provoked",
@@ -268,7 +296,8 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Quick_Thinking",
@@ -277,7 +306,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Rage",
@@ -286,7 +316,8 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Rapid_Resilience",
@@ -295,7 +326,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Redirection",
@@ -304,7 +336,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Reflection",
@@ -313,7 +346,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Reflex_Guard",
@@ -322,7 +356,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Retribution",
@@ -331,7 +366,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Rush",
@@ -340,7 +376,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Shock_Absorbers",
@@ -349,7 +386,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Steel_Fiber",
@@ -358,7 +396,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Streamline",
@@ -367,7 +406,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Streamlined_Form",
@@ -376,8 +416,9 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
-        "Rarity": "Nightmare"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Subcategory": "Nightmare"
     },
     {
         "NameLink": "/wiki/Stretch",
@@ -386,7 +427,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Uncommon"
+        "Rarity": "Uncommon",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Sure_Footed",
@@ -395,7 +437,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Thief%27s_Wit",
@@ -404,7 +447,8 @@
         "PvPOnly": false,
         "Polarity": "Naramon",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Transient_Fortitude",
@@ -413,8 +457,9 @@
         "PvPOnly": false,
         "Polarity": "Madurai",
         "PolarityLink": "http://vignette3.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
-        "RarityLink": "/wiki/Category:Corrupted_Mods",
-        "Rarity": "Corrupted"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Corrupted_Mods",
+        "Subcategory": "Corrupted"
     },
     {
         "NameLink": "/wiki/Undying_Will",
@@ -423,7 +468,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Rare"
+        "Rarity": "Rare",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Vigor",
@@ -432,8 +478,9 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "RarityLink": "/wiki/Category:Nightmare_Mode_Mods",
-        "Rarity": "Nightmare"
+        "Rarity": "Rare",
+        "SubcategoryLink": "/wiki/Category:Nightmare_Mode_Mods",
+        "Subcategory": "Nightmare"
     },
     {
         "NameLink": "/wiki/Vitality",
@@ -442,7 +489,8 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     },
     {
         "NameLink": "/wiki/Warm_Coat",
@@ -451,6 +499,7 @@
         "PvPOnly": false,
         "Polarity": "Vazarin",
         "PolarityLink": "http://vignette2.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001231",
-        "Rarity": "Common"
+        "Rarity": "Common",
+        "Subcategory": "None"
     }
 ]
