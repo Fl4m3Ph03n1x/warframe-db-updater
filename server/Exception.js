@@ -10,9 +10,11 @@ let exceptionFactory = function(args) {
         exceptionName,
         message,
         outputFileName,
+        useExceptionName
     } = args;
     
-    outputFileName = outputFileName|| (exceptionName  + "_" + _.now());
+    if(useExceptionName === true && !_.isUndefined(exceptionName))
+        outputFileName = exceptionName  + "_" + _.now();
     
     let filePath = outputFolder + outputFileName + fileExtension;
     

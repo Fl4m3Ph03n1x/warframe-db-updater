@@ -6,6 +6,7 @@
         "outputFileName": "Exception",
         "message": {
             "message": "A generic exception occurred."
-        }
+        },
+        "useExceptionName" : true
     }
 }

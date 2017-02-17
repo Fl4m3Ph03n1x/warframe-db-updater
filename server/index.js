@@ -97,31 +97,51 @@ let checkValidity = function(item) {
 };
 
 let checkAccuracy = function(item) {
-    let wikiaUri = scrapperCfg.sources.wikia.link;
-    // let wikiaPages = values(scrapperCfg.sources.wikia.pages);
-    // let completeUri;
-    
-    superagent.get(wikiaUri + item.NameLink, (error, res) => {
-        expect(error).to.not.exist;
-        expect(res.status).to.equal(HTTPStatus.OK);
-    });
+    const wikiaURL = new URL(scrapperCfg.sources.wikia.link);
 
-    superagent.get(item.PolarityLink, (error, res) => {
-        expect(error).to.not.exist;
-        expect(res.status).to.equal(HTTPStatus.OK);
-    });
+    try {
 
-    if (!_.isUndefined(item.CategoryLink)) {
-        superagent.get(wikiaUri + item.CategoryLink, (error, res) => {
+        superagent.get(item.NameLink, (error, res) => {
+
+            try {
+                expect(error).to.not.exist;
+                expect(res.status).to.equal(HTTPStatus.OK);
+            }
+            catch (error) {
+                errorParams.exceptionName = "AccuracyException";
+                exception(errorParams).write({
+                    exception: error,
+                    item
+                });
+            }
+        });
+
+        superagent.get(wikiaURL.origin + item.NameLink, (error, res) => {
             expect(error).to.not.exist;
             expect(res.status).to.equal(HTTPStatus.OK);
         });
+
+        superagent.get(item.PolarityLink, (error, res) => {
+            expect(error).to.not.exist;
+            expect(res.status).to.equal(HTTPStatus.OK);
+        });
+
+        if (!_.isUndefined(item.CategoryLink)) {
+            superagent.get(wikiaURL.origin + item.CategoryLink, (error, res) => {
+                expect(error).to.not.exist;
+                expect(res.status).to.equal(HTTPStatus.OK);
+            });
+        }
     }
-}
+    catch (error) {
+        errorParams.exceptionName = "AccuracyException";
+        exception(errorParams).write(error);
+    }
+};
 
 //Do different sources report the same informaiton about the same item?
 let checkConsistency = function(item) {
-    
+
 };
 
 let checkData = function(mods) {
