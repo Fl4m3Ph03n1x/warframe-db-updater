@@ -1,0 +1,11 @@
+{
+    "errorHandling": {
+        "outputFolder": "./ErrorLogs/",
+        "fileExtension": ".json",
+        "exceptionName": "Exception",
+        "outputFileName": "Exception",
+        "message": {
+            "message": "A generic exception occurred."
+        }
+    }
+}

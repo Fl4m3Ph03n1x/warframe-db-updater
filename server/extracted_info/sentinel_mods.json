@@ -202,17 +202,18 @@
     {
         "NameLink": "/wiki/Primed_Regen",
         "Name": "Primed Regen",
-        "Description": "The Sentinel regenerates up to three times if killed with full health, and is granted an invulnerability period per each rank.",
+        "Description": "The Sentinel regenerates up to three times if killed with full health, and is granted an invulnerability period per each mod rank.",
         "PvPOnly": false,
         "Sentinel": "Any",
         "Polarity": "Penjaga",
         "PolarityLink": "http://vignette1.wikia.nocookie.net/warframe/images/5/5f/Penjaga_Pol.svg/revision/latest/scale-to-width-down/20?cb=20150301001230",
+        "RarityLink": "/wiki/Category:Primed_Mods",
         "Rarity": "Legendary"
     },
     {
         "NameLink": "/wiki/Regen",
         "Name": "Regen",
-        "Description": "The Sentinel will regenerate once if it is killed.",
+        "Description": "The Sentinel regenerates once if killed with full health, and is granted an invulnerability period per each mod rank.",
         "PvPOnly": false,
         "Sentinel": "Any",
         "Polarity": "Penjaga",
