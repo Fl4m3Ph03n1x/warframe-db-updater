@@ -13,6 +13,8 @@ let exceptionFactory = function(args) {
         useExceptionName
     } = args;
     
+    
+    
     if(useExceptionName === true && !_.isUndefined(exceptionName))
         outputFileName = exceptionName  + "_" + _.now();
     
@@ -20,7 +22,7 @@ let exceptionFactory = function(args) {
     
     let write = function(info) {
         
-        jsonfile.writeFile(filePath, info || message, {spaces: 4}, error => {
+        jsonfile.writeFileSync(filePath, info || message, {spaces: 4}, error => {
             if (!_.isNull(error) )
                 console.log(error);
         });
