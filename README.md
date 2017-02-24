@@ -42,13 +42,13 @@ Currently this project extracts data for the following mod types:
  - Melee 
  - Sentinels
  - Kubrows
- - Kavats
  - Sentinels
  - Auras
  - Stances
 
 Currently, the stalker does **not** provide information about:
-
+ 
+ - Kavats
  - Archwings
  - Archwing Melee
  - Archwing Rifles
