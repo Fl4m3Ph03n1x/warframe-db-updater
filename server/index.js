@@ -7,15 +7,17 @@ let ModScraper = require("./promisedScraper.js");
 let exception = require("./Exception.js");
 let checker = require("./checker.js");
 
+let warframeChecker = require("./checkers/warframeChecker.js");
+
 const CONFIG_FILES = {
     SCRAPPER: "./configs/scraperConfig.json",
     SERVER: "./configs/serverConfig.json"
 };
 
 let errorParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).errorHandling;
+let waitParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).minIntervalWaits;
 let scrapperCfg = jsonfile.readFileSync(CONFIG_FILES.SCRAPPER);
 let scrapy = new ModScraper(scrapperCfg);
-
 
 let createLog = function(info) {
     errorParams.exceptionName = info.exceptionName;
@@ -25,101 +27,108 @@ let createLog = function(info) {
     });
 };
 
-
-
-//Does the item conform to our DB schema?
-// let checkDetailedInfoValidity = function(item, TYPE) {
-//     return new Promise((fulfil, reject) => {
-
-//         try {
-//             expect(item).to.have.property("NameLink");
-//             expect(item.NameLink).to.be.a("string");
-//             expect(item.NameLink).to.not.be.empty;
-
-//             expect(item).to.have.property("Name");
-//             expect(item.Name).to.be.a("string");
-//             expect(item.Name).to.not.be.empty;
-
-//             expect(item).to.have.property("Description");
-//             expect(item.Description).to.be.a("string");
-//             expect(item.Description).to.not.be.empty;
-//             expect(item.Description[item.Description.length - 1]).to.equal("."); //Each description must terminate with correct puntuation. I am freak rigth? xD
-
-//             expect(item).to.have.property("PvPOnly");
-//             expect(item.PvPOnly).to.be.a("boolean");
-
-//             expect(item).to.have.property("Polarity");
-//             expect(item.Polarity).to.be.a("string");
-//             expect(TYPE.POLARITIES).to.include(item.Polarity);
-
-//             expect(item).to.have.property("PolarityLink");
-//             expect(item.PolarityLink).to.be.a("string");
-//             expect(item.PolarityLink).to.not.be.empty;
-
-//             expect(item).to.have.property("Rarity");
-//             expect(item.Rarity).to.be.a("string");
-//             expect(TYPE.RARITIES).to.include(item.Rarity);
-
-//             if (!_.isUndefined(item.CategoryLink)) {
-//                 expect(item.CategoryLink).to.be.a("string");
-//                 expect(item.CategoryLink).to.not.be.empty;
-//             }
-
-//             expect(item).to.have.property("Category");
-//             expect(item.Category).to.be.a("string");
-//             expect(TYPE.CATEGORIES).to.include(item.Category);
-
-//             fulfil();
-//         }
-//         catch (error) {
-//             reject({
-//                 exceptionName: "ValidityException",
-//                 exception: error,
-//                 item
-//             });
-//         }
-//     });
-// };
+let getRandomArbitrary = function(min, max) {
+    return Math.random() * (max - min) + min;
+};
 
 let checkData = function(mods) {
     const wikiaURL = new URL(scrapperCfg.sources.wikia.link);
 
-    let check = checker({
+    let dataTypes = {
         rarities: ["Common", "Uncommon", "Rare", "Legendary", "Riven"],
-        polarities: ["Vazarin", "Madurai", "Naramon", "Zenurik"],
+        polarities: ["Vazarin", "Madurai", "Naramon", "Zenurik", "Penjaga", "Unairu"],
         categories: ["None", "Acolyte", "Corrupted", "Nightmare"]
-    });
+    };
+
+    let check = checker(dataTypes);
+
+    let checkWarframeMod = warframeChecker(dataTypes);
+
+    let fullCheck = [];
 
     for (let item of mods) {
 
-        check.hasOverviewInfoValidity(item)
-            // .then(() => {
-            //     console.log("checked item validaty" + item.Name);
-            // })
-            .then(() => check.hasOverviewInfoAccuracy(item, wikiaURL))
-            .then(() => {
-                console.log("checked item accuracy" + item.Name);
-            })
+
+        fullCheck.push(
+            scrapy.getModInformation(wikiaURL.origin + item.NameLink)
+            .then(checkWarframeMod.isValid)
             .catch(info => {
                 console.log("Error ocurred with: " + item.Name);
                 createLog(info);
-            });
-
-
-        // checkAccuracy(item, wikiaURL);
-        // checkConsistency(item, wikiaURL);
+            }));
+            
+        // fullCheck.push(
+        //     check.hasOverviewInfoValidity(item)
+        //     .then(() => check.hasOverviewInfoAccuracy(item, wikiaURL))
+        //     .then(() => check.hasOverviewInfoConsistency(item, wikiaURL, scrapy))
+        //     // .then(() => checkWarframeMod.hasValidName(item))
+        //     .catch(info => {
+        //         console.log("Error ocurred with: " + item.Name);
+        //         createLog(info);
+        //     })
+        // );
 
         /**
-         *  1. Do I have this in the DB?
-         *  1.1 No? Save it with timestamp.
-         *  1.2 Yes? Compare to DB version and save if different. Update timestamp.
+         *  1. Check detailed item validity
+         *  2. Check detailed item accuracy
+         *  3. Do I have item in the DB?
+         *  3.1 No? Save it with timestamp.
+         *  3.2 Yes? Compare to DB version and save if different. Update timestamp.
          */
     }
 
-    return true;
+    return Promise.all(fullCheck);
 };
 
-//Get General information from mod tables
-scrapy.getWarframeMods()
-    .then(checkData)
-    .catch(console.log);
+let cycle = function() {
+    console.log("calling");
+
+    scrapy.getWarframeMods()
+        .then(checkData)
+        .then(() => console.log("checked Warframe data"))
+        .catch(console.log);
+
+    // scrapy.getRifleMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Rifle data"))
+    //     .catch(console.log);
+
+    // scrapy.getPistolMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Pistol data"))
+    //     .catch(console.log);
+
+    // scrapy.getShotgunMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Shotgun data"))
+    //     .catch(console.log);
+
+    // scrapy.getMeleeMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Melee data"))
+    //     .catch(console.log);
+
+    // scrapy.getAuraMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Aura data"))
+    //     .catch(console.log);
+
+    // scrapy.getSentinelMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Sentinel data"))
+    //     .catch(console.log);
+
+    // scrapy.getKubrowMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Kubrow data"))
+    //     .catch(console.log);
+
+    // scrapy.getStanceMods()
+    //     .then(checkData)
+    //     .then(() => console.log("checked Stance data"))
+    //     .catch(console.log);
+};
+
+
+cycle();
+// setInterval(cycle, waitParams.cycles);//from seconds to miliseconds

@@ -8,5 +8,9 @@
             "message": "A generic exception occurred."
         },
         "useExceptionName" : true
+    },
+    "minIntervalWaits": {
+        "requests": 0.5,
+        "cycles": 500
     }
 }

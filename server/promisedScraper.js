@@ -183,7 +183,7 @@ class ModScraper {
      */
     getModInformation(modURL) {
         return this.requestHTML(modURL).then(htmlBody => {
-
+    
             //for everything else
             let $ = cheerio.load(htmlBody);
 
@@ -192,7 +192,7 @@ class ModScraper {
 
                 //The Description paragraph always strats with the name of the stance in bold. 
                 let descriptionParagraph = $(htmlBody).find('div').find('p').find('b').parent();
-
+                
                 let stanceInfo = {
                     Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
                     Description: descriptionParagraph.text().trim(),
@@ -200,11 +200,14 @@ class ModScraper {
                     URL: modURL,
                     Ranks: 3, //all stances have 3 ranks
                     Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                    TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    TraddingTax: +$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
                     Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
                     ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
                 };
-
+                
+                if(isNaN(stanceInfo.TraddingTax))
+                    stanceInfo.TraddingTax = NaN;
+                
                 let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
                     return $(el).attr('title') === 'Polarity';
                 });
@@ -266,23 +269,26 @@ class ModScraper {
             }
             else {
                 let modInfo = {
-                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().replace(/ *\([^)]*\) */g, "").trim(),//remove text withing parentheses like (Mod),
                     Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
                     Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                    TraddingTax: $("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    TraddingTax: +$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
                     URL: modURL,
                     Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
-                    Ranks: $("#mw-content-text > table.emodtable").find("tr").length - 2,
+                    Ranks: +$("#mw-content-text > table.emodtable").find("tr").length - 2,
                     ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
                 };
-
+                
                 let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
                     return $(el).attr('title') === 'Polarity';
                 });
 
                 if (polarityNode.length > 0)
                     modInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
-
+                
+                if(isNaN(modInfo.TraddingTax))
+                    modInfo.TraddingTax = NaN;
+                
                 modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
 
                 let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
@@ -309,8 +315,7 @@ class ModScraper {
 
                 return modInfo;
             }
-
-
+                
         }).catch(error => {
             throw ("Error with " + modURL + ". Error: " + error);
         });

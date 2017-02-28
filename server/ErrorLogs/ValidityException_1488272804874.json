@@ -1,0 +1,30 @@
+{
+    "exception": {
+        "error": {
+            "name": "AssertionError",
+            "message": "expected undefined to be a string",
+            "showDiff": false,
+            "stack": "AssertionError: expected undefined to be a string\n    at error (/home/ubuntu/workspace/server/checkers/validityChecker.js:49:45)\n    at tryCallTwo (/home/ubuntu/workspace/server/node_modules/promise/lib/core.js:45:5)\n    at doResolve (/home/ubuntu/workspace/server/node_modules/promise/lib/core.js:200:13)\n    at new Promise (/home/ubuntu/workspace/server/node_modules/promise/lib/core.js:66:3)\n    at hasValidURLProp (/home/ubuntu/workspace/server/checkers/validityChecker.js:46:16)\n    at hasValidImageURL (/home/ubuntu/workspace/server/checkers/validityChecker.js:157:16)\n    at isValid (/home/ubuntu/workspace/server/checkers/warframeChecker.js:32:17)\n    at tryCallOne (/home/ubuntu/workspace/server/node_modules/promise/lib/core.js:37:12)\n    at /home/ubuntu/workspace/server/node_modules/promise/lib/core.js:123:15\n    at flush (/home/ubuntu/workspace/server/node_modules/asap/raw.js:50:29)"
+        },
+        "propInvolved": "ImageURL"
+    },
+    "item": {
+        "Name": "Aviator",
+        "Description": "Aviator reduces damage taken while airborne.",
+        "Rarity": "Common",
+        "TraddingTax": null,
+        "URL": "http://warframe.wikia.com/wiki/Aviator",
+        "Transmutable": false,
+        "Ranks": 3,
+        "Polarity": "Vazarin",
+        "Tradable": true,
+        "DroppedBy": [
+            {
+                "Name": "Operation Oxium Espionage",
+                "Links": [
+                    "/wiki/Operation_Oxium_Espionage"
+                ]
+            }
+        ]
+    }
+}

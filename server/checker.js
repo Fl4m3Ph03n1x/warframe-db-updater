@@ -10,7 +10,8 @@ let request = require("request");
 
 let get = Promise.denodeify(request);
 
-let checkerFactory = function(args) {
+//factory function
+let overviewChecker = function(args) {
     let {
         rarities,
         polarities,
@@ -54,9 +55,11 @@ let checkerFactory = function(args) {
                     expect(item.CategoryLink).to.not.be.empty;
                 }
 
-                expect(item).to.have.property("Category");
-                expect(item.Category).to.be.a("string");
-                expect(categories).to.include(item.Category);
+                if (!_.isUndefined(item.Category)) {
+                    expect(item).to.have.property("Category");
+                    expect(item.Category).to.be.a("string");
+                    expect(categories).to.include(item.Category);
+                }
 
                 fulfil();
             }
@@ -82,13 +85,13 @@ let checkerFactory = function(args) {
             .then(() => get(item.PolarityLink))
             .then(isRequestOk)
             .then(() => {
-                if (!_.isUndefined(item.CategoryLink)) 
+                if (!_.isUndefined(item.CategoryLink))
                     return get(wikiaURL.origin + item.CategoryLink);
-                
+
                 return undefined;
             })
-            .then( result => {
-                if(result !== undefined)
+            .then(result => {
+                if (result !== undefined)
                     return isRequestOk(result);
             })
             .catch(error => {
@@ -100,37 +103,29 @@ let checkerFactory = function(args) {
             });
     };
 
+    //Do different sources report the same informaiton about the same item?
+    let hasOverviewInfoConsistency = function(item, wikiaURL, scrapy) {
 
-    // //Do different sources report the same informaiton about the same item?
-    // /**
-    //  *  Return true or false once all the requests are complete. PROMISIFY!
-    //  */
-    // let hasOverviewInfoConsistency = function(item, wikiaURL) {
-    //     /**
-    //      * 1. Make request to item URL
-    //      * 2. Scrap data from that page
-    //      * 3. Compare data from page with item data
-    //      */
-
-    //     scrapy.getModInformation(wikiaURL.origin + item.NameLink)
-    //         .then(info => {
-    //             expect(checkValidity(info)).to.equal(true);
-
-    //         })
-    //         .catch(error => {
-    //             createLog({
-    //                 exceptionName: "ConsistencyException",
-    //                 exception: error,
-    //                 item
-    //             });
-    //         });
-    // };
+        return scrapy.getModInformation(wikiaURL.origin + item.NameLink)
+            .then(info => {
+                expect(info.Name).to.equal(item.Name);
+                expect(info.Polarity).to.equal(item.Polarity);
+                expect(info.Rarity).to.equal(item.Rarity);
+            })
+            .catch(error => {
+                throw {
+                    exceptionName: "ConsistencyException",
+                    exception: error,
+                    item
+                };
+            });
+    };
 
     return Object.freeze({
         hasOverviewInfoValidity,
-        hasOverviewInfoAccuracy
-        // hasOverviewInfoConsistency
+        hasOverviewInfoAccuracy,
+        hasOverviewInfoConsistency
     });
 };
 
-module.exports = checkerFactory;
+module.exports = overviewChecker;
