@@ -4,9 +4,11 @@ let Promise = require("promise");
 let URL = require('url-parse');
 let chai = require("chai"),
     expect = chai.expect;
+let _ = require("underscore");
 
 //VALUE OBJECT COMPOSITION OVER HIERARCHY
-//Does the item conform to our DB schema?
+//Does the item conform tos our DB schema?
+//TODO: remove all the promise behavior. If none of this is async, why use it?
 let validityCheckerFactory = function(args) {
     let {
         rarities,
@@ -145,8 +147,8 @@ let validityCheckerFactory = function(args) {
         });
     };
 
-    let hasValidTransmutable = function(mod) {
-        return hasValidBooleanProp("Transmutable");
+    let hasValidTransmutation = function(mod) {
+        return hasValidBooleanProp(mod, "Transmutable");
     };
 
     let hasValidRank = function(mod) {
@@ -165,9 +167,35 @@ let validityCheckerFactory = function(args) {
         return hasValidBooleanProp(mod, "isPvE");
     };
 
-    //TODO: finish this one
     let hasValidDrops = function(mod) {
-        return hasValidArrayProp(mod, "DroppedBy");
+        return hasValidArrayProp(mod, "DroppedBy")
+            .then(() => {
+                let promises = [];
+
+                for (let drop of mod.DroppedBy) {
+                    promises.push(
+                        hasValidStringProp(drop, "Name")
+                        .catch(error => {
+                            validityError(drop, error, "DroppedBy.Name");
+                        })
+                    );
+
+                    promises.push(
+                        hasValidArrayProp(drop, "Links")
+                        .then(() => {
+                            for (let link of drop.Links) {
+                                expect(link).to.be.a("string");
+                                expect(link).to.not.be.empty;
+                            }
+                        })
+                        .catch(error => {
+                            validityError(drop, error, "DroppedBy.Links");
+                        })
+                    );
+                }
+
+                return Promise.all(promises);
+            });
     };
 
     return Object.freeze({
@@ -179,7 +207,7 @@ let validityCheckerFactory = function(args) {
         hasValidRarity,
         hasValidPolarity,
         hasValidTraddingTax,
-        hasValidTransmutable,
+        hasValidTransmutation,
         hasValidRank,
         hasValidImageURL,
         hasValidPvP,

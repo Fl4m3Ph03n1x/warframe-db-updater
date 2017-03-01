@@ -80,6 +80,7 @@ let checkData = function(mods) {
     return Promise.all(fullCheck);
 };
 
+//TODO: Throttle the requests !
 let cycle = function() {
     console.log("calling");
 

@@ -12,7 +12,7 @@ let warframeChecker = function(args) {
         hasValidRarity,
         hasValidPolarity,
         hasValidTraddingTax,
-        hasValidTransmutable,
+        hasValidTransmutation,
         hasValidRank,
         hasValidImageURL,
         hasValidDrops
@@ -27,7 +27,7 @@ let warframeChecker = function(args) {
                 hasValidRarity(mod),
                 hasValidPolarity(mod),
                 hasValidTraddingTax(mod),
-                // hasValidTransmutable(mod),
+                hasValidTransmutation(mod),
                 hasValidRank(mod),
                 hasValidImageURL(mod),
                 hasValidDrops(mod)
