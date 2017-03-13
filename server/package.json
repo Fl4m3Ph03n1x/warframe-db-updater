@@ -22,6 +22,7 @@
     "mongoose": "^4.8.2",
     "promise": "^7.1.1",
     "request": "^2.73.0",
+    "serialize-error": "^2.1.0",
     "underscore": "^1.8.3",
     "url-parse": "^1.1.7"
   },

@@ -21,7 +21,6 @@ let exceptionFactory = function(args) {
     let filePath = outputFolder + outputFileName + fileExtension;
     
     let write = function(info) {
-        
         jsonfile.writeFileSync(filePath, info || message, {spaces: 4}, error => {
             if (!_.isNull(error) )
                 console.log(error);

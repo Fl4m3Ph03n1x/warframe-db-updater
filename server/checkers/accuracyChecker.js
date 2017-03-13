@@ -1,63 +1,52 @@
 "use strict";
 
-let Promise = require("promise");
-let URL = require('url-parse');
 let chai = require("chai"),
     expect = chai.expect;
-let _ = require("underscore");
 let HTTPStatus = require('http-status');
-let request = require("request");
 
-let get = Promise.denodeify(request);
-
-//VALUE OBJECT COMPOSITION OVER HIERARCHY
-//Do this values depict reality? AKA, are the links and other info existent?
+/**
+ *  Provides methods to answer the question:
+ *  Do these values depict reality? AKA, are the links and other info existent?
+ *  
+ *  @param  {Object}    args    Object containing a property called "requestFn", 
+ *                              which is the function to be used when making 
+ *                              GET requests to the wikia. I am injecting this 
+ *                              dependency here so I can test both the checker
+ *                              and the GET function to be used.
+ *  @return {Object}    Returns an immutable object with methods for basic 
+ *                      accuracy checking.
+ * @see     https://www.youtube.com/watch?v=0X1Ns2NRfks
+ */
 let accuracyCheckerFactory = function(args) {
     let {
-        rarities,
-        polarities
+        requestFun
     } = args;
 
-    let accuracyError = function(mod, error) {
-        return {
-            exceptionName: "AccuracyException",
-            exception: error,
-            item: mod
-        };
-    };
-    
-    let hasOverviewInfoAccuracy = function(item, wikiaURL) {
+    /**
+     *  Uses the request function passed to make an HTTP GET request to the 
+     *  given URL. Checks the response status to make sure the URL exists by 
+     *  checking if the response is 200 or 403.
+     *  
+     *  I accept OK (200) and FORBIDDEN (403) because since the requests 
+     *  will be made automatically, some warframe websites will require 
+     *  login, which won't be provided in the request. Thus, getting a 403
+     *  status doesn't mean the website doesn't exist, it simply means that
+     *  we don't have access.
+     * 
+     *  @param  {string}            url The url to test. 
+     *  @throws AssertionException  If the check fails any of the conditions.
+     */
+    let doesURLExist = function(url) {
+        let acceptedStatuses = [HTTPStatus.OK, HTTPStatus.FORBIDDEN];
 
-        let isRequestOk = response => {
-            return expect(response.statusCode).to.equal(HTTPStatus.OK);
-        };
-
-        return get(wikiaURL.origin + item.NameLink)
-            .then(isRequestOk)
-            .then(() => get(item.PolarityLink))
-            .then(isRequestOk)
-            .then(() => {
-                if (!_.isUndefined(item.CategoryLink))
-                    return get(wikiaURL.origin + item.CategoryLink);
-
-                return undefined;
-            })
-            .then(result => {
-                if (result !== undefined)
-                    return isRequestOk(result);
-            })
-            .catch(error => {
-                throw {
-                    exceptionName: "AccuracyException",
-                    exception: error,
-                    item
-                };
+        return requestFun(url)
+            .then(response => {
+                expect(acceptedStatuses).to.include(response.statusCode);
             });
     };
 
     return Object.freeze({
-        rarities,
-        polarities
+        doesURLExist
     });
 };
 

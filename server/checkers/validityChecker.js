@@ -1,218 +1,145 @@
 "use strict";
 
-let Promise = require("promise");
 let URL = require('url-parse');
 let chai = require("chai"),
     expect = chai.expect;
-let _ = require("underscore");
 
-//VALUE OBJECT COMPOSITION OVER HIERARCHY
-//Does the item conform tos our DB schema?
-//TODO: remove all the promise behavior. If none of this is async, why use it?
-let validityCheckerFactory = function(args) {
-    let {
-        rarities,
-        polarities
-    } = args;
+/**
+ *  Provides methods to answer the question:
+ *  Does the item conform tos our DB schema?
+ *  
+ *  @return {Object}    Returns an immutable object with methods for basic 
+ *                      validity checking. 
+ */
+let validityCheckerFactory = function() {
 
-    let validityError = function(mod, error, propInvolved) {
-        return {
-            exceptionName: "ValidityException",
-            exception: {
-                error,
-                propInvolved
-            },
-            item: mod
-        };
-    };
-
+    /**
+     *   Checks if the given mod:
+     *      1. Has the given property, 
+     *      2. If the property is of type string 
+     *      3. If the property is not an empty string 
+     *  
+     *  @param  {Object}            mod         The mod object.
+     *  @param  {string}            propName    The name of the property to be 
+     *                                          tested.
+     *  @throws AssertionException              If the check fails any of the 
+     *                                          conditions.
+     */
     let hasValidStringProp = function(mod, propName) {
-        return new Promise((fulfil, reject) => {
-            try {
-                expect(mod).to.have.property(propName);
-                expect(mod[propName]).to.be.a("string");
-                expect(mod[propName]).to.not.be.empty;
-                fulfil();
-            }
-            catch (error) {
-                reject(validityError(mod, error, propName));
-            }
-        });
+        expect(mod).to.have.property(propName);
+        expect(mod[propName]).to.be.a("string");
+        expect(mod[propName]).to.not.be.empty;
     };
 
-    let hasValidURLProp = function(mod, propName) {
-
-        //http://stackoverflow.com/a/3809435/1337392
+    /**
+     *  Checks if the given url matches an URL regex based on  
+     *  http://stackoverflow.com/a/3809435/1337392
+     *  
+     *  @param  {string}            anURL   The url.
+     *  @throws AssertionException  If the url doesn't match the regex.
+     */
+    let isValidURL = function(anURL) {
         let urlRegex = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
-
-        return new Promise((fulfil, reject) => {
-            try {
-                expect(mod).to.have.property(propName);
-                expect(mod[propName]).to.be.a("string");
-                expect(mod[propName]).to.not.be.empty;
-                expect(mod[propName]).to.match(urlRegex);
-                fulfil();
-            }
-            catch (error) {
-                reject(validityError(mod, error, propName));
-            }
-        });
+        expect(anURL).to.match(urlRegex);
     };
 
+    /**
+     *   Checks if the given mod:
+     *      1. Has the given property, 
+     *      2. If the property is a valid string property via hasValidStringProp
+     *      3. If the property is a valid URL via isValidURL
+     *  
+     *  @param  {Object}            mod         The mod object.
+     *  @param  {string}            propName    The name of the property to be 
+     *                                          tested.
+     *  @see     hasValidStringProp
+     *  @see     isValidURL
+     */
+    let hasValidURLProp = function(mod, propName) {
+        hasValidStringProp(mod, propName);
+        isValidURL(mod[propName]);
+    };
+
+    /**
+     *   Checks if the given mod:
+     *      1. Has the given property, 
+     *      2. If the property is of type number 
+     *      3. If the property is not NaN
+     *      4. If the property is greater than 0
+     *  
+     *  @param  {Object}            mod         The mod object.
+     *  @param  {string}            propName    The name of the property to be 
+     *                                          tested.
+     *  @throws AssertionException              If the check fails any of the 
+     *                                          conditions.
+     */
     let hasValidNumberProp = function(mod, propName) {
-        return new Promise((fulfil, reject) => {
-            try {
-                expect(mod).to.have.property(propName);
-                expect(mod[propName]).to.be.a("number");
-                expect(mod[propName]).not.to.be.NaN;
-                expect(mod[propName]).to.be.above(0);
-                fulfil();
-            }
-            catch (error) {
-                reject(validityError(mod, error, propName));
-            }
-        });
+        expect(mod).to.have.property(propName);
+        expect(mod[propName]).to.be.a("number");
+        expect(mod[propName]).not.to.be.NaN;
+        expect(mod[propName]).to.be.above(0);
     };
 
+    /**
+     *   Checks if the given mod:
+     *      1. Has the given property, 
+     *      2. If the property is of type boolean 
+     *  
+     *  @param  {Object}            mod         The mod object.
+     *  @param  {string}            propName    The name of the property to be 
+     *                                          tested.
+     *  @throws AssertionException              If the check fails any of the 
+     *                                          conditions.
+     */
     let hasValidBooleanProp = function(mod, propName) {
-        return new Promise((fulfil, reject) => {
-            try {
-                expect(mod).to.have.property(propName);
-                expect(mod[propName]).to.be.a("boolean");
-                fulfil();
-            }
-            catch (error) {
-                reject(validityError(mod, error, propName));
-            }
-        });
+        expect(mod).to.have.property(propName);
+        expect(mod[propName]).to.be.a("boolean");
     };
 
+    /**
+     *   Checks if the given mod:
+     *      1. Has the given property, 
+     *      2. If the property is a valid string property via hasValidStringProp
+     *      3. If that property is one of the value inside the anArray property
+     *  
+     *  @param  {Object}            mod         The mod object.
+     *  @param  {string}            propName    The name of the property to be 
+     *                                          tested.
+     *  @param  {Array}             anArray     The array of valid values that 
+     *                                          must contain the propName's 
+     *                                          value.
+     *  @throws AssertionException              If the check fails check num #3.
+     * @see     hasValidStringProp
+     */
     let isKnownTypeProp = function(mod, propName, anArray) {
-        return hasValidStringProp(mod, propName)
-            .then(() => {
-                expect(anArray).to.include(mod[propName]);
-            })
-            .catch(error => {
-                throw validityError(mod, error, propName);
-            });
+        hasValidStringProp(mod, propName);
+        expect(anArray).to.include(mod[propName]);
     };
 
+    /**
+     *   Checks if the given mod:
+     *      1. Has the given property, 
+     *      2. If the property is of type Array 
+     *  
+     *  @param  {Object}            mod         The mod object.
+     *  @param  {string}            propName    The name of the property to be 
+     *                                          tested.
+     *  @throws AssertionException              If the check fails any of the 
+     *                                          conditions.
+     */
     let hasValidArrayProp = function(mod, propName) {
-        return new Promise((fulfil, reject) => {
-            try {
-                expect(mod).to.have.property(propName);
-                expect(mod[propName]).to.be.an("Array");
-                fulfil();
-            }
-            catch (error) {
-                reject(validityError(mod, error, propName));
-            }
-        });
-    };
-
-    let hasValidName = function(mod) {
-        return hasValidStringProp(mod, "Name");
-    };
-
-    let hasValidDescription = function(mod) {
-        return hasValidStringProp(mod, "Description")
-            .then(() => {
-                //Each description must terminate with correct puntuation. I am freak rigth? xD
-                expect(mod.Description[mod.Description.length - 1]).to.equal(".");
-            })
-            .catch(error => {
-                throw validityError(mod, error, "Description");
-            });
-        //catch something!
-    };
-
-    let hasValidURL = function(mod) {
-        return hasValidURLProp(mod, "URL");
-    };
-
-    let hasValidRarity = function(mod) {
-        return isKnownTypeProp(mod, "Rarity", rarities);
-    };
-
-    let hasValidPolarity = function(mod) {
-        return isKnownTypeProp(mod, "Polarity", polarities);
-    };
-
-    let hasValidTraddingTax = function(mod) {
-        return new Promise((fulfil, reject) => {
-            if (!isNaN(mod.TraddingTax))
-                return hasValidNumberProp(mod, "TraddingTax");
-            else
-                fulfil();
-        });
-    };
-
-    let hasValidTransmutation = function(mod) {
-        return hasValidBooleanProp(mod, "Transmutable");
-    };
-
-    let hasValidRank = function(mod) {
-        return hasValidNumberProp(mod, "Ranks");
-    };
-
-    let hasValidImageURL = function(mod) {
-        return hasValidURLProp(mod, "ImageURL");
-    };
-
-    let hasValidPvP = function(mod) {
-        return hasValidBooleanProp(mod, "isPvP");
-    };
-
-    let hasValidPvE = function(mod) {
-        return hasValidBooleanProp(mod, "isPvE");
-    };
-
-    let hasValidDrops = function(mod) {
-        return hasValidArrayProp(mod, "DroppedBy")
-            .then(() => {
-                let promises = [];
-
-                for (let drop of mod.DroppedBy) {
-                    promises.push(
-                        hasValidStringProp(drop, "Name")
-                        .catch(error => {
-                            validityError(drop, error, "DroppedBy.Name");
-                        })
-                    );
-
-                    promises.push(
-                        hasValidArrayProp(drop, "Links")
-                        .then(() => {
-                            for (let link of drop.Links) {
-                                expect(link).to.be.a("string");
-                                expect(link).to.not.be.empty;
-                            }
-                        })
-                        .catch(error => {
-                            validityError(drop, error, "DroppedBy.Links");
-                        })
-                    );
-                }
-
-                return Promise.all(promises);
-            });
+        expect(mod).to.have.property(propName);
+        expect(mod[propName]).to.be.an("Array");
     };
 
     return Object.freeze({
-        rarities,
-        polarities,
-        hasValidName,
-        hasValidDescription,
-        hasValidURL,
-        hasValidRarity,
-        hasValidPolarity,
-        hasValidTraddingTax,
-        hasValidTransmutation,
-        hasValidRank,
-        hasValidImageURL,
-        hasValidPvP,
-        hasValidPvE,
-        hasValidDrops
+        hasValidStringProp,
+        hasValidURLProp,
+        hasValidNumberProp,
+        hasValidBooleanProp,
+        isKnownTypeProp,
+        hasValidArrayProp,
+        isValidURL
     });
 };
 

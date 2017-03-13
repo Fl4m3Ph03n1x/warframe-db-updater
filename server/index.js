@@ -2,10 +2,13 @@
 
 let jsonfile = require("jsonfile");
 let URL = require('url-parse');
+let request = require("request");
+let Promise = require("promise");
 
 let ModScraper = require("./promisedScraper.js");
 let exception = require("./Exception.js");
 let checker = require("./checker.js");
+let _ = require("underscore");
 
 let warframeChecker = require("./checkers/warframeChecker.js");
 
@@ -27,36 +30,67 @@ let createLog = function(info) {
     });
 };
 
-let getRandomArbitrary = function(min, max) {
-    return Math.random() * (max - min) + min;
+let sparse = function(fun, delayMs) {
+
+    let lastCallTime = Date.now();
+    return function(...args) {
+
+
+        return new Promise((fulfil, reject) => {
+
+            const now = Date.now();
+            const thisDelay = Math.max(delayMs, lastCallTime - now + delayMs);
+            lastCallTime = now + thisDelay;
+
+            setTimeout(() => {
+
+                fun(...args)
+                    .then(fulfil)
+                    .catch(reject);
+
+            }, thisDelay);
+        });
+
+    };
 };
 
 let checkData = function(mods) {
     const wikiaURL = new URL(scrapperCfg.sources.wikia.link);
 
-    let dataTypes = {
+    let requestFun = sparse(Promise.denodeify(request), 50);
+    let args = {
         rarities: ["Common", "Uncommon", "Rare", "Legendary", "Riven"],
         polarities: ["Vazarin", "Madurai", "Naramon", "Zenurik", "Penjaga", "Unairu"],
-        categories: ["None", "Acolyte", "Corrupted", "Nightmare"]
+        categories: ["None", "Acolyte", "Corrupted", "Nightmare"],
+        wikiaURL: wikiaURL.origin,
+        requestFun
     };
 
-    let check = checker(dataTypes);
+    let check = checker(args);
 
-    let checkWarframeMod = warframeChecker(dataTypes);
+    let checkWarframeMod = warframeChecker(args);
+
+    // scrapy.getModInformation("http://warframe.wikia.com/wiki/Armored_Agility")
+    //     .then(checkWarframeMod.isAccurate)
+    //     .catch(info => {
+    //         console.log("Error ocurred with: Armored Agility");
+    //         createLog(info);
+    //     });
 
     let fullCheck = [];
 
     for (let item of mods) {
 
-
         fullCheck.push(
             scrapy.getModInformation(wikiaURL.origin + item.NameLink)
-            .then(checkWarframeMod.isValid)
+            // .then(checkWarframeMod.isValid)
+            .then(checkWarframeMod.isAccurate)
             .catch(info => {
                 console.log("Error ocurred with: " + item.Name);
                 createLog(info);
-            }));
-            
+            })
+        );
+
         // fullCheck.push(
         //     check.hasOverviewInfoValidity(item)
         //     .then(() => check.hasOverviewInfoAccuracy(item, wikiaURL))
@@ -80,7 +114,6 @@ let checkData = function(mods) {
     return Promise.all(fullCheck);
 };
 
-//TODO: Throttle the requests !
 let cycle = function() {
     console.log("calling");
 
@@ -132,4 +165,4 @@ let cycle = function() {
 
 
 cycle();
-// setInterval(cycle, waitParams.cycles);//from seconds to miliseconds
+// // setInterval(cycle, waitParams.cycles);//from seconds to miliseconds

@@ -1,12 +1,10 @@
 "use strict";
 
-let Promise = require("promise");
 let URL = require('url-parse');
 let chai = require("chai"),
     expect = chai.expect;
 
-//VALUE OBJECT COMPOSITION OVER HIERARCHY
-//Does the item conform to our DB schema?
+//Do multiple references of the same item have the same information?
 let consistencyCheckerFactory = function(args) {
     let {
         rarities,
