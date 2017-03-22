@@ -1,8 +1,8 @@
 "use strict";
 
-let chai = require("chai"),
+const chai = require("chai"),
     expect = chai.expect;
-let HTTPStatus = require('http-status');
+const HTTPStatus = require('http-status');
 
 /**
  *  Provides methods to answer the question:
@@ -15,7 +15,7 @@ let HTTPStatus = require('http-status');
  *                              and the GET function to be used.
  *  @return {Object}    Returns an immutable object with methods for basic 
  *                      accuracy checking.
- * @see     https://www.youtube.com/watch?v=0X1Ns2NRfks
+ *  @see    https://www.youtube.com/watch?v=0X1Ns2NRfks
  */
 let accuracyCheckerFactory = function(args) {
     let {

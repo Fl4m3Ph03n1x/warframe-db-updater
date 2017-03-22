@@ -14,7 +14,7 @@ let warframeIndexTableChecker = function(args) {
         wikiaURL,
         rarities,
         polarities,
-        categories
+        subcategories
     } = args;
 
     let {
@@ -152,7 +152,7 @@ let warframeIndexTableChecker = function(args) {
 
         if (mod.Subcategory !== undefined) {
             try {
-                isKnownTypeProp(mod, "Subcategory", categories);
+                isKnownTypeProp(mod, "Subcategory", subcategories);
             }
             catch (error) {
                 throw validityError(mod, error, "Subcategory");
@@ -174,7 +174,7 @@ let warframeIndexTableChecker = function(args) {
     };
 
     let isValid = function(mod) {
-        return Promise.all([
+        return execute([
             hasValidNameLink,
             hasValidName,
             hasValidDescription,
@@ -184,9 +184,9 @@ let warframeIndexTableChecker = function(args) {
             hasValidRarity,
             hasValidSubcategory,
             hasValidSubcategoryLink
-        ].map(fun => execute(fun, mod)));
+        ], mod);
     };
-
+    
     let hasAccurateNameLink = function(mod) {
         return doesURLExist(wikiaURL + mod.NameLink)
             .catch(error => {
@@ -234,15 +234,15 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let isSubcategoryConsistent = function(mod) {
+    let isSubcategoryConsistent = function(indexInfo, detailInfo) {
 
     };
 
-    let isConsistent = function(mod) {
-        return Promise.all([
-            isModConsistent(mod),
-            isSubcategoryConsistent(mod)
-        ]);
+    let isConsistent = function(indexInfo, detailInfo) {
+        return execute([
+            isModConsistent,
+            isSubcategoryConsistent
+        ], indexInfo, detailInfo);
     };
 
     return Object.freeze({

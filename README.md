@@ -36,7 +36,16 @@ Current Features
 Currently this project extracts data for the following mod types:
 
  - Warframes
- - Rifles
+
+
+Currently, the stalker does **not** provide information about:
+
+ - Archwings
+ - Archwing Melee
+ - Archwing Rifles
+ - Syndicate Mods
+ - Rivens
+  - Rifles
  - Shotguns
  - Pistols
  - Melee 
@@ -46,14 +55,6 @@ Currently this project extracts data for the following mod types:
  - Sentinels
  - Auras
  - Stances
-
-Currently, the stalker does **not** provide information about:
-
- - Archwings
- - Archwing Melee
- - Archwing Rifles
- - Syndicate Mods
- - Rivens
 
 Further versions of the stalker are planned to improve on this, but since the 
 project stalks the Wikia, it is imperative to improve the wikia's quality first.

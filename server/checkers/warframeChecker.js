@@ -1,12 +1,12 @@
 "use strict";
 
-let Promise = require("promise");
-let chai = require("chai"),
+const chai = require("chai"),
     expect = chai.expect;
-let serializeError = require('serialize-error');
+const serializeError = require('serialize-error');
 
-let validityCheck = require("./validityChecker.js");
-let accuracyCheck = require("./accuracyChecker.js");
+const validityCheck = require("./validityChecker.js");
+const accuracyCheck = require("./accuracyChecker.js");
+const execute = require("../utils/mapExecution.js");
 
 //TODO: check for PvE / PvP mods
 let warframeChecker = function(args) {
@@ -202,18 +202,18 @@ let warframeChecker = function(args) {
     };
 
     let isValid = function(mod) {
-        return Promise.all([
-            hasValidName(mod),
-            hasValidDescription(mod),
-            hasValidURL(mod),
-            hasValidRarity(mod),
-            hasValidPolarity(mod),
-            hasValidTraddingTax(mod),
-            hasValidTransmutation(mod),
-            hasValidRank(mod),
-            hasValidImageURL(mod),
-            hasValidDrops(mod)
-        ]);
+        return execute([
+            hasValidName,
+            hasValidDescription,
+            hasValidURL,
+            hasValidRarity,
+            hasValidPolarity,
+            hasValidTraddingTax,
+            hasValidTransmutation,
+            hasValidRank,
+            hasValidImageURL,
+            hasValidDrops
+        ], mod);
     };
 
     let hasAccurateImageUrl = function(mod) {
@@ -250,10 +250,10 @@ let warframeChecker = function(args) {
     };
 
     let isAccurate = function(mod) {
-        return Promise.all([
-            hasAccurateImageUrl(mod),
-            hasAccurateDroppedByLinks(mod)
-        ]);
+        return execute([
+            hasAccurateImageUrl,
+            hasAccurateDroppedByLinks
+        ], mod);
     };
 
     return Object.freeze({

@@ -4,11 +4,10 @@ let jsonfile = require("jsonfile");
 let URL = require('url-parse');
 let request = require("request");
 let Promise = require("promise");
+const serializeError = require('serialize-error');
 
 let ModScraper = require("./promisedScraper.js");
 let exception = require("./Exception.js");
-let checker = require("./checker.js");
-// let _ = require("underscore");
 let sparse = require("./utils/sparse.js");
 let warframeChecker = require("./checkers/warframeChecker.js");
 let warframeIndexTableChecker = require("./checkers/warframeIndexTableChecker.js");
@@ -31,15 +30,15 @@ let createLog = function(info) {
     });
 };
 
+let createServerLog = function(error) {
+    errorParams.exceptionName = "ServerError.json";
+    exception(errorParams).write(serializeError(error));
+};
+
 let checkResults = function(results) {
     results
         .filter(result => result.state === "rejected")
-        .forEach(
-            obj => {
-                console.log("Error ocurred with: " + obj.reason.item.Name);
-                createLog(obj.reason);
-            }
-        );
+        .forEach(obj => createLog(obj.reason));
 };
 
 let checkData = function(mods) {
@@ -53,49 +52,35 @@ let checkData = function(mods) {
         requestFun
     };
 
-    let check = checker(args);
-
     let checkWarframeIndex = warframeIndexTableChecker(args);
     let checkWarframeMod = warframeChecker(args);
     let fullCheck = [];
 
     for (let item of mods) {
 
-        fullCheck.push(
-            checkWarframeIndex.isAccurate(item)
+        let check = checkWarframeIndex.isValid(item)
             .then(checkResults)
-            // checkWarframeIndex.isValid(item)
-            // .then(() => { checkWarframeIndex.isAccurate(item);})
-            .catch(info => {
-                console.log("Error ocurred with: " + item.Name);
-                createLog(info);
+            .then(() => checkWarframeIndex.isAccurate(item))
+            .then(checkResults)
+            .then(() => scrapy.getModInformation(wikiaURL.origin + item.NameLink))
+            .then(details => {
+                return checkWarframeMod.isValid(details)
+                    .then(checkResults)
+                    .then(() => checkWarframeMod.isAccurate(details))
+                    .then(checkResults)
+                    .then(() => checkWarframeIndex.isConsistent(item, details))
+                    .then(checkResults)
+                    .catch(error => {
+                        console.log(error);
+                    });
             })
-        );
+            .catch(error => {
+                createServerLog(error);
+            });
 
-        // fullCheck.push(
-        //     scrapy.getModInformation(wikiaURL.origin + item.NameLink)
-        //     // .then(checkWarframeMod.isValid)
-        //     .then(checkWarframeMod.isAccurate)
-        //     .catch(info => {
-        //         console.log("Error ocurred with: " + item.Name);
-        //         createLog(info);
-        //     })
-        // );
-
-        // fullCheck.push(
-        //     check.hasOverviewInfoValidity(item)
-        //     .then(() => check.hasOverviewInfoAccuracy(item, wikiaURL))
-        //     .then(() => check.hasOverviewInfoConsistency(item, wikiaURL, scrapy))
-        //     // .then(() => checkWarframeMod.hasValidName(item))
-        //     .catch(info => {
-        //         console.log("Error ocurred with: " + item.Name);
-        //         createLog(info);
-        //     })
-        // );
-
+        fullCheck.push(check);
+        
         /**
-         *  1. Check detailed item validity
-         *  2. Check detailed item accuracy
          *  3. Do I have item in the DB?
          *  3.1 No? Save it with timestamp.
          *  3.2 Yes? Compare to DB version and save if different. Update timestamp.
@@ -111,7 +96,9 @@ let cycle = function() {
     scrapy.getWarframeMods()
         .then(checkData)
         .then(() => console.log("checked Warframe data"))
-        .catch(console.log);
+        .catch(error => {
+            console.log(error);
+        });
 
     // scrapy.getRifleMods()
     //     .then(checkData)
