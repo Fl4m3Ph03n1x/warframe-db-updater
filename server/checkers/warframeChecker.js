@@ -3,11 +3,11 @@
 let Promise = require("promise");
 let chai = require("chai"),
     expect = chai.expect;
-let validityCheck = require("./validityChecker.js");
-let accuracyCheck = require("./accuracyChecker.js");
 let serializeError = require('serialize-error');
 
-//factory function
+let validityCheck = require("./validityChecker.js");
+let accuracyCheck = require("./accuracyChecker.js");
+
 //TODO: check for PvE / PvP mods
 let warframeChecker = function(args) {
     let {
@@ -256,14 +256,9 @@ let warframeChecker = function(args) {
         ]);
     };
 
-    let isConsistent = function(mod) {
-        return Promise.all([]);
-    };
-
     return Object.freeze({
         isValid,
-        isAccurate,
-        isConsistent
+        isAccurate
     });
 };
 

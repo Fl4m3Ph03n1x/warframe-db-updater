@@ -8,9 +8,10 @@ let Promise = require("promise");
 let ModScraper = require("./promisedScraper.js");
 let exception = require("./Exception.js");
 let checker = require("./checker.js");
-let _ = require("underscore");
-
+// let _ = require("underscore");
+let sparse = require("./utils/sparse.js");
 let warframeChecker = require("./checkers/warframeChecker.js");
+let warframeIndexTableChecker = require("./checkers/warframeIndexTableChecker.js");
 
 const CONFIG_FILES = {
     SCRAPPER: "./configs/scraperConfig.json",
@@ -30,66 +31,56 @@ let createLog = function(info) {
     });
 };
 
-let sparse = function(fun, delayMs) {
-
-    let lastCallTime = Date.now();
-    return function(...args) {
-
-
-        return new Promise((fulfil, reject) => {
-
-            const now = Date.now();
-            const thisDelay = Math.max(delayMs, lastCallTime - now + delayMs);
-            lastCallTime = now + thisDelay;
-
-            setTimeout(() => {
-
-                fun(...args)
-                    .then(fulfil)
-                    .catch(reject);
-
-            }, thisDelay);
-        });
-
-    };
+let checkResults = function(results) {
+    results
+        .filter(result => result.state === "rejected")
+        .forEach(
+            obj => {
+                console.log("Error ocurred with: " + obj.reason.item.Name);
+                createLog(obj.reason);
+            }
+        );
 };
 
 let checkData = function(mods) {
     const wikiaURL = new URL(scrapperCfg.sources.wikia.link);
-
-    let requestFun = sparse(Promise.denodeify(request), 50);
-    let args = {
+    const requestFun = sparse(Promise.denodeify(request), 50);
+    const args = {
         rarities: ["Common", "Uncommon", "Rare", "Legendary", "Riven"],
         polarities: ["Vazarin", "Madurai", "Naramon", "Zenurik", "Penjaga", "Unairu"],
-        categories: ["None", "Acolyte", "Corrupted", "Nightmare"],
+        subcategories: ["None", "Acolyte", "Corrupted", "Nightmare"],
         wikiaURL: wikiaURL.origin,
         requestFun
     };
 
     let check = checker(args);
 
+    let checkWarframeIndex = warframeIndexTableChecker(args);
     let checkWarframeMod = warframeChecker(args);
-
-    // scrapy.getModInformation("http://warframe.wikia.com/wiki/Armored_Agility")
-    //     .then(checkWarframeMod.isAccurate)
-    //     .catch(info => {
-    //         console.log("Error ocurred with: Armored Agility");
-    //         createLog(info);
-    //     });
-
     let fullCheck = [];
 
     for (let item of mods) {
 
         fullCheck.push(
-            scrapy.getModInformation(wikiaURL.origin + item.NameLink)
-            // .then(checkWarframeMod.isValid)
-            .then(checkWarframeMod.isAccurate)
+            checkWarframeIndex.isAccurate(item)
+            .then(checkResults)
+            // checkWarframeIndex.isValid(item)
+            // .then(() => { checkWarframeIndex.isAccurate(item);})
             .catch(info => {
                 console.log("Error ocurred with: " + item.Name);
                 createLog(info);
             })
         );
+
+        // fullCheck.push(
+        //     scrapy.getModInformation(wikiaURL.origin + item.NameLink)
+        //     // .then(checkWarframeMod.isValid)
+        //     .then(checkWarframeMod.isAccurate)
+        //     .catch(info => {
+        //         console.log("Error ocurred with: " + item.Name);
+        //         createLog(info);
+        //     })
+        // );
 
         // fullCheck.push(
         //     check.hasOverviewInfoValidity(item)
@@ -163,6 +154,5 @@ let cycle = function() {
     //     .catch(console.log);
 };
 
-
 cycle();
-// // setInterval(cycle, waitParams.cycles);//from seconds to miliseconds
+// setInterval(cycle, waitParams.cycles);//from seconds to miliseconds
