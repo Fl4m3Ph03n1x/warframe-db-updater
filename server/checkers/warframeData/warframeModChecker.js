@@ -4,9 +4,9 @@ const chai = require("chai"),
     expect = chai.expect;
 const serializeError = require('serialize-error');
 
-const validityCheck = require("./validityChecker.js");
-const accuracyCheck = require("./accuracyChecker.js");
-const execute = require("../utils/mapExecution.js");
+const validityCheck = require("../validityChecker.js");
+const accuracyCheck = require("../accuracyChecker.js");
+const execute = require("../../utils/mapExecution.js");
 
 //TODO: check for PvE / PvP mods
 let warframeChecker = function(args) {

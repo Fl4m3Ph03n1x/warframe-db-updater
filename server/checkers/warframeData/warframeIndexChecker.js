@@ -4,10 +4,10 @@ const chai = require("chai"),
     expect = chai.expect;
 const serializeError = require('serialize-error');
 
-const validityCheck = require("./validityChecker.js");
-const accuracyCheck = require("./accuracyChecker.js");
-const consistencyCheck = require("./consistencyChecker.js");
-const execute = require("../utils/mapExecution.js");
+const validityCheck = require("../validityChecker.js");
+const accuracyCheck = require("../accuracyChecker.js");
+const consistencyCheck = require("../consistencyChecker.js");
+const execute = require("../../utils/mapExecution.js");
 
 let warframeIndexTableChecker = function(args) {
     let {
