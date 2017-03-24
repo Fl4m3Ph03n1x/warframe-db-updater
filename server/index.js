@@ -5,8 +5,8 @@ let URL = require('url-parse');
 let request = require("request");
 let Promise = require("promise");
 
-let ModScraper = require("./promisedScraper.js");
-let sparse = require("./utils/sparse.js");
+const ModScraper = require("./promisedScraper.js");
+const sparse = require("./utils/sparse.js");
 const checkWarframeData = require("./checkers/warframeData/warframeDataChecker.js");
 
 const CONFIG_FILES = {
@@ -14,12 +14,12 @@ const CONFIG_FILES = {
     SERVER: "./configs/serverConfig.json"
 };
 
-let errorParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).errorHandling;
-let waitParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).minIntervalWaits;
-let scrapperCfg = jsonfile.readFileSync(CONFIG_FILES.SCRAPPER);
-let scrapy = new ModScraper(scrapperCfg);
+const errorParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).errorHandling;
+const waitParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).minIntervalWaits;
+const scrapperCfg = jsonfile.readFileSync(CONFIG_FILES.SCRAPPER);
+const scrapy = new ModScraper(scrapperCfg);
 
-let cycle = function() {
+const cycle = function() {
     console.log("calling");
     
     scrapy.getWarframeMods()

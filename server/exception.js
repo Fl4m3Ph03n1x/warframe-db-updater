@@ -1,8 +1,10 @@
 "use strict";
 
-let jsonfile = require("jsonfile");
-let _ = require("underscore");
+const jsonfile = require("jsonfile");
 
+/**
+ *
+ */
 let exceptionFactory = function(args) {
     let {
         outputFolder,
@@ -12,23 +14,21 @@ let exceptionFactory = function(args) {
         outputFileName,
         useExceptionName
     } = args;
-    
-    
-    
-    if(useExceptionName === true && !_.isUndefined(exceptionName))
-        outputFileName = exceptionName  + "_" + _.now();
-    
+
+    if (useExceptionName === true && exceptionName !== undefined)
+        outputFileName = exceptionName + "_" + Date.now();
+
     let filePath = outputFolder + outputFileName + fileExtension;
-    
+
     let write = function(info) {
         jsonfile.writeFileSync(filePath, info || message, {spaces: 4}, error => {
-            if (!_.isNull(error) )
+            if (error !== null)
                 console.log(error);
         });
     };
 
     return Object.freeze({
-        createTime: _.now(),
+        createTime: Date.now(),
         write
     });
 };
