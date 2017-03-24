@@ -6,16 +6,9 @@ const Promise = require("promise");
 
 //Personal Libs
 const logFactory = require("../../utils/logCreator.js");
+const resultsChecker = require("../resultsChecker.js");
 const warframeChecker = require("./warframeModChecker.js");
 const warframeIndexTableChecker = require("./warframeIndexChecker.js");
-
-//TODO Apply Inversion of Control!
-//https://www.youtube.com/watch?v=-kpEP4JeEdc
-let checkResults = function(results, logger) {
-    results
-        .filter(result => result.state === "rejected")
-        .forEach(obj => logger.createLog(obj.reason));
-};
 
 let checkWarframeData = function(mods, args) {
 
@@ -23,27 +16,27 @@ let checkWarframeData = function(mods, args) {
         wikiaURL,
         scrapy
     } = args;
-    
-    let logger =  logFactory(args);
 
+    let logger = logFactory(args);
+    let checker = resultsChecker(logger);
     let checkWarframeIndex = warframeIndexTableChecker(args);
     let checkWarframeMod = warframeChecker(args);
     let fullCheck = [];
 
     for (let item of mods) {
 
-        let check = checkWarframeIndex.isValid(item)
-            .then(res => checkResults(res, logger))
+        let itemCheck = checkWarframeIndex.isValid(item)
+            .then(checker)
             .then(() => checkWarframeIndex.isAccurate(item))
-            .then(res => checkResults(res, logger))
+            .then(checker)
             .then(() => scrapy.getModInformation(wikiaURL + item.NameLink))
             .then(details => {
                 return checkWarframeMod.isValid(details)
-                    .then(res => checkResults(res, logger))
+                    .then(checker)
                     .then(() => checkWarframeMod.isAccurate(details))
-                    .then(res => checkResults(res, logger))
+                    .then(checker)
                     .then(() => checkWarframeIndex.isConsistent(item, details))
-                    .then(res => checkResults(res, logger))
+                    .then(checker)
                     .catch(error => {
                         console.log(error);
                     });
@@ -52,13 +45,7 @@ let checkWarframeData = function(mods, args) {
                 logger.createServerLog(error);
             });
 
-        fullCheck.push(check);
-
-        /**
-         *  3. Do I have item in the DB?
-         *  3.1 No? Save it with timestamp.
-         *  3.2 Yes? Compare to DB version and save if different. Update timestamp.
-         */
+        fullCheck.push(itemCheck);
     }
 
     return Promise.all(fullCheck);

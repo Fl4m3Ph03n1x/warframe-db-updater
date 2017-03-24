@@ -38,6 +38,12 @@ let cycle = function() {
         .then(() => console.log("checked Warframe data"))
         .catch(console.log);
 
+        /**
+         *  3. Do I have item in the DB?
+         *  3.1 No? Save it with timestamp.
+         *  3.2 Yes? Compare to DB version and save if different. Update timestamp.
+         */
+
     // scrapy.getRifleMods()
     //     .then(checkData)
     //     .then(() => console.log("checked Rifle data"))
