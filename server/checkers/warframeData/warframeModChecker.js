@@ -60,92 +60,92 @@ let warframeChecker = function(args) {
 
     let hasValidName = function(mod) {
         try {
-            hasValidStringProp(mod, "Name");
+            hasValidStringProp(mod, "name");
         }
         catch (error) {
-            throw validityError(mod, error, "Name");
+            throw validityError(mod, error, "name");
         }
     };
 
     let hasValidDescription = function(mod) {
         /*
-         * I could differentiate bewteen a missing 'Description' field or a
-         * missing '.' at the end of the Description field, by putting each 
+         * I could differentiate bewteen a missing 'description' field or a
+         * missing '.' at the end of the description field, by putting each 
          * expect() in its own try/catch clause, but I don't think that level
          * of depth is needed.
          */
         try {
-            hasValidStringProp(mod, "Description");
+            hasValidStringProp(mod, "description");
 
             //Each description must terminate with correct puntuation. I am freak rigth? xD
-            expect(mod.Description[mod.Description.length - 1]).to.equal(".");
+            expect(mod.description[mod.description.length - 1]).to.equal(".");
         }
         catch (error) {
-            throw validityError(mod, error, "Description");
+            throw validityError(mod, error, "description");
         }
     };
 
     let hasValidURL = function(mod) {
         try {
-            hasValidURLProp(mod, "URL");
+            hasValidURLProp(mod, "url");
         }
         catch (error) {
-            throw validityError(mod, error, "URL");
+            throw validityError(mod, error, "url");
         }
     };
 
     let hasValidRarity = function(mod) {
         try {
-            isKnownTypeProp(mod, "Rarity", rarities);
+            isKnownTypeProp(mod, "rarity", rarities);
         }
         catch (error) {
-            throw validityError(mod, error, "Rarity");
+            throw validityError(mod, error, "rarity");
         }
     };
 
     let hasValidPolarity = function(mod) {
         try {
-            isKnownTypeProp(mod, "Polarity", polarities);
+            isKnownTypeProp(mod, "polarity", polarities);
         }
         catch (error) {
-            throw validityError(mod, error, "Polarity");
+            throw validityError(mod, error, "polarity");
         }
     };
 
     let hasValidTraddingTax = function(mod) {
         try {
-            if (!isNaN(mod.TraddingTax))
-                hasValidNumberProp(mod, "TraddingTax");
+            if (!isNaN(mod.traddingTax))
+                hasValidNumberProp(mod, "traddingTax");
         }
         catch (error) {
-            throw validityError(mod, error, "TraddingTax");
+            throw validityError(mod, error, "traddingTax");
         }
     };
 
     let hasValidTransmutation = function(mod) {
         try {
-            hasValidBooleanProp(mod, "Transmutable");
+            hasValidBooleanProp(mod, "transmutable");
         }
         catch (error) {
-            throw validityError(mod, error, "Transmutable");
+            throw validityError(mod, error, "transmutable");
         }
     };
 
     let hasValidRank = function(mod) {
         try {
-            hasValidNumberProp(mod, "Ranks");
+            hasValidNumberProp(mod, "ranks");
         }
         catch (error) {
-            throw validityError(mod, error, "Ranks");
+            throw validityError(mod, error, "ranks");
         }
     };
 
     let hasValidImageURL = function(mod) {
         try {
-            hasValidURLProp(mod, "ImageURL");
+            hasValidURLProp(mod, "imageURL");
         }
         catch (error) {
-            throw validityError(mod, error, "ImageURL");
+            throw validityError(mod, error, "imageURL");
         }
     };
 
@@ -170,24 +170,24 @@ let warframeChecker = function(args) {
     let hasValidDrops = function(mod) {
 
         try {
-            hasValidArrayProp(mod, "DroppedBy");
+            hasValidArrayProp(mod, "droppedBy");
 
-            for (let drop of mod.DroppedBy) {
+            for (let drop of mod.droppedBy) {
 
                 try {
-                    hasValidStringProp(drop, "Name");
+                    hasValidStringProp(drop, "name");
                 }
                 catch (error) {
-                    throw validityError(mod, error, "DroppedBy.Name");
+                    throw validityError(mod, error, "droppedBy.name");
                 }
 
                 try {
-                    hasValidArrayProp(drop, "Links");
-                    for (let link of drop.Links)
+                    hasValidArrayProp(drop, "links");
+                    for (let link of drop.links)
                         isValidURL(wikiaURL + link);
                 }
                 catch (error) {
-                    throw validityError(mod, error, "DroppedBy.Links");
+                    throw validityError(mod, error, "droppedBy.links");
                 }
 
             }
@@ -195,7 +195,7 @@ let warframeChecker = function(args) {
         }
         catch (error) {
             if (error.exception === undefined)
-                throw validityError(mod, error, "DroppedBy");
+                throw validityError(mod, error, "droppedBy");
             else
                 throw error;
         }
@@ -217,9 +217,9 @@ let warframeChecker = function(args) {
     };
 
     let hasAccurateImageUrl = function(mod) {
-        return doesURLExist(mod.ImageURL)
+        return doesURLExist(mod.imageURL)
             .catch(error => {
-                throw accuracyError(mod, error, "ImageUrl", mod.ImageURL);
+                throw accuracyError(mod, error, "imageUrl", mod.imageURL);
             });
     };
 
@@ -227,8 +227,8 @@ let warframeChecker = function(args) {
     let hasAccurateDroppedByLinks = function(mod) {
         let promises = [];
 
-        for (let drop of mod.DroppedBy) {
-            for (let link of drop.Links) {
+        for (let drop of mod.droppedBy) {
+            for (let link of drop.links) {
 
                 let url;
                 try {
@@ -241,7 +241,7 @@ let warframeChecker = function(args) {
 
                 let result = doesURLExist(url)
                     .catch(error => {
-                        throw accuracyError(mod, error, "DroppedBy.Links", url);
+                        throw accuracyError(mod, error, "droppedBy.links", url);
                     });
                 promises.push(result);
             }

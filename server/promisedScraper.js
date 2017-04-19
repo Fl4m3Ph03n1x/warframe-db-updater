@@ -194,26 +194,26 @@ class ModScraper {
                 let descriptionParagraph = $(htmlBody).find('div').find('p').find('b').parent();
                 
                 let stanceInfo = {
-                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
-                    Description: descriptionParagraph.text().trim(),
-                    SlotType: "Stance",
-                    URL: modURL,
-                    Ranks: 3, //all stances have 3 ranks
-                    Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                    TraddingTax: +$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
-                    Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
-                    ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
+                    name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().trim(),
+                    description: descriptionParagraph.text().trim(),
+                    slotType: "Stance",
+                    url: modURL,
+                    ranks: 3, //all stances have 3 ranks
+                    rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                    traddingTax: +$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                    imageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
                 };
                 
                 if(isNaN(stanceInfo.TraddingTax))
-                    stanceInfo.TraddingTax = NaN;
+                    stanceInfo.traddingTax = NaN;
                 
                 let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
                     return $(el).attr('title') === 'Polarity';
                 });
 
                 if (polarityNode.length > 0)
-                    stanceInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
+                    stanceInfo.polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
 
 
                 let WeaponsList = [];
@@ -226,15 +226,15 @@ class ModScraper {
                     tmpWeaponName = $(elem).text().trim();
 
                     if (tmpWeaponName.includes("*")) {
-                        tmpWeaponObj.Name = tmpWeaponName.replace("*", "");
-                        tmpWeaponObj.MatchesPolarity = true;
+                        tmpWeaponObj.name = tmpWeaponName.replace("*", "");
+                        tmpWeaponObj.matchesPolarity = true;
                     }
                     else {
-                        tmpWeaponObj.Name = tmpWeaponName;
-                        tmpWeaponObj.MatchesPolarity = false;
+                        tmpWeaponObj.name = tmpWeaponName;
+                        tmpWeaponObj.matchesPolarity = false;
                     }
 
-                    tmpWeaponObj.Links = [];
+                    tmpWeaponObj.links = [];
                     tmpWeaponLinkNodes = $(elem).find("a");
                     tmpWeaponLinkNodes.each((linkIndex, linkElem) => {
                         tmpWeaponObj.Links.push($(linkElem).attr("href"));
@@ -248,18 +248,18 @@ class ModScraper {
                 let info = droppedByDiv.split("<br>");
                 let dropInfo = {};
                 let links = "";
-                stanceInfo.DroppedBy = [];
+                stanceInfo.droppedBy = [];
                 for (let tag of info) {
                     dropInfo = {};
                     //remove text between parenthesis, and it is useless and often confuses the parser
                     tag = tag.replace(/ *\([^)]*\) */g, "");
-                    dropInfo.Name = $(tag).text().trim() || tag;
-                    dropInfo.Links = [];
+                    dropInfo.name = $(tag).text().trim() || tag;
+                    dropInfo.links = [];
 
                     links = $(tag).find("a").add($(tag).filter("a"));
 
                     $(links).each(function(index, elem) {
-                        dropInfo.Links.push($(this).attr("href"));
+                        dropInfo.links.push($(this).attr("href"));
                     });
 
                     stanceInfo.DroppedBy.push(dropInfo);
@@ -269,14 +269,14 @@ class ModScraper {
             }
             else {
                 let modInfo = {
-                    Name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().replace(/ *\([^)]*\) */g, "").trim(),//remove text withing parentheses like (Mod),
-                    Description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
-                    Rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
-                    TraddingTax: +$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
-                    URL: modURL,
-                    Transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
-                    Ranks: +$("#mw-content-text > table.emodtable").find("tr").length - 2,
-                    ImageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
+                    name: $("#WikiaPageHeader > div > div.header-column.header-title > h1").text().replace(/ *\([^)]*\) */g, "").trim(),//remove text withing parentheses like (Mod),
+                    description: $("#mw-content-text > div.tooltip-content.Infobox_Parent").next().text().trim(),
+                    rarity: $("div.pi-item:nth-child(3) > div:nth-child(2)").text().trim(),
+                    traddingTax: +$("div.pi-item:nth-child(4) > div:nth-child(2)").text().trim(),
+                    url: modURL,
+                    transmutable: $("#mw-content-text > div > aside > section > div:nth-child(6) > div > div").text().trim() == KEYWORDS.TRANSMUTABLE,
+                    ranks: +$("#mw-content-text > table.emodtable").find("tr").length - 2,
+                    imageURL: $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > figure > a > img").attr("src")
                 };
                 
                 let polarityNode = $('a.image.image-thumbnail.link-internal').filter((i, el) => {
@@ -284,33 +284,33 @@ class ModScraper {
                 });
 
                 if (polarityNode.length > 0)
-                    modInfo.Polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
+                    modInfo.polarity = polarityNode.find("img").attr("alt").trim().split(" ")[0].trim();
                 
                 if(isNaN(modInfo.TraddingTax))
-                    modInfo.TraddingTax = NaN;
+                    modInfo.traddingTax = NaN;
                 
-                modInfo.Tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
+                modInfo.tradable = (modInfo.TraddingTax != KEYWORDS.NA && modInfo.TraddingTax != "");
 
                 let droppedByDiv = $("#mw-content-text > div.tooltip-content.Infobox_Parent > aside > section > div:nth-child(5) > div").toString();
                 let info = droppedByDiv.split("<br>");
                 let dropInfo = {};
                 let links = "";
-                modInfo.DroppedBy = [];
+                modInfo.droppedBy = [];
 
                 for (let tag of info) {
                     dropInfo = {};
                     //remove text between parenthesis, and it is useless and often confuses the parser
                     tag = tag.replace(/ *\([^)]*\) */g, "");
-                    dropInfo.Name = $(tag).text().trim() || tag;
-                    dropInfo.Links = [];
+                    dropInfo.name = $(tag).text().trim() || tag;
+                    dropInfo.links = [];
 
                     links = $(tag).find("a").add($(tag).filter("a"));
 
                     $(links).each(function(index, elem) {
-                        dropInfo.Links.push($(this).attr("href"));
+                        dropInfo.links.push($(this).attr("href"));
                     });
 
-                    modInfo.DroppedBy.push(dropInfo);
+                    modInfo.droppedBy.push(dropInfo);
                 }
 
                 return modInfo;
@@ -343,7 +343,7 @@ class ModScraper {
             let trList = $(table).find("tr");
 
             //fill the headers and remove the 1st row as it was processed
-            let headers = trList.first().children().text().trim().split("\n");
+            let headers = trList.first().children().text().trim().toLowerCase().split("\n");
             headers = headers.map(str => str.trim());
             trList = trList.slice(1, trList.length);
 
@@ -359,7 +359,7 @@ class ModScraper {
 
                     line = currentTdList.eq(tdIndex).text().trim();
 
-                    if (headers[tdIndex] == COLUMN_POLARITY) {
+                    if (headers[tdIndex] == COLUMN_POLARITY.toLowerCase()) {
                         item[headers[tdIndex]] = currentTdList.eq(tdIndex).find("img").attr("alt").split(" ")[0];
 
                         //Because the wikia has conflicting scripts, we must ensure we get the field we want.
@@ -367,7 +367,7 @@ class ModScraper {
                         if (!(item[headers[tdIndex] + "Link"]))
                             item[headers[tdIndex] + "Link"] = currentTdList.eq(tdIndex).find("img").attr("src");
                     }
-                    else if (headers[tdIndex] == COLUMN_DESCRIPTION) {
+                    else if (headers[tdIndex] == COLUMN_DESCRIPTION.toLocaleLowerCase()) {
                         let words = line.split(" ");
 
                         for (let word of words) {
@@ -382,7 +382,7 @@ class ModScraper {
                         item[headers[tdIndex]] = line.replace(/\s+/g, " ") + ".";
 
                         //check if it is PvP only.
-                        item.PvPOnly = false;
+                        item.pvpOnly = false;
                         if (item[headers[tdIndex]].includes(KEYWORDS.PVP))
                             item.PvPOnly = true;
                     }

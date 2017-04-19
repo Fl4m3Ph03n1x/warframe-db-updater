@@ -11,7 +11,7 @@ const exception = require("../exception.js");
  *                          This object must have an errorParams object, with 
  *                          the definitions for the errors.
  */
-let logFactory = function(args) {
+const logFactory = function(args) {
 
     let {
         errorParams
@@ -24,7 +24,7 @@ let logFactory = function(args) {
      *  @param  {Object}    info    An object with the error information that 
      *                              will be printed in the log.
      */
-    let createLog = function(info) {
+    const createLog = function(info) {
         errorParams.exceptionName = info.exceptionName;
         exception(errorParams).write({
             exception: info.exception,
@@ -42,7 +42,7 @@ let logFactory = function(args) {
      *  @param  {Object}    error   An object with the error information that 
      *                              will be printed in the log.
      */
-    let createServerLog = function(error) {
+    const createServerLog = function(error) {
         errorParams.exceptionName = "ServerError.json";
         exception(errorParams).write(serializeError(error));
     };

@@ -21,7 +21,7 @@
  *                          of wait between each execution.
  *  @see        {@link  http://stackoverflow.com/questions/42651439/how-to-delay-execution-of-functions-javascript}
  */
-let sparse = (fun, delayMs) => {
+const sparse = (fun, delayMs) => {
 
     let lastCallTime = Date.now();
     return function(...args) {

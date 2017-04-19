@@ -13,7 +13,7 @@
  * @returns {array}   An array containing the execution object for each function.
  * @see {@link  http://stackoverflow.com/questions/42839462/promise-then-and-catch-clauses-not-working}
  */
-let allSettled = function(values) {
+const allSettled = function(values) {
     let settle =
         value => Promise.resolve(value)
         .then(result => ({
@@ -42,7 +42,7 @@ let allSettled = function(values) {
  *                      function.
  * @see {@link http://stackoverflow.com/questions/42808381/how-can-i-use-promises-to-catch-errors-when-they-might-not-be-wrapped-in-a-promi}
  */
-let promisify = function(fun, ...args) {
+const promisify = function(fun, ...args) {
     //we never reject here
     return new Promise(fulfil => {
         fulfil(fun(...args));
@@ -60,7 +60,7 @@ let promisify = function(fun, ...args) {
  * @returns {Promise} A resolved Promise with an array of execution objects for 
  *                  each executed function.
  */
-let mapExecution = function(funArray, ...args) {
+const mapExecution = function(funArray, ...args) {
     return allSettled(funArray.map(fun => promisify(fun, ...args)));
 };
 

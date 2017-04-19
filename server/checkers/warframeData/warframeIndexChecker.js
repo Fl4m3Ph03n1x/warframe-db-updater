@@ -77,85 +77,85 @@ let warframeIndexTableChecker = function(args) {
 
     let hasValidNameLink = function(mod) {
         try {
-            hasValidStringProp(mod, "NameLink");
-            isValidURL(wikiaURL + mod.NameLink);
+            hasValidStringProp(mod, "nameLink");
+            isValidURL(wikiaURL + mod.nameLink);
         }
         catch (error) {
-            throw validityError(mod, error, "NameLink");
+            throw validityError(mod, error, "nameLink");
         }
     };
 
     let hasValidName = function(mod) {
         try {
-            hasValidStringProp(mod, "Name");
+            hasValidStringProp(mod, "name");
         }
         catch (error) {
-            throw validityError(mod, error, "Name");
+            throw validityError(mod, error, "name");
         }
     };
 
     let hasValidDescription = function(mod) {
         /*
-         * I could differentiate bewteen a missing 'Description' field or a
-         * missing '.' at the end of the Description field, by putting each 
+         * I could differentiate bewteen a missing 'description' field or a
+         * missing '.' at the end of the description field, by putting each 
          * expect() in its own try/catch clause, but I don't think that level
          * of depth is needed.
          */
         try {
-            hasValidStringProp(mod, "Description");
+            hasValidStringProp(mod, "description");
 
             //Each description must terminate with correct puntuation. I am freak rigth? xD
-            expect(mod.Description[mod.Description.length - 1]).to.equal(".");
+            expect(mod.description[mod.description.length - 1]).to.equal(".");
         }
         catch (error) {
-            throw validityError(mod, error, "Description");
+            throw validityError(mod, error, "description");
         }
     };
 
     let hasValidPvPOnly = function(mod) {
         try {
-            hasValidBooleanProp(mod, "PvPOnly");
+            hasValidBooleanProp(mod, "pvpOnly");
         }
         catch (error) {
-            throw validityError(mod, error, "PvPOnly");
+            throw validityError(mod, error, "pvpOnly");
         }
     };
 
     let hasValidPolarity = function(mod) {
         try {
-            isKnownTypeProp(mod, "Polarity", polarities);
+            isKnownTypeProp(mod, "polarity", polarities);
         }
         catch (error) {
-            throw validityError(mod, error, "Polarity");
+            throw validityError(mod, error, "polarity");
         }
     };
 
     let hasValidPolarityLink = function(mod) {
         try {
-            hasValidURLProp(mod, "PolarityLink", polarities);
+            hasValidURLProp(mod, "polarityLink", polarities);
         }
         catch (error) {
-            throw validityError(mod, error, "PolarityLink");
+            throw validityError(mod, error, "polarityLink");
         }
     };
 
     let hasValidRarity = function(mod) {
         try {
-            isKnownTypeProp(mod, "Rarity", rarities);
+            isKnownTypeProp(mod, "rarity", rarities);
         }
         catch (error) {
-            throw validityError(mod, error, "Rarity");
+            throw validityError(mod, error, "rarity");
         }
     };
 
     let hasValidSubcategory = function(mod) {
 
-        if (mod.Subcategory !== undefined) {
+        if (mod.subcategory !== undefined) {
             try {
-                isKnownTypeProp(mod, "Subcategory", subcategories);
+                isKnownTypeProp(mod, "subcategory", subcategories);
             }
             catch (error) {
-                throw validityError(mod, error, "Subcategory");
+                throw validityError(mod, error, "subcategory");
             }
         }
 
@@ -163,12 +163,12 @@ let warframeIndexTableChecker = function(args) {
 
     let hasValidSubcategoryLink = function(mod) {
 
-        if (mod.SubcategoryLink !== undefined) {
+        if (mod.subcategoryLink !== undefined) {
             try {
-                isValidURL(wikiaURL + mod.SubcategoryLink);
+                isValidURL(wikiaURL + mod.subcategoryLink);
             }
             catch (error) {
-                throw validityError(mod, error, "SubcategoryLink");
+                throw validityError(mod, error, "subcategoryLink");
             }
         }
     };
@@ -186,20 +186,21 @@ let warframeIndexTableChecker = function(args) {
             hasValidSubcategoryLink
         ], mod);
     };
-    
+
     let hasAccurateNameLink = function(mod) {
-        return doesURLExist(wikiaURL + mod.NameLink)
+        return doesURLExist(wikiaURL + mod.nameLink)
             .catch(error => {
-                throw accuracyError(mod, error, "NameLink", mod.NameLink);
+                throw accuracyError(mod, error, "nameLink", mod.nameLink);
             });
     };
 
     let hasAccurateSubcategoryLink = function(mod) {
-        if (mod.SubcategoryLink !== undefined)
-            return doesURLExist(wikiaURL + mod.SubcategoryLink)
+        if (mod.subcategoryLink !== undefined) {
+            return doesURLExist(wikiaURL + mod.subcategoryLink)
                 .catch(error => {
-                    throw accuracyError(mod, error, "SubcategoryLink", mod.SubcategoryLink);
+                    throw accuracyError(mod, error, "subcategoryLink", mod.subcategoryLink);
                 });
+        }
     };
 
     let isAccurate = function(mod) {
@@ -209,28 +210,28 @@ let warframeIndexTableChecker = function(args) {
         ], mod);
     };
 
-    //TODO: Check NameLink === URL !
-    //TODO: Check Subcategory is the right one!
+    //TODO: Check nameLink === URL !
+    //TODO: Check subcategory is the right one!
     let isModConsistent = function(indexInfo, detailInfo) {
         try {
-            arePropertiesConsistent(indexInfo.Name, detailInfo.Name);
+            arePropertiesConsistent(indexInfo.name, detailInfo.name);
         }
         catch (error) {
-            throw consistencyError(indexInfo, detailInfo, error, "Name");
+            throw consistencyError(indexInfo, detailInfo, error, "name");
         }
 
         try {
-            arePropertiesConsistent(indexInfo.Polarity, detailInfo.Polarity);
+            arePropertiesConsistent(indexInfo.polarity, detailInfo.polarity);
         }
         catch (error) {
-            throw consistencyError(indexInfo, detailInfo, error, "Polarity");
+            throw consistencyError(indexInfo, detailInfo, error, "polarity");
         }
 
         try {
-            arePropertiesConsistent(indexInfo.Rarity, detailInfo.Rarity);
+            arePropertiesConsistent(indexInfo.rarity, detailInfo.rarity);
         }
         catch (error) {
-            throw consistencyError(indexInfo, detailInfo, error, "Rarity");
+            throw consistencyError(indexInfo, detailInfo, error, "rarity");
         }
     };
 

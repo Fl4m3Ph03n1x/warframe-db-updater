@@ -1,31 +1,34 @@
 "use strict";
 
-let jsonfile = require("jsonfile");
-let URL = require('url-parse');
-let request = require("request");
-let Promise = require("promise");
+//Public libs
+const URL = require('url-parse');
+const request = require("request");
+const Promise = require("promise");
 
+//Personal libs
 const ModScraper = require("./promisedScraper.js");
 const sparse = require("./utils/sparse.js");
 const checkWarframeData = require("./checkers/warframeData/warframeDataChecker.js");
 
+//Config files
 const CONFIG_FILES = {
     SCRAPPER: "./configs/scraperConfig.json",
     SERVER: "./configs/serverConfig.json"
 };
 
-const errorParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).errorHandling;
-const waitParams = jsonfile.readFileSync(CONFIG_FILES.SERVER).minIntervalWaits;
-const scrapperCfg = jsonfile.readFileSync(CONFIG_FILES.SCRAPPER);
+//Setup 
+const errorParams = require(CONFIG_FILES.SERVER).errorHandling;
+const waitParams = require(CONFIG_FILES.SERVER).minIntervalWaits;
+const scrapperCfg = require(CONFIG_FILES.SCRAPPER);
 const scrapy = new ModScraper(scrapperCfg);
 
+//Neverending story
 const cycle = function() {
     console.log("calling");
-    
+
     scrapy.getWarframeMods()
         .then(modsTable => {
-            return checkWarframeData(modsTable, 
-            {
+            return checkWarframeData(modsTable, {
                 wikiaURL: new URL(scrapperCfg.sources.wikia.link).origin,
                 requestFun: sparse(Promise.denodeify(request), waitParams.requests),
                 rarities: ["Common", "Uncommon", "Rare", "Legendary", "Riven"],
@@ -37,52 +40,6 @@ const cycle = function() {
         })
         .then(() => console.log("checked Warframe data"))
         .catch(console.log);
-
-        /**
-         *  3. Do I have item in the DB?
-         *  3.1 No? Save it with timestamp.
-         *  3.2 Yes? Compare to DB version and save if different. Update timestamp.
-         */
-
-    // scrapy.getRifleMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Rifle data"))
-    //     .catch(console.log);
-
-    // scrapy.getPistolMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Pistol data"))
-    //     .catch(console.log);
-
-    // scrapy.getShotgunMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Shotgun data"))
-    //     .catch(console.log);
-
-    // scrapy.getMeleeMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Melee data"))
-    //     .catch(console.log);
-
-    // scrapy.getAuraMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Aura data"))
-    //     .catch(console.log);
-
-    // scrapy.getSentinelMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Sentinel data"))
-    //     .catch(console.log);
-
-    // scrapy.getKubrowMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Kubrow data"))
-    //     .catch(console.log);
-
-    // scrapy.getStanceMods()
-    //     .then(checkData)
-    //     .then(() => console.log("checked Stance data"))
-    //     .catch(console.log);
 };
 
 cycle();
