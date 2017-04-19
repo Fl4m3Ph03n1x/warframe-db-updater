@@ -9,31 +9,32 @@ const accuracyCheck = require("../accuracyChecker.js");
 const consistencyCheck = require("../consistencyChecker.js");
 const execute = require("../../utils/mapExecution.js");
 
-let warframeIndexTableChecker = function(args) {
-    let {
+const warframeIndexTableChecker = function(args) {
+    const {
         wikiaURL,
         rarities,
         polarities,
         subcategories
     } = args;
 
-    let {
+    const {
         hasValidStringProp,
         hasValidURLProp,
         hasValidBooleanProp,
         isKnownTypeProp,
-        isValidURL
+        isValidURL,
+        doesArrayContainValidProps
     } = validityCheck();
 
-    let {
+    const {
         doesURLExist
     } = accuracyCheck(args);
 
-    let {
+    const {
         arePropertiesConsistent
     } = consistencyCheck();
 
-    let validityError = function(mod, error, propInvolved) {
+    const validityError = function(mod, error, propInvolved) {
         return {
             exceptionName: "ValidityException",
             exception: {
@@ -44,7 +45,7 @@ let warframeIndexTableChecker = function(args) {
         };
     };
 
-    let accuracyError = function(mod, error, propInvolved, url) {
+    const accuracyError = function(mod, error, propInvolved, url) {
         /*
          *  I have to serialize the error because JSON.stringify will not 
          *  include the stack, message and other properties from the error and
@@ -61,7 +62,7 @@ let warframeIndexTableChecker = function(args) {
         };
     };
 
-    let consistencyError = function(indexInfo, detailedInfo, error, propInvolved) {
+    const consistencyError = function(indexInfo, detailedInfo, error, propInvolved) {
         return {
             exceptionName: "ConsistencyException",
             exception: {
@@ -75,7 +76,7 @@ let warframeIndexTableChecker = function(args) {
         };
     };
 
-    let hasValidNameLink = function(mod) {
+    const hasValidNameLink = function(mod) {
         try {
             hasValidStringProp(mod, "nameLink");
             isValidURL(wikiaURL + mod.nameLink);
@@ -85,7 +86,7 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidName = function(mod) {
+    const hasValidName = function(mod) {
         try {
             hasValidStringProp(mod, "name");
         }
@@ -94,7 +95,7 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidDescription = function(mod) {
+    const hasValidDescription = function(mod) {
         /*
          * I could differentiate bewteen a missing 'description' field or a
          * missing '.' at the end of the description field, by putting each 
@@ -112,7 +113,7 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidPvPOnly = function(mod) {
+    const hasValidPvPOnly = function(mod) {
         try {
             hasValidBooleanProp(mod, "pvpOnly");
         }
@@ -121,7 +122,7 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidPolarity = function(mod) {
+    const hasValidPolarity = function(mod) {
         try {
             isKnownTypeProp(mod, "polarity", polarities);
         }
@@ -130,7 +131,7 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidPolarityLink = function(mod) {
+    const hasValidPolarityLink = function(mod) {
         try {
             hasValidURLProp(mod, "polarityLink", polarities);
         }
@@ -139,7 +140,7 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidRarity = function(mod) {
+    const hasValidRarity = function(mod) {
         try {
             isKnownTypeProp(mod, "rarity", rarities);
         }
@@ -148,9 +149,9 @@ let warframeIndexTableChecker = function(args) {
         }
     };
 
-    let hasValidSubcategory = function(mod) {
+    const hasValidSubcategory = function(mod) {
 
-        if (mod.subcategory !== undefined) {
+        if (mod.subcategory !== "None") {
             try {
                 isKnownTypeProp(mod, "subcategory", subcategories);
             }
@@ -161,15 +162,51 @@ let warframeIndexTableChecker = function(args) {
 
     };
 
-    let hasValidSubcategoryLink = function(mod) {
+    const hasValidSubcategoryLink = function(mod) {
 
-        if (mod.subcategoryLink !== undefined) {
+        if (mod.subcategory !== "None") {
             try {
                 isValidURL(wikiaURL + mod.subcategoryLink);
             }
             catch (error) {
                 throw validityError(mod, error, "subcategoryLink");
             }
+        }
+    };
+    
+    //will blow up
+    const hasValidSyndicate = function(mod) {
+
+        if (mod.syndicate !== undefined) {
+            try {
+                doesArrayContainValidProps(mod, "syndicate", []);
+            }
+            catch (error) {
+                throw validityError(mod, error, "syndicate");
+            }
+        }
+
+    };
+
+    const hasValidSyndicateLink = function(mod) {
+
+        if (mod.syndicate !== undefined) {
+            try {
+                isValidURL(wikiaURL + mod.syndicateLink);
+            }
+            catch (error) {
+                throw validityError(mod, error, "syndicateLink");
+            }
+        }
+    };
+
+    const hasValidGameModes = mod => {
+
+        try {
+            doesArrayContainValidProps(mod, "gameModes", ["PvE", "PvP", "Archwing"]);
+        }
+        catch (error) {
+            throw validityError(mod, error, "gameModes");
         }
     };
 
@@ -183,7 +220,10 @@ let warframeIndexTableChecker = function(args) {
             hasValidPolarityLink,
             hasValidRarity,
             hasValidSubcategory,
-            hasValidSubcategoryLink
+            hasValidSubcategoryLink,
+            // hasValidGameModes,
+            // hasValidSyndicate,
+            // hasValidSyndicateLink
         ], mod);
     };
 

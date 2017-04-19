@@ -8,7 +8,7 @@ const Promise = require("promise");
 //Personal libs
 const ModScraper = require("./promisedScraper.js");
 const sparse = require("./utils/sparse.js");
-const checkWarframeData = require("./checkers/warframeData/warframeDataChecker.js");
+const warframeData = require("./checkers/warframe/warframeData.js");
 
 //Config files
 const CONFIG_FILES = {
@@ -26,18 +26,18 @@ const scrapy = new ModScraper(scrapperCfg);
 const cycle = function() {
     console.log("calling");
 
+    const warframeOpts = {
+        wikiaURL: new URL(scrapperCfg.sources.wikia.link).origin,
+        requestFun: sparse(Promise.denodeify(request), waitParams.requests),
+        rarities: ["Common", "Uncommon", "Rare", "Legendary", "Riven"],
+        polarities: ["Vazarin", "Madurai", "Naramon", "Zenurik", "Penjaga", "Unairu"],
+        subcategories: ["None", "Acolyte", "Corrupted", "Nightmare"],
+        scrapy,
+        errorParams
+    };
+    
     scrapy.getWarframeMods()
-        .then(modsTable => {
-            return checkWarframeData(modsTable, {
-                wikiaURL: new URL(scrapperCfg.sources.wikia.link).origin,
-                requestFun: sparse(Promise.denodeify(request), waitParams.requests),
-                rarities: ["Common", "Uncommon", "Rare", "Legendary", "Riven"],
-                polarities: ["Vazarin", "Madurai", "Naramon", "Zenurik", "Penjaga", "Unairu"],
-                subcategories: ["None", "Acolyte", "Corrupted", "Nightmare"],
-                scrapy,
-                errorParams
-            });
-        })
+        .then(modsTable => warframeData(modsTable, warframeOpts))
         .then(() => console.log("checked Warframe data"))
         .catch(console.log);
 };

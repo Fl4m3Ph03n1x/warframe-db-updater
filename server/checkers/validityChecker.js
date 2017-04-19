@@ -1,7 +1,7 @@
 "use strict";
 
-let URL = require('url-parse');
-let chai = require("chai"),
+const URL = require('url-parse');
+const chai = require("chai"),
     expect = chai.expect;
 
 /**
@@ -11,7 +11,7 @@ let chai = require("chai"),
  *  @return {Object}    Returns an immutable object with methods for basic 
  *                      validity checking. 
  */
-let validityCheckerFactory = function() {
+const validityCheckerFactory = function() {
 
     /**
      *   Checks if the given mod:
@@ -25,7 +25,7 @@ let validityCheckerFactory = function() {
      *  @throws AssertionException              If the check fails any of the 
      *                                          conditions.
      */
-    let hasValidStringProp = function(mod, propName) {
+    const hasValidStringProp = function(mod, propName) {
         expect(mod).to.have.property(propName);
         expect(mod[propName]).to.be.a("string");
         expect(mod[propName]).to.not.be.empty;
@@ -38,7 +38,7 @@ let validityCheckerFactory = function() {
      *  @param  {string}            anURL   The url.
      *  @throws AssertionException  If the url doesn't match the regex.
      */
-    let isValidURL = function(anURL) {
+    const isValidURL = function(anURL) {
         let urlRegex = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
         expect(anURL).to.match(urlRegex);
     };
@@ -55,7 +55,7 @@ let validityCheckerFactory = function() {
      *  @see     hasValidStringProp
      *  @see     isValidURL
      */
-    let hasValidURLProp = function(mod, propName) {
+    const hasValidURLProp = function(mod, propName) {
         hasValidStringProp(mod, propName);
         isValidURL(mod[propName]);
     };
@@ -73,7 +73,7 @@ let validityCheckerFactory = function() {
      *  @throws AssertionException              If the check fails any of the 
      *                                          conditions.
      */
-    let hasValidNumberProp = function(mod, propName) {
+    const hasValidNumberProp = function(mod, propName) {
         expect(mod).to.have.property(propName);
         expect(mod[propName]).to.be.a("number");
         expect(mod[propName]).not.to.be.NaN;
@@ -91,7 +91,7 @@ let validityCheckerFactory = function() {
      *  @throws AssertionException              If the check fails any of the 
      *                                          conditions.
      */
-    let hasValidBooleanProp = function(mod, propName) {
+    const hasValidBooleanProp = function(mod, propName) {
         expect(mod).to.have.property(propName);
         expect(mod[propName]).to.be.a("boolean");
     };
@@ -111,7 +111,7 @@ let validityCheckerFactory = function() {
      *  @throws AssertionException              If the check fails check num #3.
      * @see     hasValidStringProp
      */
-    let isKnownTypeProp = function(mod, propName, anArray) {
+    const isKnownTypeProp = function(mod, propName, anArray) {
         hasValidStringProp(mod, propName);
         expect(anArray).to.include(mod[propName]);
     };
@@ -127,11 +127,18 @@ let validityCheckerFactory = function() {
      *  @throws AssertionException              If the check fails any of the 
      *                                          conditions.
      */
-    let hasValidArrayProp = function(mod, propName) {
+    const hasValidArrayProp = function(mod, propName) {
         expect(mod).to.have.property(propName);
         expect(mod[propName]).to.be.an("Array");
     };
-
+    
+    const doesArrayContainValidProps = (mod, propName, anArray) => {
+        hasValidArrayProp(mod, propName);
+        mod[propName].forEach(elem => {
+            expect(anArray).to.include(elem);
+        });
+    };
+    
     return Object.freeze({
         hasValidStringProp,
         hasValidURLProp,
@@ -139,7 +146,8 @@ let validityCheckerFactory = function() {
         hasValidBooleanProp,
         isKnownTypeProp,
         hasValidArrayProp,
-        isValidURL
+        isValidURL,
+        doesArrayContainValidProps
     });
 };
 

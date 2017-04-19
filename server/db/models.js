@@ -17,7 +17,7 @@ module.exports = (function() {
         //Build Models Object
         models = {
             IndexTable: mongoose.model("indexTable", require("../schemas/indexTableSchema.js")),
-            WarframeMod: mongoose.model("warframeModSchema", require("../schemas/warframeModSchema.js"))
+            Mod: mongoose.model("mod", require("../schemas/modSchema.js"))
         };
 
     };
