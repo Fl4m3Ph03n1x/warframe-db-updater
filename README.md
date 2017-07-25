@@ -24,7 +24,14 @@
                                     yyyyyyyyyyyyyyy//yyyyyy.yyy-oyyyyyo:yyyyyyyyyyyyyy
                                     yyyyyyyyyyyyyyyyyyyyyyyoyyy+syyyyyyyyyyyyyyyyyyyyy
 
-    
+
+Deprecated 
+--------
+
+This project is no longer being mantained. Feel free to fork it and do with it as
+you will.
+
+
 Description
 ----------
 Also known as the Wikia-stalker, `warframe-db-updater` is a project which 
