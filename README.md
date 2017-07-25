@@ -24,15 +24,12 @@
                                     yyyyyyyyyyyyyyy//yyyyyy.yyy-oyyyyyo:yyyyyyyyyyyyyy
                                     yyyyyyyyyyyyyyyyyyyyyyyoyyy+syyyyyyyyyyyyyyyyyyyyy
 
-<<<<<<< HEAD
 
 Deprecated 
 --------
 
 This project is no longer being mantained. Feel free to fork it and do with it as
 you will.
-=======
->>>>>>> 4f65d56291cceaf24caa64e68346ea0aec4a1f35
     
 Description
 ----------
