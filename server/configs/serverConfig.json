@@ -1,0 +1,16 @@
+{
+    "errorHandling": {
+        "outputFolder": "./ErrorLogs/",
+        "fileExtension": ".json",
+        "exceptionName": "Exception",
+        "outputFileName": "Exception",
+        "message": {
+            "message": "A generic exception occurred."
+        },
+        "useExceptionName" : true
+    },
+    "minIntervalWaits": {
+        "requests": 50,
+        "cycles": 50000
+    }
+}
